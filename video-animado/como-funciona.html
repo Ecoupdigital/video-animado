@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como funciona o video-animado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F6F4; --card:#FFFFFF; --ink:#14141A; --mute:#6B6B76; --line:#E4E4E0;
+  --accent:#2F6BFF; --accent-soft:#E8EFFF; --ok:#19B35B; --ok-soft:#E3F6EB; --warn:#B7791F; --warn-soft:#FBF1DC;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1014; --card:#181A20; --ink:#F2F2F4; --mute:#9A9AA6; --line:#2A2C34;
+    --accent:#6B94FF; --accent-soft:#1D2740; --ok:#3DD383; --ok-soft:#14291F; --warn:#E3B04B; --warn-soft:#2B2414;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1014; --card:#181A20; --ink:#F2F2F4; --mute:#9A9AA6; --line:#2A2C34;
+  --accent:#6B94FF; --accent-soft:#1D2740; --ok:#3DD383; --ok-soft:#14291F; --warn:#E3B04B; --warn-soft:#2B2414;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:40px 16px 80px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0 0 12px;font-weight:800}
+h2{font-size:24px;letter-spacing:-.01em;margin:56px 0 6px;font-weight:800}
+.lead{color:var(--mute);font-size:18px;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 20px}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:99px;margin-bottom:14px}
+.rules{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:24px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}
+.rule b{display:block;margin-bottom:2px}
+/* fluxo */
+.flow{display:flex;flex-direction:column;gap:0;margin-top:20px}
+.step{display:flex;gap:14px}
+.rail{display:flex;flex-direction:column;align-items:center}
+.dot{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.dot.ok{background:var(--ok)}
+.line{width:2px;flex:1;background:var(--line);margin:4px 0}
+.step:last-child .line{display:none}
+.body{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px;flex:1}
+.body h3{margin:0 0 4px;font-size:17px}
+.body p{margin:0;color:var(--mute);font-size:15px}
+.fork{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px}
+.opt{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.opt b{display:block}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--ok-soft);color:var(--ok);margin-left:6px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+/* blocos de perguntas */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:16px;display:flex;gap:12px;align-items:center;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary .n{width:30px;height:30px;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:800;flex:none}
+summary .t{flex:1}
+summary .t small{display:block;color:var(--mute);font-weight:400;font-size:14px}
+summary .count{font-size:13px;color:var(--mute);font-weight:400;white-space:nowrap}
+summary::after{content:"+";font-size:22px;color:var(--mute);margin-left:4px}
+details[open] summary::after{content:"–"}
+.qs{padding:0 16px 16px 58px;margin:0}
+.qs li{margin:0 0 12px;font-size:15px;padding-left:2px}
+.qs li::marker{color:var(--mute);font-size:13px}
+.qs .ex{display:block;color:var(--mute);font-size:13.5px;margin-top:2px}
+.note{background:var(--warn-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:14.5px;margin:12px 0}
+/* entregas */
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:14px}
+.file{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px}
+.file code{display:block;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--accent);margin-bottom:4px;word-break:break-all}
+.tree{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;font-family:ui-monospace,Menlo,monospace;font-size:13px;overflow-x:auto;white-space:pre;line-height:1.7;margin-top:14px}
+.tree i{color:var(--mute);font-style:normal}
+footer{margin-top:60px;color:var(--mute);font-size:13.5px}
+button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 12px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+<button class="theme" id="theme" aria-label="Alternar tema">Tema</button>
+<div class="wrap">
+
+<span class="tag">Skill /video-animado</span>
+<h1>Como a skill funciona e o que ela pergunta</h1>
+<p class="lead">Ela faz vídeos narrados com animação 2D desenhada em código. Serve pra qualquer pessoa, com nenhum, um ou vários personagens.</p>
+
+<div class="rules">
+  <div class="rule"><b>Tudo em código</b>Nenhuma ferramenta externa de imagem ou vídeo por IA. Personagem e cenário são desenhados com formas.</div>
+  <div class="rule"><b>Uma pergunta por vez</b>Sempre com 2 a 4 opções e uma recomendada.</div>
+  <div class="rule"><b>"Decide por mim"</b>Em qualquer pergunta a pessoa pode dizer isso e a skill escolhe a recomendada.</div>
+  <div class="rule"><b>Brandbook é a referência</b>Depois de criado, todo vídeo novo lê ele antes de começar.</div>
+</div>
+
+<h2>O caminho geral</h2>
+<p class="sub">Do momento em que a pessoa chama a skill até o vídeo pronto.</p>
+
+<div class="flow">
+  <div class="step"><div class="rail"><div class="dot">0</div><div class="line"></div></div>
+    <div class="body"><h3>Procura um brandbook que já exista</h3>
+      <p>Ela olha sozinha a pasta <b>animacao/</b> do estúdio e a pasta atual. Lista o que achou e pergunta:</p>
+      <div class="fork">
+        <div class="opt"><b>Usar um que achou</b>Pula direto pra fazer o vídeo.</div>
+        <div class="opt"><b>Apontar outro caminho</b>Serve pra brandbook recebido de outra pessoa.</div>
+        <div class="opt"><b>Criar um novo</b>Começa a entrevista (Parte A).</div>
+      </div>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">A</div><div class="line"></div></div>
+    <div class="body"><h3>Parte A · Entrevista (só na primeira vez) <span class="pill warn">25 a 35 perguntas</span></h3>
+      <p>7 blocos, uma pergunta por vez. Entre os blocos ela resume o que decidiu e pergunta se está certo. Todas as perguntas estão logo abaixo.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">A</div><div class="line"></div></div>
+    <div class="body"><h3>Parte A · Gera o brandbook</h3>
+      <p>HTML pra ver e compartilhar, versão em texto pro Claude ler, ficha e desenho de cada personagem, cenários, e uma imagem de teste.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot ok">✓</div><div class="line"></div></div>
+    <div class="body"><h3>Aprovação de olho</h3>
+      <p>A pessoa vê as expressões lado a lado e a imagem de teste. Só segue quando aprovar. Se o desenho não sair bom, a skill simplifica o desenho em vez de trocar de ferramenta.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
+    <div class="body"><h3>Parte B · Pergunta rápida do vídeo</h3>
+      <p>Só o que faltar: tema, duração (30 a 60 s), formato (vertical por padrão), quais personagens e cenários entram.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
+    <div class="body"><h3>Parte B · Roteiro pra ser ouvido <span class="pill">pede aprovação</span></h3>
+      <p>Frases curtas, números escritos como se fala. Do lado de cada frase: a cena, quem aparece, a expressão e o que surge na tela. Respeita a narrativa do brandbook.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
+    <div class="body"><h3>Parte B · Narração <span class="pill">pede aprovação</span></h3>
+      <p>Usa a voz salva no brandbook: voz clonada no ElevenLabs, voz pronta do ElevenLabs, ou áudio que a pessoa já gravou. Só gasta crédito de voz depois do roteiro aprovado.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
+    <div class="body"><h3>Parte B · Tempo de cada palavra e montagem</h3>
+      <p>Transcreve a narração com o tempo de cada palavra. Monta o vídeo no Remotion: cada elemento nasce na palavra que o cita, a boca do personagem acompanha o volume da voz, legenda palavra por palavra.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot ok">✓</div><div class="line"></div></div>
+    <div class="body"><h3>Confere um frame de cada cena e renderiza</h3>
+      <p>Mostra os frames antes de renderizar. Entrega o mp4 em Downloads e diz o que a pessoa deve conferir de ouvido.</p>
+    </div></div>
+</div>
+
+<h2>As perguntas da entrevista</h2>
+<p class="sub">Clique em cada bloco pra abrir. As opções mostradas são pontos de partida; a skill adapta ao assunto da pessoa. Se uma resposta já cobrir outra pergunta, ela pula.</p>
+
+<details open>
+  <summary><span class="n">1</span><span class="t">Universo<small>O mundo dos vídeos: assunto, público e tom</small></span><span class="count">5 perguntas</span></summary>
+  <ol class="qs">
+    <li>Sobre o que são os vídeos?<span class="ex">dicas · tutoriais · histórias · notícias · humor · outro</span></li>
+    <li>Quem assiste, e em que nível de conhecimento?<span class="ex">iniciante · profissional · criança · dono de negócio</span></li>
+    <li>Qual o tom?<span class="ex">didático e calmo · animado · irônico · sério · afetuoso</span></li>
+    <li>Os vídeos têm personagem?<span class="ex">nenhum · um (recomendado) · vários</span></li>
+    <li>Nome do universo<span class="ex">a skill sugere 3 nomes e a pessoa escolhe ou digita outro</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">2</span><span class="t">Personagens<small>Repete para cada personagem. Se for nenhum, pula este bloco</small></span><span class="count">10 perguntas cada</span></summary>
+  <ol class="qs">
+    <li>Quem é? Nome e uma frase de personalidade<span class="ex">pessoa · bicho · objeto · mascote · robô</span></li>
+    <li>Gênero e idade aparente</li>
+    <li>Rosto<span class="ex">formato (redondo, quadrado, oval) · tom de pele · olhos · sobrancelhas · nariz · boca</span></li>
+    <li>Cabelo e detalhes<span class="ex">tipo, cor, tamanho · barba · óculos</span></li>
+    <li>Corpo e enquadramento<span class="ex">cabeça grande ou realista · corpo todo, metade de cima ou só busto</span></li>
+    <li>Roupa<span class="ex">uma só em todos os vídeos (recomendado, mantém consistência) · troca por cenário</span></li>
+    <li>Acompanhantes<span class="ex">cachorro · gato · bebê · planta · parceiro · colega. Cada um ganha uma mini-ficha. Aparecem sempre ou só às vezes?</span></li>
+    <li>Jeito de falar<span class="ex">gírias · ritmo · bordões · sotaque · o que nunca diz</span></li>
+    <li>Jeito de se mover<span class="ex">gesticula muito ou pouco · anda · aponta · vira o rosto</span></li>
+    <li>Voz<span class="ex">clonada no ElevenLabs · pronta do ElevenLabs (a skill sugere conforme o personagem) · áudio que a pessoa já gravou</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">3</span><span class="t">Cenários<small>Onde as histórias acontecem</small></span><span class="count">4 perguntas</span></summary>
+  <ol class="qs">
+    <li>Onde acontecem? E quantos cenários no total (recomendado 3 a 5)<span class="ex">casa · escritório · rua · loja · natureza · espaço abstrato (fundo de cor com formas) · outro</span></li>
+    <li>Para cada cenário: cômodos ou áreas, hora do dia, clima, objetos que sempre estão lá, cores dominantes<span class="ex">ex.: casa com sala, cozinha e home office</span></li>
+    <li>Algum elemento que se repete como assinatura?<span class="ex">um quadro · uma janela · uma planta · um relógio</span></li>
+    <li>Fundo plano ou com profundidade?<span class="ex">recomendado: 2 a 3 camadas que se movem diferente</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">4</span><span class="t">Narrativa<small>A história por trás: o que o personagem faz e como se comporta</small></span><span class="count">7 perguntas</span></summary>
+  <ol class="qs">
+    <li>O que o personagem faz no dia a dia? Onde frequenta?</li>
+    <li>O que ele quer e o que atrapalha?<span class="ex">o conflito que se repete nos vídeos</span></li>
+    <li>Como se comporta quando algo dá certo? E quando dá errado?</li>
+    <li>Como se relaciona com os outros personagens ou acompanhantes?</li>
+    <li>Como cada vídeo costuma começar e terminar?<span class="ex">gancho · fecho · chamada</span></li>
+    <li>O que ele nunca faria ou diria?</li>
+    <li>Tem uma história de origem curta?<span class="ex">opcional, 2 a 3 frases</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">5</span><span class="t">Visual<small>Estilo do desenho, cores e fontes</small></span><span class="count">5 perguntas</span></summary>
+  <ol class="qs">
+    <li>Estilo do desenho (sempre possível em código)<span class="ex">geométrico chapado (recomendado) · com contorno · minimalista · papel recortado. Se ficar em dúvida, a skill mostra uma amostra de cada</span></li>
+    <li>Paleta<span class="ex">a skill sugere 2 a 3 paletas com cores exatas; define a proporção de uso e a cor de acerto e de erro</span></li>
+    <li>Fontes<span class="ex">a skill sugere 2 combinações; uma pra título e legenda, outra pra detalhes</span></li>
+    <li>Contorno, sombra, textura<span class="ex">recomendado: sem textura</span></li>
+    <li>Nível de detalhe<span class="ex">muito simples · simples (recomendado) · médio</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">6</span><span class="t">Movimento<small>Como as coisas se mexem</small></span><span class="count">7 perguntas</span></summary>
+  <ol class="qs">
+    <li>Parado, o personagem respira e pisca?<span class="ex">recomendado: sim, de leve</span></li>
+    <li>Entrada e saída de cena<span class="ex">deslizando · pulando · fade · corte seco</span></li>
+    <li>Como o texto aparece<span class="ex">palavra por palavra · linha inteira · sobe de baixo · estoura</span></li>
+    <li>Ritmo geral e duração típica de cada cena<span class="ex">calmo · médio · rápido</span></li>
+    <li>Expressões<span class="ex">mínimo: neutra, falando, feliz, surpreso, pensando, apontando. Quer acrescentar? triste · bravo · rindo · dormindo</span></li>
+    <li>Som<span class="ex">efeitos nenhum · só nos momentos-chave (recomendado) · em todos. Trilha de fundo sim ou não</span></li>
+    <li>O que nunca fazer em movimento<span class="ex">ex.: tremer, mexer tudo ao mesmo tempo</span></li>
+  </ol>
+</details>
+
+<details>
+  <summary><span class="n">7</span><span class="t">Fechamento<small>Conferir tudo e gerar</small></span><span class="count">3 passos</span></summary>
+  <ol class="qs">
+    <li>Resumo geral de tudo que foi decidido, em lista curta. A pessoa confirma ou corrige.</li>
+    <li>Nome final do brandbook (confirma o que foi sugerido no bloco 1)</li>
+    <li>A skill gera tudo e pede aprovação das expressões e da imagem de teste</li>
+  </ol>
+</details>
+
+<div class="note"><b>Sem personagem também vale.</b> Se a pessoa disser "nenhum" no bloco 1, a skill pula o bloco 2 e os outros blocos falam só do mundo: cenários, ritmo, cores, texto. O vídeo fica só com formas, texto e cenários animados. Com vários personagens, cada um ganha a própria ficha e a própria voz.</div>
+
+<h2>O que ela entrega</h2>
+<div class="grid">
+  <div class="file"><code>BRANDBOOK-ANIMACAO.html</code>A versão bonita, abre direto no navegador, pra ver e compartilhar.</div>
+  <div class="file"><code>BRANDBOOK-ANIMACAO.md</code>A versão que o Claude lê antes de cada vídeo. Mesmas regras do HTML.</div>
+  <div class="file"><code>personagens/nome/</code>Ficha, o desenho em código e a imagem com todas as expressões.</div>
+  <div class="file"><code>cenarios/</code>Um cenário em código para cada lugar definido.</div>
+  <div class="file"><code>pronuncias.md</code>Opcional. Como cada termo deve soar na voz e aparecer na legenda.</div>
+  <div class="file"><code>videos/data-slug/</code>Cada vídeo: roteiro, narração e o projeto, para poder mexer depois.</div>
+</div>
+
+<div class="tree">estúdio/
+└─ animacao/
+   └─ <b>nome-do-universo</b>/            <i>← o brandbook (um por universo)</i>
+      ├─ BRANDBOOK-ANIMACAO.html
+      ├─ BRANDBOOK-ANIMACAO.md
+      ├─ pronuncias.md                <i>← opcional</i>
+      ├─ personagens/
+      │  └─ nome-do-personagem/
+      │     ├─ FICHA.md
+      │     ├─ Personagem.tsx
+      │     └─ expressoes.png
+      ├─ cenarios/
+      └─ videos/
+         └─ 2026-11-08-tema-do-video/</div>
+
+<h2>Depois que o brandbook existe</h2>
+<p class="sub">Nos vídeos seguintes a skill pula a entrevista. Ela lê o brandbook, usa os mesmos personagens e cenários sem redesenhar, e se a pessoa pedir um ajuste que valha pros próximos vídeos (ex.: "o boneco tá sério demais"), atualiza o HTML e o texto juntos.</p>
+
+<footer>Fonte: SKILL.md e references/perguntas.md em 03-skills/video-animado. Se uma pergunta mudar lá, atualize aqui.</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme'),r=document.documentElement;
+  try{var s=localStorage.getItem('va-theme');if(s)r.setAttribute('data-theme',s);}catch(e){}
+  b.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var n=dark?'light':'dark';r.setAttribute('data-theme',n);
+    try{localStorage.setItem('va-theme',n);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
