@@ -73,13 +73,13 @@ Com vários personagens, cada ficha guarda a voz do personagem.
 ### Parte B. Fazer o vídeo
 
 1. **Pergunta única** (só o que faltar): tema, duração (30 a 60 s por padrão), formato (vertical 1080x1920 por padrão, 30 fps), quais personagens e cenários entram.
-2. **Roteiro pra ser OUVIDO.** Frases curtas, número escrito como se fala, sem parênteses nem sigla difícil. Do lado de cada frase: a cena, quem aparece, a expressão e o que surge na tela. Respeite a narrativa do brandbook. Salve em `videos/<data-slug>/roteiro.md` e **só siga com a aprovação da pessoa**.
+2. **Gancho e roteiro pra ser OUVIDO** (leia `references/roteiro.md`). Primeiro 3 opções de gancho de tipos diferentes, a pessoa escolhe. Depois o roteiro: frases curtas, número escrito como se fala, sem parênteses nem sigla difícil, sem as frases proibidas da lista. Do lado de cada frase: a cena, quem aparece, a expressão e o que surge na tela. Respeite a narrativa do brandbook. Ao final, liste à parte as afirmações de fato que a pessoa precisa confirmar. Salve em `videos/<data-slug>/roteiro.md` e **só siga com a aprovação da pessoa**.
 3. **Narração**, pelo caminho de voz salvo no brandbook. Mostre o áudio e espere aprovação. Frase estranha: gere de novo só aquela frase. Use o `pronuncias.md` se existir. Salve `narracao.mp3`.
 4. **Tempo de cada palavra.** Transcreva a narração com timestamps por palavra (a ferramenta de transcrição que o estúdio já tem, a do curso de edição: mlx-whisper no Mac). Corrija erros típicos do Whisper em nomes de produtos e termos técnicos. Se a pessoa não tiver transcritor instalado, diga e ajude a instalar antes de seguir.
 5. **Projeto Remotion** em `videos/<data-slug>/` (use a skill `remotion-best-practices`). Um áudio de fundo (`narracao.mp3`). Cada cena importa os componentes do brandbook, **nunca redesenha** personagem ou cenário. Boca: extraia o volume do áudio por frame e use como `falando`, com um piso pra não tremer no silêncio. Cada elemento nasce na palavra que o cita. Legenda palavra por palavra no estilo do brandbook. Hooks do React nunca dentro de `if` ou depois de `return` antecipado.
-6. **Conferir antes de renderizar.** `npx tsc --noEmit`, depois um frame de cada cena. Olhe a imagem: personagem inteiro e igual à ficha, texto sem sobrepor nem estourar a largura, expressão e cena certas no tempo certo. Mostre os frames à pessoa.
-7. **Renderizar e entregar.** mp4 (H.264, áudio AAC) em `~/Downloads/`. Gere um contact sheet e olhe. Diga o que tem em cada cena, a duração, o que ela deve conferir de ouvido (você não ouve áudio) e onde está o projeto.
-8. **Ajustes.** A pessoa pede em palavras comuns ("o boneco tá sério demais", "aparece mais rápido"). Se a regra vale pros próximos vídeos, atualize o brandbook (as duas versões); se vale só pra este, o projeto.
+6. **Conferir antes de renderizar.** `npx tsc --noEmit`, depois um frame de cada cena. Olhe a imagem: personagem inteiro e igual à ficha, texto sem sobrepor nem estourar a largura, dentro da área segura, boca batendo com a voz, expressão e cena certas no tempo certo. Detalhes em `references/conferencias.md`.
+7. **Renderizar, conferir e entregar.** mp4 (H.264, áudio AAC) em `~/Downloads/`. Rode `scripts/checar_video.py` (volume, tamanho, silêncio), gere um contact sheet e chame o **revisor independente** (subagente que não viu a montagem, briefing em `references/conferencias.md`). Corrija o que for grave ou médio e renderize de novo. Entregue também a capa e a legenda do post, e ofereça os formatos 1:1 e 16:9 (`references/roteiro.md`). Diga o que tem em cada cena, a duração, o que o revisor achou e o que mudou, o que ela deve conferir de ouvido (você não ouve áudio) e onde está o projeto.
+8. **Ajustes.** A pessoa pede em palavras comuns ("o boneco tá sério demais", "aparece mais rápido") ou pelo tempo ("muda o título em 0:12"). Converta tempo em frame, mexa só na cena afetada e mostre o trecho antes de renderizar tudo. Se a regra vale pros próximos vídeos, atualize o brandbook (as duas versões); se vale só pra este, o projeto.
 
 ### Sugestão de nome
 
@@ -90,6 +90,7 @@ Sempre que o brandbook for criado, sugira 3 nomes de universo (curtos, fáceis d
 - Personagem fora do brandbook: toda cena importa o mesmo componente.
 - Boca mexendo sem fala, ou parada com fala: sincronizar pela amplitude, com piso.
 - Ferramenta externa por preguiça: se o desenho não sai, simplifique.
-- Gastar crédito de voz sem o roteiro aprovado.
+- Gastar crédito de voz sem o roteiro aprovado. Antes de gerar a narração, diga quantos caracteres vão para a voz e espere o sim.
+- Entregar sem passar pelo revisor independente: quem montou não enxerga os próprios erros.
 - Salvar o brandbook só em HTML: o Claude lê o `.md`, mantenha os dois iguais.
 - (Preencher na primeira execução real.)
