@@ -1,0 +1,20 @@
+{
+  "modelo": "dados-historia",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Forno em Números",
+    "pasta": "forno-em-numeros",
+    "assunto": "o resultado de cada trimestre de uma padaria de bairro e a história dela desde o primeiro forno",
+    "publico": "clientes e vizinhos da padaria, de 20 a 60 anos, que gostam de ver o bastidor",
+    "tom": "animado e direto, com o número dito inteiro"
+  },
+  "marca": { "nome": "Padaria Forno Alto", "cor": "#E4572E" },
+  "dados": { "rotulo": "FORNO ALTO · 3º TRIMESTRE" },
+  "tema": "isometrico",
+  "cores": { "origem": "tema", "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["mostrar número sem dizer de onde veio", "comparar com outra padaria pelo nome"],
+  "fecho": { "chamada": "Qual pão sai mais aí?", "assinatura": "@padariafornoalto", "frase_assinatura": "me segue pra ver o próximo trimestre", "aviso_ia": true },
+  "amostra": { "titulo": "O melhor *trimestre* da padaria", "valor": { "numero": 38, "prefixo": "+", "sufixo": "%" }, "marco": "O primeiro forno", "chip": "12 min", "manchete": "Padaria vende 3 mil pães num dia" }
+}

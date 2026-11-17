@@ -1,0 +1,20 @@
+{
+  "modelo": "dados-historia",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Fôlego em Números",
+    "pasta": "rede-academias",
+    "assunto": "os números e a história de uma rede de academias de bairro: o resultado de cada trimestre, quantos alunos entraram, como cada unidade abriu e o que mudou desde a primeira sala",
+    "publico": "alunos, ex-alunos e vizinhos das unidades, de 18 a 55 anos, que gostam de ver o bastidor e o crescimento da academia que frequentam",
+    "tom": "animado e direto, de quem comemora o número junto com o aluno, sem exagero e sem prometer resultado de treino"
+  },
+  "marca": { "nome": "Fôlego Academias", "cor": "#7C3AED" },
+  "dados": { "rotulo": "FÔLEGO · 3º TRIMESTRE" },
+  "tema": "isometrico",
+  "cores": { "origem": "marca", "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer emagrecimento ou resultado de treino", "mostrar número de aluno ou de faturamento sem dizer de onde veio", "comparar com academia concorrente pelo nome"],
+  "fecho": { "chamada": "Qual unidade é a sua?", "assinatura": "@folegoacademias", "frase_assinatura": "me segue pra ver o próximo trimestre", "aviso_ia": true },
+  "amostra": { "titulo": "O melhor *trimestre* da rede", "marco": "Primeira sala, 40 alunos", "chip": "8 min", "manchete": "Academia de bairro abre às 5h", "valor": { "numero": 42, "prefixo": "+", "sufixo": "%" } }
+}

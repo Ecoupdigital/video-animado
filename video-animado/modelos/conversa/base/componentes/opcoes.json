@@ -1,0 +1,81 @@
+{
+  "papeis": {
+    "fundo": "fundo da tela atrás do celular (começo do degradê)",
+    "fundo2": "fim do degradê do fundo",
+    "celular": "moldura do celular e o teclado por trás das teclas",
+    "chat": "fundo da conversa dentro do celular",
+    "padrao": "desenho miúdo sobre o fundo da conversa (pontos, grade, diagonal)",
+    "cabecalho": "faixa do contato no alto da tela e o botão de enviar",
+    "cabecalhoTexto": "nome do contato, seta de voltar e status sobre o cabeçalho",
+    "bolhaEsquerda": "bolha de quem manda mensagem para o dono do celular (o contato, à esquerda) e o digitando",
+    "textoEsquerda": "texto da bolha da esquerda",
+    "bolhaDireita": "bolha do dono do celular (à direita)",
+    "textoDireita": "texto da bolha da direita",
+    "titulo": "título da cena e legenda, sobre o fundo",
+    "destaque": "a palavra destacada do título e a pílula do card final sem marca",
+    "horario": "horário, pontos do digitando, status e texto apagado do campo",
+    "lido": "sinal de lido das bolhas da direita (lido = cheio; enviado = só o contorno)",
+    "campo": "campo de mensagem, as teclas e o fundo da reação",
+    "cardFinal": "cartão do card final"
+  },
+  "paletas": {
+    "claro": {
+      "fundo": "#E8E5FF", "fundo2": "#FFE4EC", "celular": "#17161C", "chat": "#F5F3FA", "padrao": "#D9D4E8",
+      "cabecalho": "#2F2A63", "cabecalhoTexto": "#FFFFFF", "bolhaEsquerda": "#FFFFFF", "textoEsquerda": "#1E1C2A",
+      "bolhaDireita": "#FFDCCB", "textoDireita": "#3A1D10", "titulo": "#221D4D", "destaque": "#D9356F",
+      "horario": "#77738A", "lido": "#C2410C", "campo": "#FFFFFF", "cardFinal": "#FFFFFF"
+    },
+    "escuro": {
+      "fundo": "#121019", "fundo2": "#2A1A36", "celular": "#050507", "chat": "#1B1923", "padrao": "#2E2B3A",
+      "cabecalho": "#2A2640", "cabecalhoTexto": "#F3F1FA", "bolhaEsquerda": "#2F2C3D", "textoEsquerda": "#F1EFF8",
+      "bolhaDireita": "#F2B05E", "textoDireita": "#251604", "titulo": "#F5F2FF", "destaque": "#FF7BA6",
+      "horario": "#9C98B0", "lido": "#7C3A00", "campo": "#2A2737", "cardFinal": "#24212F"
+    },
+    "vivo": {
+      "fundo": "#FFE24A", "fundo2": "#FF9E3D", "celular": "#121212", "chat": "#FFFBEB", "padrao": "#F1DE9C",
+      "cabecalho": "#5A1FB0", "cabecalhoTexto": "#FFFFFF", "bolhaEsquerda": "#FFFFFF", "textoEsquerda": "#1A1A1A",
+      "bolhaDireita": "#D61F69", "textoDireita": "#FFFFFF", "titulo": "#1B1035", "destaque": "#B0175A",
+      "horario": "#86764E", "lido": "#FFE24A", "campo": "#FFFFFF", "cardFinal": "#FFFFFF"
+    }
+  },
+  "prontas": {
+    "claro": { "nome": "Claro: lilás e rosa claros, cabeçalho índigo, bolha pêssego" },
+    "escuro": { "nome": "Escuro: grafite e ameixa, bolha âmbar, destaque rosa" },
+    "vivo": { "nome": "Vivo: amarelo e laranja, cabeçalho violeta, bolha magenta" }
+  },
+  "pronta_padrao": "claro",
+  "papeis_da_marca": ["bolhaDireita", "textoDireita", "destaque"],
+  "fundos_chat": {
+    "pontos": "pontinhos espaçados, como a tela de referência",
+    "liso": "cor lisa, sem desenho",
+    "grade": "grade fina de quadrados",
+    "diagonal": "listras diagonais finas"
+  },
+  "avatares": {
+    "pessoa": "busto de pessoa (cabeça e ombros)",
+    "flor": "flor de 5 pétalas",
+    "bolo": "fatia de bolo com cereja",
+    "gato": "cara de gato",
+    "casa": "casinha com porta",
+    "sol": "sol com raios"
+  },
+  "imagens": {
+    "bolo": "bolo de dois andares com vela",
+    "foto": "foto de paisagem (sol e montanha)",
+    "mapa": "mapa com rota e alfinete",
+    "recibo": "recibo com linhas e total",
+    "produto": "caixa de presente com laço",
+    "calendario": "calendário com um dia marcado"
+  },
+  "reacoes": {
+    "coracao": "coração",
+    "risada": "carinha rindo",
+    "espanto": "carinha de espanto",
+    "estrela": "estrela",
+    "ok": "sinal de certo num círculo"
+  },
+  "tipos_mensagem": ["texto", "audio", "imagem"],
+  "simbolos_marca": ["estrela", "circulo", "coracao", "folha", "balao", "letra"],
+  "status_padrao": "online",
+  "hora_padrao": "18:30"
+}

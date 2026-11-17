@@ -1,0 +1,76 @@
+{
+  "temas": ["isometrico", "linha-do-tempo", "mapa", "jornal"],
+  "papeis": {
+    "fundo": "fundo da tela: começo do degradê, papel, terra do mapa ou cortiça",
+    "fundo2": "segunda cor do fundo: fim do degradê, mancha do papel, quarteirão do mapa ou pontos escuros da cortiça",
+    "superficie": "cartão do marco, cartão do topo, recorte de papel e rua do mapa",
+    "linha": "linhas finas: borda do cartão, trilho apagado, tracejado da rua, linhas de texto do recorte",
+    "titulo": "título e número grande sobre o fundo",
+    "texto": "texto de apoio sobre o fundo",
+    "suave": "rótulo mono, mês embaixo da coluna, letra miúda",
+    "tinta": "texto sobre o cartão e o recorte: manchete, frase do marco",
+    "destaque": "número grande, coluna em destaque, linha que se desenha, rota, círculo à mão",
+    "destaque2": "segunda cor: pino de chegada, moeda, ponto do marco",
+    "barra": "colunas do gráfico e praças do mapa",
+    "piso": "piso do gráfico isométrico, base das colunas e rio do mapa",
+    "sobre": "texto sobre o destaque e sobre a etiqueta",
+    "faixa": "fita adesiva dos recortes e faixa da legenda",
+    "etiqueta": "etiqueta e chip: tempo da rota, selo do ano, rótulo do recorte",
+    "enfeite": "enfeites: cubos do isométrico, árvores do mapa, pontos claros da cortiça"
+  },
+  "paletas": {
+    "isometrico": {
+      "fundo": "#0F1B33", "fundo2": "#22406B", "superficie": "#1B3358", "linha": "#2F5D8A",
+      "titulo": "#FFFFFF", "texto": "#E6EFFF", "suave": "#7FA6D6", "tinta": "#E6EFFF",
+      "destaque": "#4ADE80", "destaque2": "#F59E0B", "barra": "#38BDF8", "piso": "#183456",
+      "sobre": "#0F1B33", "faixa": "#FFFFFF", "etiqueta": "#CFE3FF", "enfeite": "#818CF8"
+    },
+    "linha-do-tempo": {
+      "fundo": "#FAF6F0", "fundo2": "#F2EADF", "superficie": "#FFFFFF", "linha": "#EADFD3",
+      "titulo": "#1C1917", "texto": "#44403C", "suave": "#A8A29E", "tinta": "#44403C",
+      "destaque": "#E11D48", "destaque2": "#BE123C", "barra": "#D9CEC1", "piso": "#EADFD3",
+      "sobre": "#FFFFFF", "faixa": "#FEF3C7", "etiqueta": "#1C1917", "enfeite": "#FDA4AF"
+    },
+    "mapa": {
+      "fundo": "#F6EFDF", "fundo2": "#E9DFC8", "superficie": "#FFFFFF", "linha": "#D6CCB6",
+      "titulo": "#1F2937", "texto": "#374151", "suave": "#9A8A68", "tinta": "#1F2937",
+      "destaque": "#F97316", "destaque2": "#EF4444", "barra": "#CFE3B4", "piso": "#9FD3E6",
+      "sobre": "#FFFFFF", "faixa": "#FEF3C7", "etiqueta": "#1F2937", "enfeite": "#9CC77A"
+    },
+    "jornal": {
+      "fundo": "#C49A6C", "fundo2": "#A87D52", "superficie": "#F3EDDC", "linha": "#BDB6A6",
+      "titulo": "#3B2412", "texto": "#5B3A1E", "suave": "#6E4B2A", "tinta": "#1C1917",
+      "destaque": "#DC2626", "destaque2": "#57534E", "barra": "#8C857A", "piso": "#D6B086",
+      "sobre": "#FFFFFF", "faixa": "#FEF9C3", "etiqueta": "#1C1917", "enfeite": "#D6B086"
+    }
+  },
+  "prontas": {
+    "isometrico": {
+      "noite": { "nome": "Noite azul e destaque verde", "cores": { "fundo": "#0F1B33", "fundo2": "#22406B", "destaque": "#4ADE80", "barra": "#38BDF8" } },
+      "grafite": { "nome": "Grafite e destaque amarelo", "cores": { "fundo": "#111827", "fundo2": "#2A3443", "superficie": "#263244", "linha": "#3B4657", "suave": "#9CA3AF", "texto": "#E5E7EB", "tinta": "#E5E7EB", "destaque": "#FACC15", "barra": "#94A3B8", "piso": "#1B2432", "sobre": "#111827", "etiqueta": "#E5E7EB", "enfeite": "#F472B6" } },
+      "aurora": { "nome": "Aurora violeta e destaque rosa", "cores": { "fundo": "#1E1B4B", "fundo2": "#4C1D95", "superficie": "#2E2A6B", "linha": "#5B4BB7", "suave": "#C4B5FD", "texto": "#EDE9FE", "tinta": "#EDE9FE", "destaque": "#F472B6", "destaque2": "#FBBF24", "barra": "#A78BFA", "piso": "#2A2466", "sobre": "#1E1B4B", "etiqueta": "#EDE9FE", "enfeite": "#38BDF8" } }
+    },
+    "linha-do-tempo": {
+      "papel": { "nome": "Papel claro e linha vermelha", "cores": { "fundo": "#FAF6F0", "destaque": "#E11D48" } },
+      "areia": { "nome": "Areia e linha azul", "cores": { "fundo": "#F3EAD7", "fundo2": "#E9DDC4", "linha": "#D9C9A8", "suave": "#9C8A68", "destaque": "#1D4ED8", "destaque2": "#1E3A8A", "barra": "#CBB994", "faixa": "#FDE68A", "enfeite": "#93C5FD" } },
+      "noite": { "nome": "Fundo escuro e linha dourada", "cores": { "fundo": "#1C1917", "fundo2": "#26211E", "superficie": "#292524", "linha": "#44403C", "titulo": "#FAFAF9", "texto": "#D6D3D1", "suave": "#A8A29E", "tinta": "#E7E5E4", "destaque": "#FBBF24", "destaque2": "#F59E0B", "barra": "#57534E", "piso": "#44403C", "sobre": "#1C1917", "etiqueta": "#FAFAF9", "enfeite": "#FDE68A" } }
+    },
+    "mapa": {
+      "dia": { "nome": "Mapa de dia e rota laranja", "cores": { "fundo": "#F6EFDF", "destaque": "#F97316", "destaque2": "#EF4444" } },
+      "noite": { "nome": "Mapa de noite e rota amarela", "cores": { "fundo": "#1E2733", "fundo2": "#2B3747", "superficie": "#3B4A5E", "linha": "#55667D", "titulo": "#F1F5F9", "texto": "#CBD5E1", "suave": "#94A3B8", "tinta": "#F1F5F9", "destaque": "#FBBF24", "destaque2": "#F87171", "barra": "#2F4A3A", "piso": "#1E3A5F", "sobre": "#1E2733", "etiqueta": "#F1F5F9", "enfeite": "#3F6B4A" } },
+      "papel-antigo": { "nome": "Papel antigo e rota vinho", "cores": { "fundo": "#EFE2C4", "fundo2": "#E2D2AC", "superficie": "#FBF5E6", "linha": "#C9B68C", "titulo": "#3B2A14", "texto": "#5A4426", "suave": "#8C7449", "tinta": "#3B2A14", "destaque": "#B91C1C", "destaque2": "#7C2D12", "barra": "#CBD3A4", "piso": "#B9CFC4", "etiqueta": "#3B2A14", "sobre": "#FBF5E6", "enfeite": "#A3B57A" } }
+    },
+    "jornal": {
+      "vermelha": { "nome": "Caneta vermelha e fita amarela", "cores": { "destaque": "#DC2626", "faixa": "#FEF9C3", "etiqueta": "#1C1917" } },
+      "azul": { "nome": "Caneta azul e fita clara", "cores": { "destaque": "#1D4ED8", "faixa": "#DBEAFE", "etiqueta": "#1E3A8A" } },
+      "verde": { "nome": "Caneta verde e fita kraft", "cores": { "destaque": "#15803D", "faixa": "#E7D3A8", "etiqueta": "#14532D" } }
+    }
+  },
+  "pronta_padrao": { "isometrico": "noite", "linha-do-tempo": "papel", "mapa": "dia", "jornal": "vermelha" },
+  "estilos": {
+    "isometrico": { "nome": "Mundo isométrico", "modo": "escuro", "titulo": "texto", "peso_titulo": 800, "numero": "texto", "peso_numero": 900, "cor_numero": "destaque", "capa": "colunas", "contraste": ["fundo", "fundo2"] },
+    "linha-do-tempo": { "nome": "Linha do tempo", "modo": "claro", "titulo": "serif", "peso_titulo": 700, "numero": "serif", "peso_numero": 700, "cor_numero": "destaque", "capa": "marcos", "contraste": ["fundo", "superficie"] },
+    "mapa": { "nome": "Mapa com rota", "modo": "claro", "titulo": "texto", "peso_titulo": 800, "numero": "texto", "peso_numero": 800, "cor_numero": "destaque", "capa": "rota", "contraste": ["fundo", "superficie"] },
+    "jornal": { "nome": "Recortes de jornal", "modo": "claro", "titulo": "serif", "peso_titulo": 700, "numero": "serif", "peso_numero": 700, "cor_numero": "titulo", "capa": "recortes", "contraste": ["superficie"] }
+  }
+}

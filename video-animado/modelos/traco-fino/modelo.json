@@ -1,0 +1,13 @@
+{
+  "id": "traco-fino",
+  "nome": "Traço fino, antes e agora",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "personagens",
+  "receita": "narradora-unica",
+  "resumo": "Ilustração editorial de traço fino, proporção realista, uma narradora que conta o antes e o agora.",
+  "perguntas": { "pular": [], "trocar": { "2": "assunto-e-virada", "7": "apoio-e-crianca" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Theo", "Bruno", "Lúcia", "Lucia"],
+  "stills_prova": ["expressoes-*", "opcoes-aparencia", "elenco", "cenarios", "teste-antes", "teste-agora", "teste-caderno", "teste-celular", "teste-fecho"],
+  "criado_em": "2026-11-16"
+}

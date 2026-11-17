@@ -1,0 +1,28 @@
+{
+  "modelo": "neon",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Arara Liquida",
+    "pasta": "arara-liquida",
+    "assunto": "liquidação de fim de estação de uma loja de roupa de bairro: a peça da vez, o preço que cai e o prazo curto, um vídeo por oferta",
+    "publico": "quem compra roupa no bairro e segue a loja para pegar a liquidação, de 18 a 45 anos",
+    "tom": "animado e direto, de vendedora amiga que avisa da oferta sem empurrar"
+  },
+  "marca": { "nome": "Varal da Vila", "cor": "#16A34A" },
+  "oferta": {
+    "tipo": "oferta",
+    "o_que": "Jaqueta jeans",
+    "preco": "R$ 89,90",
+    "preco_antigo": "R$ 179,90",
+    "prazo": "só até domingo",
+    "selo": "só hoje",
+    "botao": "chama no direct"
+  },
+  "amostra": { "letreiro": ["QUEIMA DE", "ESTOQUE"] },
+  "cores": { "origem": "marca", "pronta": null, "paleta": null },
+  "receita": "narracao-inteira",
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer estoque que a loja não tem", "inventar desconto em cima de preço que nunca existiu", "falar mal do corpo de alguém"],
+  "fecho": { "chamada": "Corre que a arara está *acabando*", "assinatura": "@varaldavila", "frase_assinatura": "me segue pra não perder a próxima", "aviso_ia": true }
+}

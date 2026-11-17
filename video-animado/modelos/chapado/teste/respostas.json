@@ -1,0 +1,56 @@
+{
+  "modelo": "chapado",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-15",
+  "universo": {
+    "nome": "Sorriso em Dia",
+    "pasta": "sorriso-em-dia",
+    "assunto": "rotina de consultório de dentista com humor: medo da cadeira, escova esquecida, fio dental que ninguém usa, e uma dica de cuidado com os dentes em cada vídeo",
+    "publico": "adultos de 25 a 50 anos que adiam a ida ao dentista",
+    "tom": "leve e acolhedor, ri do medo sem humilhar ninguém"
+  },
+  "marca": { "nome": "Clínica Exemplo", "cor": "#2F8F9D", "simbolo": "dente", "palavra_fecho": "SORRISO" },
+  "personagens": [
+    {
+      "id": "bia", "nome": "Bia", "papel": "protagonista", "idade": 34,
+      "quem_e": "dentista paciente e bem-humorada, explica tudo com calma",
+      "aparencia": {
+        "pele": "p3", "cabelo": "comprido", "corCabelo": "#5A3A22",
+        "topo": "#2F8F9D", "manga": "curta", "tipoBaixo": "calca", "baixo": "#3B4A5A",
+        "sapato": "#F2F2F2", "sola": "#BFC6CC", "jaleco": true, "oculos": true, "cilios": true,
+        "raioCabeca": 114, "tamanhoOlho": 1.12, "altura": 1
+      },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    },
+    {
+      "id": "seu-ademar", "nome": "Seu Ademar", "papel": "apoio", "idade": 58,
+      "quem_e": "paciente com medo da cadeira, conta mil desculpas para não abrir a boca",
+      "aparencia": {
+        "pele": "p8", "cabelo": "careca", "corCabelo": "#2A2422", "corSobrancelha": "#3A302C",
+        "topo": "#E7B75F", "gola": "#CF9E46", "manga": "curta", "tipoBaixo": "calca", "baixo": "#6B5A4A",
+        "sapato": "#3A2E26", "sola": "#241C16", "barba": true, "rugas": true,
+        "largura": 24, "raioCabeca": 112, "tamanhoOlho": 1.05, "altura": 1.04
+      },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    },
+    {
+      "id": "tati", "nome": "Tati", "papel": "apoio", "idade": 24,
+      "quem_e": "recepcionista animada que agenda tudo e lembra todo mundo da consulta",
+      "aparencia": {
+        "pele": "p1", "cabelo": "curto-liso", "corCabelo": "#C9792E",
+        "topo": "#B9A3D6", "gola": "#9F88C0", "manga": "longa", "tipoBaixo": "saia", "baixo": "#4F7A52",
+        "sapato": "#7A3B2E", "sola": "#4E241B", "sardas": true, "cilios": true,
+        "largura": 2, "raioCabeca": 108, "tamanhoOlho": 1.18, "altura": 0.96
+      },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    }
+  ],
+  "acompanhantes": [
+    { "id": "bolota", "tipo": "cachorro", "nome": "Bolota", "cor": "preto" }
+  ],
+  "cenarios": { "casa": ["sala"], "sala_espera": { "placa": "Consultório 2" }, "rua": { "loja": "Ótica Central" } },
+  "cores": { "origem": "modelo", "paleta": null },
+  "voz": { "caminho": "pronta" },
+  "nunca": ["prometer resultado de tratamento", "mostrar sangue ou instrumento afiado em destaque", "rir do paciente com medo"],
+  "fecho": { "chamada": "Quer marcar uma avaliação?", "palavra": "SORRISO", "aviso_ficticio": true }
+}

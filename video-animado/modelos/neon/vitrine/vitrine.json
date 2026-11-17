@@ -1,0 +1,17 @@
+{
+  "nome_exibicao": "Neon retrô",
+  "frase": "Oferta, lançamento e contagem regressiva com cara de fita dos anos 80: céu roxo, sol listrado, grade andando e o letreiro neon que acende na palavra falada ou na batida da música. O preço conta até o valor, o selo bate, o botão chama. Sem personagem.",
+  "exemplo": "Exemplo: promoção da meia-noite de uma hamburgueria (marca inventada), só letreiros na batida",
+  "legendas": {
+    "elenco": "Peças"
+  },
+  "arquivos": {
+    "folha": "folha.jpg",
+    "elenco": "elenco.jpg",
+    "trecho": "trecho.mp4"
+  },
+  "trecho": {
+    "inicio": 0,
+    "duracao": 6
+  }
+}

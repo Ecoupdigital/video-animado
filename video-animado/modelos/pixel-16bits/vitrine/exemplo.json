@@ -1,0 +1,27 @@
+{
+  "modelo": "pixel-16bits",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "universo": {
+    "nome": "Notícia de IA em pixel",
+    "pasta": "noticia-de-ia",
+    "assunto": "notícias de inteligência artificial explicadas em menos de 30 segundos, com o que muda na prática",
+    "publico": "empreendedores e profissionais que usam IA no trabalho e não têm tempo de acompanhar tudo",
+    "tom": "direto e animado, sem enrolação"
+  },
+  "marca": null,
+  "personagens": [
+    {
+      "id": "jonathan",
+      "nome": "Jonathan",
+      "papel": "protagonista",
+      "quem_e": "o apresentador do @jonathanrenan.ia em pixel art",
+      "aparencia": { "pele": "p3", "cabelo": "curto", "corCabelo": "castanho", "barba": "cheia", "oculos": null, "roupa": "grafite", "estampa": "terminal", "corEstampa": "#8B7FF8" }
+    }
+  ],
+  "topo": { "rotulo": "// notícia de IA", "assinatura": "JONATHANRENAN.IA" },
+  "cores": { "origem": "modelo", "paleta": null },
+  "voz": { "caminho": "clonada", "voice_id": null },
+  "nunca": ["usar logo de empresa de terceiros", "anunciar o que ainda é boato como lançamento"],
+  "fecho": { "perfil": "@jonathanrenan.ia", "frase": "IA na prática, sem enrolação" }
+}

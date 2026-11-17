@@ -1,0 +1,36 @@
+{
+  "receita": "narracao-inteira",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "Queima de estoque na arara: tudo da estação passada pela metade.",
+      "letreiros": [["QUEIMA DE", "ESTOQUE"], ["PELA", "METADE"]],
+      "batidas": { "letreiro1": "tudo" }
+    },
+    {
+      "tipo": "oferta",
+      "texto": "A jaqueta jeans saiu de cento e setenta e nove e noventa por oitenta e nove e noventa, só hoje.",
+      "letreiros": [["JAQUETA", "JEANS"]],
+      "batidas": { "letreiro0": "jaqueta", "o_que": "jaqueta", "preco": "saiu", "selo": "hoje" }
+    },
+    {
+      "tipo": "contagem",
+      "texto": "Mas corre, porque a liquidação termina no domingo.",
+      "forma": "relogio",
+      "relogio": "47:59:59",
+      "letreiros": [["CORRE", "QUE ACABA"]],
+      "batidas": { "letreiro0": "corre", "contagem": "liquidação" }
+    },
+    {
+      "tipo": "chamada",
+      "texto": "Separou a sua? Chama no direct que a gente guarda.",
+      "letreiros": [["VEM PRA", "ARARA"]],
+      "batidas": { "letreiro0": "separou", "botao": "chama" }
+    },
+    {
+      "tipo": "final",
+      "texto": "Corre que a arara está acabando.",
+      "batidas": { "card": "corre" }
+    }
+  ]
+}

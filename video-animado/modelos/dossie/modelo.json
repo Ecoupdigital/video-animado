@@ -1,0 +1,13 @@
+{
+  "id": "dossie",
+  "nome": "Dossiê investigativo",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "sem-personagem",
+  "receita": "narracao-inteira",
+  "resumo": "Reel narrado de caso ou notícia, sem personagem: texto cinético na palavra falada, carimbo, ficha com silhueta, fio, rota e gráfico, em 3 temas trocáveis.",
+  "perguntas": { "pular": [5, 6, 7], "trocar": { "8": "rotulo-e-manchetes", "9": "tema-visual", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Theo", "Bruno"],
+  "stills_prova": ["cena-*", "folha-*", "elenco", "temas"],
+  "criado_em": "2026-11-16"
+}

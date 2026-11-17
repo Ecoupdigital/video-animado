@@ -1,0 +1,42 @@
+{
+  "modelo": "conto",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Aula de Quinta",
+    "pasta": "escola-idiomas",
+    "assunto": "situações engraçadas de quem volta a estudar inglês depois dos 30: o falso cognato, a vergonha de falar em voz alta, a lição de casa esquecida, com uma dica de idioma em cada vídeo",
+    "publico": "adultos de 25 a 50 anos que querem destravar o inglês e têm vergonha de errar",
+    "tom": "leve e acolhedor, ri do erro junto com o aluno, nunca do aluno"
+  },
+  "marca": { "nome": "Ponte Idiomas", "cor": "#0E7C86", "simbolo": "balao", "palavra_fecho": "PONTE" },
+  "tema": "formas",
+  "cenarios": { "lista": ["sala", "rua"], "lugar": "Escola Ponte" },
+  "personagens": [
+    {
+      "id": "teca", "nome": "Teca", "papel": "protagonista", "idade": 41,
+      "quem_e": "professora de inglês paciente e brincalhona, que corrige rindo junto",
+      "aparencia": {
+        "preset": "coque-oculos", "cor": "#3A86FF", "acessorio": "oculos", "corDetalhe": "#1D1D1F",
+        "pele": "p3", "cabelo": "coque", "corCabelo": "#4A2C17", "roupa": "camisa-saia", "corBaixo": "#2B3A55", "sapato": "#2B2B2B",
+        "corpo": "pilula", "olhos": "redondos", "sobrancelha": "fina"
+      },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    },
+    {
+      "id": "otavio", "nome": "Otávio", "papel": "apoio", "idade": 34,
+      "quem_e": "aluno esforçado e distraído, confia demais no falso cognato",
+      "aparencia": {
+        "preset": "bone-camiseta", "cor": "#EF476F", "acessorio": "bone", "corDetalhe": "#FFD23F",
+        "pele": "p7", "cabelo": "curto", "corCabelo": "#1E1A17", "roupa": "camisa-calca", "corBaixo": "#3B4A6B", "sapato": "#2B2B2B",
+        "corpo": "retangulo", "olhos": "redondos", "sobrancelha": "grossa"
+      },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    }
+  ],
+  "cores": { "origem": "marca", "pronta": null, "paleta": null },
+  "narrador": { "ligado": true, "voz": { "caminho": "pronta", "voice_id": null } },
+  "voz": { "caminho": "pronta" },
+  "nunca": ["rir do sotaque de alguém", "ensinar errado só pela piada", "prometer fluência em pouco tempo"],
+  "fecho": { "chamada": "Já passou vergonha falando inglês?", "palavra": "PONTE", "aviso_ficticio": true }
+}

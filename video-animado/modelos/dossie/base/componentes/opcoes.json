@@ -1,0 +1,34 @@
+{
+  "temas": ["investigativo", "jornal", "marca"],
+  "papeis_fonte": ["titulo", "texto", "mono"],
+  "fontes": ["Inter", "InterTight", "JetBrainsMono", "PlayfairDisplay", "Merriweather", "SourceSans3", "SourceCodePro", "IBMPlexMono", "Oswald", "Fraunces", "DMSans", "Archivo", "SpaceGrotesk", "RobotoMono", "Lora"],
+  "paletas": {
+    "investigativo": {
+      "fundo": "#06070E", "fundo2": "#0C0D18", "superficie": "#121425", "apagado": "#1A1B3A",
+      "destaque": "#7B6CF6", "destaque2": "#6C8EF6", "claro": "#A5B4FC", "ouro": "#F6C86C",
+      "titulo": "#FFFFFF", "texto": "#E8E8F0", "suave": "#9B9BB8", "discreto": "#5A5A78",
+      "alerta": "#E5484D", "alertaSuave": "#F87171",
+      "papel": "#E9E7F2", "tinta": "#0C0D18", "fita": "#A5B4FC"
+    },
+    "jornal": {
+      "fundo": "#F1ECE2", "fundo2": "#E6DFD1", "superficie": "#FBF8F2", "apagado": "#D6CDBA",
+      "destaque": "#1F3A5F", "destaque2": "#3C6185", "claro": "#4E6A8C", "ouro": "#A86A12",
+      "titulo": "#111111", "texto": "#1E1D1A", "suave": "#5C574D", "discreto": "#8B8476",
+      "alerta": "#B3261E", "alertaSuave": "#C94B3F",
+      "papel": "#FFFFFF", "tinta": "#141414", "fita": "#D8C79E"
+    },
+    "marca": {
+      "fundo": "#0D0F12", "fundo2": "#14171C", "superficie": "#1A1E25", "apagado": "#262B34",
+      "destaque": "#7B6CF6", "destaque2": "#6C8EF6", "claro": "#A5B4FC", "ouro": "#E8B04B",
+      "titulo": "#FFFFFF", "texto": "#E9EAED", "suave": "#A1A7B2", "discreto": "#626976",
+      "alerta": "#E5484D", "alertaSuave": "#F87171",
+      "papel": "#ECEDF0", "tinta": "#111317", "fita": "#A5B4FC"
+    }
+  },
+  "estilos": {
+    "investigativo": { "nome": "Investigativo escuro", "modo": "escuro", "fontes": { "titulo": "Inter", "texto": "Inter", "mono": "JetBrainsMono" }, "caixaAlta": true, "pesoTitulo": 900, "tracking": -0.025 },
+    "jornal": { "nome": "Jornal claro", "modo": "claro", "fontes": { "titulo": "PlayfairDisplay", "texto": "SourceSans3", "mono": "IBMPlexMono" }, "caixaAlta": false, "pesoTitulo": 900, "tracking": -0.01 },
+    "marca": { "nome": "Neutro de marca", "modo": "escuro", "fontes": { "titulo": "InterTight", "texto": "Inter", "mono": "JetBrainsMono" }, "caixaAlta": true, "pesoTitulo": 800, "tracking": -0.02 }
+  },
+  "papeis_derivados_da_marca": ["destaque", "destaque2", "claro", "fita"]
+}

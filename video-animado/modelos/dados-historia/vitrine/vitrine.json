@@ -1,0 +1,17 @@
+{
+  "nome_exibicao": "Dados e história",
+  "frase": "Reel narrado que mostra um resultado em número ou conta uma história no tempo, sem personagem: o número conta, a coluna sobe, o marco entra, a rota se desenha, o recorte cai e o círculo fecha na palavra falada. Quatro temas: isométrico, linha do tempo, mapa e jornal.",
+  "exemplo": "Exemplo: o resultado do trimestre de uma padaria, no isométrico (marca inventada)",
+  "legendas": {
+    "elenco": "Peças"
+  },
+  "arquivos": {
+    "folha": "folha.jpg",
+    "elenco": "elenco.jpg",
+    "trecho": "trecho.mp4"
+  },
+  "trecho": {
+    "inicio": 1.5,
+    "duracao": 6
+  }
+}

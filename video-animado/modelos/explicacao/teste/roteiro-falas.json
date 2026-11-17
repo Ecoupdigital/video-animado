@@ -1,0 +1,122 @@
+{
+  "rotulo": "CONTAS EM DIA · PRÓ-LABORE",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "Como definir o seu pró-labore sem misturar as contas.",
+      "titulo": "Como definir o seu *pró-labore*",
+      "subtitulo": "sem misturar as contas",
+      "icone": "carteira",
+      "batidas": {
+        "risco": "sem",
+        "icone": "misturar",
+        "subtitulo": "contas"
+      }
+    },
+    {
+      "tipo": "passos",
+      "texto": "Três passos. Separe a conta da empresa. Depois, escolha um valor fixo. E pague o pró-labore todo mês.",
+      "titulo": "Três *passos*",
+      "passos": [
+        {
+          "texto": "Separar as contas",
+          "icone": "carteira"
+        },
+        {
+          "texto": "Valor fixo",
+          "icone": "calendario"
+        },
+        {
+          "texto": "= Pró-labore em dia",
+          "icone": "check"
+        }
+      ],
+      "batidas": {
+        "passo0": "separe",
+        "passo1": "escolha",
+        "passo2": "pague",
+        "circulo": "mês"
+      }
+    },
+    {
+      "tipo": "conta",
+      "texto": "Na conta: a empresa sobrou dez mil. Você tira três mil de pró-labore. O resto fica no caixa.",
+      "titulo": "Na *conta*",
+      "linhas": [
+        "Sobra: R$ 10.000",
+        "Pró-labore: *R$ 3.000*"
+      ],
+      "resultado": "Caixa: R$ 7.000",
+      "batidas": {
+        "linha0": "empresa",
+        "linha1": "tira",
+        "resultado": "resto",
+        "circulo": "caixa"
+      }
+    },
+    {
+      "tipo": "colunas",
+      "texto": "Na sua semana, a nota fiscal já foi. O pró-labore ficou pronto agora.",
+      "titulo": "Sua *semana*",
+      "colunas": [
+        "A FAZER",
+        "FAZENDO",
+        "FEITO"
+      ],
+      "cartoes": [
+        {
+          "texto": "Guia do INSS",
+          "coluna": 0
+        },
+        {
+          "texto": "Nota fiscal",
+          "coluna": 2
+        },
+        {
+          "texto": "Pró-labore",
+          "coluna": 1,
+          "vai": 2
+        }
+      ],
+      "batidas": {
+        "cartao0": "semana",
+        "anda2": "pronto"
+      }
+    },
+    {
+      "tipo": "tela",
+      "texto": "No sistema, clique em lançar e o pagamento aparece.",
+      "titulo": "Clique em *Lançar*",
+      "tela": {
+        "secao": "Pagamentos",
+        "botao": "Lançar",
+        "menu": [
+          "Início",
+          "Pagamentos",
+          "Notas",
+          "Ajustes"
+        ],
+        "itens": [
+          "Aluguel",
+          "Internet",
+          "Contador"
+        ],
+        "novo": "Pró-labore"
+      },
+      "batidas": {
+        "janela": "sistema",
+        "clique": "lançar",
+        "novo": "aparece"
+      }
+    },
+    {
+      "tipo": "final",
+      "texto": "Ficou alguma dúvida sobre o seu pró-labore?",
+      "pergunta": "Ficou alguma *dúvida*?",
+      "fontes": [],
+      "batidas": {
+        "chamada": "dúvida"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "secoes": [
+    {
+      "texto": "Calor forte chegou e o seu cachorro sente muito mais do que você.",
+      "titulo": ["Calor forte?", "Seu cão sente mais"],
+      "destaque": ["cão", "mais"],
+      "legenda": ["calor", "cachorro"],
+      "gesto": "duas",
+      "card": {
+        "molde": "blocos",
+        "rotulo": "// temperatura do corpo",
+        "blocos": [
+          { "rotulo": "você", "valor": "36,5 °C", "em": "você." },
+          { "rotulo": "cão e gato", "valor": "38,5 °C", "em": "cachorro" }
+        ]
+      }
+    },
+    {
+      "texto": "Três cuidados: água fresca sempre, passeio só cedo e sombra o dia todo.",
+      "titulo": ["Três cuidados", "pra hoje"],
+      "destaque": ["cuidados"],
+      "gesto": "uma",
+      "card": {
+        "molde": "lista",
+        "rotulo": "// checklist do calor",
+        "itens": [
+          { "texto": "Água fresca sempre", "nota": "troque 2x", "em": "água" },
+          { "texto": "Passeio só cedo", "nota": "antes das 9h", "em": "passeio" },
+          { "texto": "Sombra o dia todo", "em": "sombra" }
+        ]
+      }
+    },
+    {
+      "texto": "Muita gente pergunta se pode dar banho gelado. Não pode, o choque faz mal.",
+      "titulo": ["Banho gelado", "ajuda?"],
+      "destaque": ["gelado"],
+      "gesto": "nada",
+      "card": {
+        "molde": "conversa",
+        "rotulo": "// pergunta no direct",
+        "mensagens": [
+          { "quem": "Tutora do Bob", "texto": "Posso dar banho gelado nele?", "em": "pergunta" },
+          { "quem": "Dra. Lu", "texto": "Não, o choque faz mal. Use água fresca.", "em": "Não", "lado": "dir" }
+        ]
+      }
+    },
+    {
+      "texto": "Mas atenção: língua roxa ou desmaio é emergência, corre pra clínica.",
+      "titulo": ["Língua roxa", "é emergência"],
+      "destaque": ["emergência"],
+      "legenda": ["emergência"],
+      "gesto": "ombros",
+      "card": {
+        "molde": "selo",
+        "rotulo": "// sinal de alerta",
+        "titulo": "Golpe de calor",
+        "selo": "EMERGÊNCIA",
+        "em": "emergência,",
+        "icone": "cruz",
+        "etiquetas": [
+          { "texto": "língua roxa", "em": "língua" },
+          { "texto": "desmaio", "em": "desmaio" }
+        ]
+      }
+    }
+  ],
+  "final": { "duracao": 3 }
+}

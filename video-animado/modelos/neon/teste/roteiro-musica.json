@@ -1,0 +1,37 @@
+{
+  "receita": "texto-e-musica",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "compassos": 2,
+      "letreiros": [["QUEIMA DE", "ESTOQUE"], ["ATÉ", "50% OFF"]],
+      "batidas": { "letreiro0": 1, "letreiro1": 5 }
+    },
+    {
+      "tipo": "oferta",
+      "compassos": 2,
+      "letreiros": [["JAQUETA", "JEANS"]],
+      "batidas": { "letreiro0": 1, "o_que": 1, "preco": 2, "selo": 5, "prazo": 6 }
+    },
+    {
+      "tipo": "contagem",
+      "compassos": 2,
+      "forma": "relogio",
+      "relogio": "47:59:59",
+      "rotulo": "termina em",
+      "letreiros": [["CORRE", "QUE ACABA"]],
+      "batidas": { "letreiro0": 1, "contagem": 2 }
+    },
+    {
+      "tipo": "chamada",
+      "compassos": 2,
+      "letreiros": [["VEM PRA", "ARARA"]],
+      "batidas": { "letreiro0": 1, "botao": 3 }
+    },
+    {
+      "tipo": "final",
+      "compassos": 2,
+      "batidas": { "card": 1 }
+    }
+  ]
+}

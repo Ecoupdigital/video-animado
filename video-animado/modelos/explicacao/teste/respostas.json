@@ -1,0 +1,20 @@
+{
+  "modelo": "explicacao",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Contas em Dia",
+    "pasta": "contas-em-dia",
+    "assunto": "contabilidade de empresa pequena explicada passo a passo: pró-labore, distribuição de lucro, imposto do mês e o que entra em cada conta, sempre com a conta feita na tela",
+    "publico": "donos de empresa pequena e prestadores de serviço de 25 a 50 anos que misturam a conta da empresa com a de casa",
+    "tom": "didático e calmo, de quem senta do lado e faz a conta junto, sem jargão e sem dar bronca"
+  },
+  "marca": { "nome": "Tabuada Contábil", "cor": "#1F6F5C" },
+  "explicacao": { "rotulo": "CONTAS EM DIA · PRÓ-LABORE" },
+  "tema": "quadro",
+  "cores": { "origem": "marca", "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer que a pessoa vai pagar menos imposto", "dar alíquota ou valor sem dizer a regra e a fonte na tela", "chamar de errado quem ainda mistura as contas"],
+  "fecho": { "chamada": "Ficou alguma dúvida sobre o seu pró-labore?", "assinatura": "@tabuadacontabil", "frase_assinatura": "me segue pra aprender o próximo passo", "aviso_ia": true },
+  "amostra": { "titulo": "Como definir o seu *pró-labore*", "item": "Separar as contas" }
+}

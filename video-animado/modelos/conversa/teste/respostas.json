@@ -1,0 +1,34 @@
+{
+  "modelo": "conversa",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Encomenda Doce",
+    "pasta": "loja-bolos",
+    "assunto": "conversas de uma loja de bolos de bairro com quem encomenda pelo celular: o bolo de última hora, a dúvida do sabor, o endereço trocado, com uma dica de encomenda em cada vídeo",
+    "publico": "quem encomenda bolo e doce para festa em casa, de 25 a 55 anos",
+    "tom": "leve e acolhedor, de atendente que resolve rindo junto, nunca de quem faz o cliente se sentir bobo"
+  },
+  "marca": { "nome": "Forno da Vila", "cor": "#B4532A", "simbolo": "coracao", "palavra_fecho": "BOLO" },
+  "personagens": [
+    {
+      "id": "forno", "nome": "Forno da Vila", "papel": "protagonista", "lado": "direita",
+      "quem_e": "a loja de bolos, que atende pelo celular com paciência e bom humor",
+      "avatar": { "tipo": "desenho", "desenho": "bolo", "cor": "#FFD08A" },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    },
+    {
+      "id": "rita", "nome": "Rita", "papel": "apoio", "lado": "esquerda", "idade": 38,
+      "quem_e": "cliente que deixa tudo para a última hora e encomenda o bolo do aniversário da mãe na véspera",
+      "status": "online",
+      "avatar": { "tipo": "inicial", "cor": "#F4A6C0" },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    }
+  ],
+  "tela": { "fundo": "pontos", "horario": true, "lido": true, "hora": "20:14" },
+  "cores": { "origem": "marca", "pronta": null, "paleta": null },
+  "receita": "vozes-por-fala",
+  "voz": { "caminho": "pronta" },
+  "nunca": ["prometer entrega que a loja não consegue cumprir", "rir de quem encomenda em cima da hora", "mostrar conversa real de cliente"],
+  "fecho": { "chamada": "Já encomendou bolo na véspera?", "palavra": "BOLO", "aviso_ficticio": true }
+}

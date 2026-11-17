@@ -1,0 +1,83 @@
+{
+  "rotulo": "FORNO ALTO · 3º TRIMESTRE",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "O trimestre fechou em mais trinta e oito por cento, o melhor da padaria.",
+      "titulo": "O *trimestre* fechou",
+      "valor": {
+        "numero": 38,
+        "prefixo": "+",
+        "sufixo": "%"
+      },
+      "subtitulo": "o melhor da padaria",
+      "batidas": {
+        "valor": "mais",
+        "subtitulo": "melhor"
+      }
+    },
+    {
+      "tipo": "colunas",
+      "texto": "Mês a mês: julho, agosto e setembro, o melhor de todos do ano.",
+      "titulo": "Mês a *mês*",
+      "valor": {
+        "numero": 300,
+        "prefixo": "R$ ",
+        "sufixo": " mil"
+      },
+      "colunas": [
+        {
+          "rotulo": "JUL",
+          "valor": 120
+        },
+        {
+          "rotulo": "AGO",
+          "valor": 200
+        },
+        {
+          "rotulo": "SET",
+          "valor": 300
+        }
+      ],
+      "legenda": "Setembro puxou o trimestre inteiro.",
+      "batidas": {
+        "coluna0": "julho",
+        "coluna1": "agosto",
+        "coluna2": "setembro",
+        "valor": "setembro"
+      }
+    },
+    {
+      "tipo": "marcos",
+      "texto": "A história: dois mil e quinze, dois mil e vinte, e hoje são três lojas no bairro todo.",
+      "titulo": "A *história*",
+      "marcos": [
+        {
+          "ano": "2015",
+          "texto": "O primeiro forno"
+        },
+        {
+          "ano": "2020",
+          "texto": "Segunda loja"
+        },
+        {
+          "ano": "2026",
+          "texto": "Hoje: 3 lojas"
+        }
+      ],
+      "batidas": {
+        "marco0": "dois",
+        "marco1": "dois#2",
+        "marco2": "hoje"
+      }
+    },
+    {
+      "tipo": "final",
+      "texto": "Qual pão sai mais aí?",
+      "pergunta": "Qual pão sai mais *aí*?",
+      "fontes": [
+        "caixa da padaria (set/2026)"
+      ]
+    }
+  ]
+}

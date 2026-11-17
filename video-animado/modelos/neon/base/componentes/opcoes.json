@@ -1,0 +1,55 @@
+{
+  "papeis": {
+    "ceu": "céu no alto da tela (o degradê desce até o horizonte)",
+    "ceu2": "céu no horizonte, atrás do sol",
+    "chao": "chão escuro abaixo do horizonte, sob a grade",
+    "sol1": "sol na ponta de cima do degradê",
+    "sol2": "sol na ponta de baixo do degradê, no horizonte",
+    "solFaixa": "faixas que cortam o sol",
+    "grade": "linhas da grade em perspectiva",
+    "contorno": "linha do letreiro em contorno e a borda do card final",
+    "cheio": "linha do letreiro cheio (a de cor sólida)",
+    "destaque": "o preço que conta, a contagem e a palavra destacada (*palavra*)",
+    "botao": "botão em pílula com a oferta",
+    "selo": "selo \"só hoje\" (o texto dele sai na cor do céu)",
+    "topo": "\"PLAY\", contador de fita, o que é a oferta, preço antigo e prazo",
+    "cardFinal": "fundo do card final",
+    "cardTexto": "chamada, frase e aviso do card final"
+  },
+  "paletas": {
+    "synth": {
+      "ceu": "#090319", "ceu2": "#3B0A5C", "chao": "#12021F",
+      "sol1": "#FFE259", "sol2": "#FF2BD6", "solFaixa": "#3B0A5C", "grade": "#FF2BD6",
+      "contorno": "#5EEAD4", "cheio": "#FF7AE8", "destaque": "#FFE259", "botao": "#FFE259",
+      "selo": "#FF2BD6", "topo": "#E2E8F0", "cardFinal": "#160428", "cardTexto": "#F1E9FF"
+    },
+    "por-do-sol": {
+      "ceu": "#140820", "ceu2": "#5A1638", "chao": "#1A0812",
+      "sol1": "#FFF3A6", "sol2": "#FF5F1F", "solFaixa": "#5A1638", "grade": "#FF8A3D",
+      "contorno": "#FFD166", "cheio": "#FF8F5E", "destaque": "#FFE08A", "botao": "#FFD166",
+      "selo": "#FF7A2E", "topo": "#FDEBDC", "cardFinal": "#22091A", "cardTexto": "#FFF1E6"
+    },
+    "verde-azul": {
+      "ceu": "#02121A", "ceu2": "#0A3446", "chao": "#03141B",
+      "sol1": "#D9F99D", "sol2": "#14B8D6", "solFaixa": "#0A3446", "grade": "#2DD4BF",
+      "contorno": "#A7F3D0", "cheio": "#5EEA8C", "destaque": "#BEF264", "botao": "#67E8F9",
+      "selo": "#22D3EE", "topo": "#E0F2FE", "cardFinal": "#062330", "cardTexto": "#E8FBFF"
+    }
+  },
+  "prontas": {
+    "synth": { "nome": "Synth: céu roxo, sol amarelo e rosa, grade magenta, letreiro rosa e ciano (as cores da tela de referência)" },
+    "por-do-sol": { "nome": "Pôr do sol: céu vinho, sol laranja, grade laranja, letreiro laranja e amarelo" },
+    "verde-azul": { "nome": "Verde e azul: céu petróleo, sol verde-limão e azul, grade turquesa, letreiro verde e menta" }
+  },
+  "pronta_padrao": "synth",
+  "papeis_da_marca": ["cheio", "destaque", "botao"],
+  "tipos_de_video": {
+    "oferta": "oferta ou liquidação: o preço que conta e o selo",
+    "lancamento": "lançamento de produto ou coleção: letreiro e botão",
+    "evento": "evento com data e hora: letreiro, contagem e botão",
+    "contagem": "contagem regressiva para uma virada (meia-noite, abertura, fim da promoção)"
+  },
+  "amostra": { "letreiro": ["PROMO DA", "MEIA-NOITE"] },
+  "oferta_padrao": { "selo": "só hoje", "botao": "garanta o seu" },
+  "musica": { "bpm": 120, "primeira_batida": 0, "tempos_por_compasso": 4 }
+}

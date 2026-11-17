@@ -1,0 +1,106 @@
+{
+  "tons_pele": {
+    "p1": { "base": "#F7DCC6", "sombra": "#E2BC9E", "sarda": "#C99773" },
+    "p2": { "base": "#F1C7A5", "sombra": "#D9A882", "sarda": "#B98762" },
+    "p3": { "base": "#E0AA80", "sombra": "#C48C63", "sarda": "#A46F4A" },
+    "p4": { "base": "#C68A62", "sombra": "#A9704C", "sarda": "#8E5A3A" },
+    "p5": { "base": "#B47A52", "sombra": "#966040", "sarda": "#7A4A30" },
+    "p6": { "base": "#9C6644", "sombra": "#7E4F33", "sarda": "#6A3F27" },
+    "p7": { "base": "#8A5A3C", "sombra": "#6E4630", "sarda": "#5A3624" },
+    "p8": { "base": "#62402B", "sombra": "#4C3020", "sarda": "#3C2418" }
+  },
+  "cabelos": ["coque", "curto-liso", "crespo-curto", "cachos", "armado", "comprido", "careca"],
+  "baixos": ["calca", "saia", "jardineira"],
+  "mangas": ["curta", "longa"],
+  "acessorios": ["nenhum", "perolas", "mochila"],
+  "simbolos_marca": ["lua", "circulo", "estrela", "folha", "coracao", "dente", "letra"],
+  "comodos": ["sala", "cozinha", "quarto", "banheiro"],
+  "paletas": {
+    "casa-quente": {
+      "fundo": "#FBF3EA",
+      "fundo2": "#F6DCC8",
+      "fundo3": "#EBC7AE",
+      "apoio": "#C99A6E",
+      "apoioEscuro": "#A87B52",
+      "apoio2": "#9DB59A",
+      "apoio2Claro": "#DCE7D8",
+      "destaque": "#F5645B",
+      "destaqueProfundo": "#C6372F",
+      "texto": "#222222",
+      "textoSuave": "#6A6A6A",
+      "acerto": "#4F7A52",
+      "erro": "#C6372F",
+      "detalhe": "#E7B75F"
+    }
+  },
+  "cores_cachorro": {
+    "caramelo": { "base": "#D08B4B", "claro": "#F2D3A8", "orelha": "#A9682F", "risco": "#8A5226" },
+    "preto": { "base": "#3E3834", "claro": "#E3D9CC", "orelha": "#26211E", "risco": "#1A1614" },
+    "branco": { "base": "#F1EBE2", "claro": "#FFFFFF", "orelha": "#D8C8B2", "risco": "#A8957C" },
+    "cinza": { "base": "#9C9BA3", "claro": "#DEDDE2", "orelha": "#74737C", "risco": "#55545C" },
+    "chocolate": { "base": "#7A4E33", "claro": "#D2AE8A", "orelha": "#5A3624", "risco": "#3E2416" }
+  },
+  "presets": {
+    "coque-sardas": {
+      "pele": "p4", "cabelo": "coque", "corCabelo": "#3B2418",
+      "topo": "#F5645B", "gola": "#DD4940", "manga": "curta",
+      "tipoBaixo": "jardineira", "baixo": "#8DB1D6",
+      "sapato": "#F7F4EF", "sola": "#CDBFAF", "faixaSapato": "#F5645B",
+      "sardas": true, "cilios": true, "prendedor": "#9DB59A",
+      "raioCabeca": 118, "tamanhoOlho": 1.22, "largura": 0, "altura": 1
+    },
+    "crespo-barba": {
+      "pele": "p7", "cabelo": "crespo-curto", "corCabelo": "#1E1410",
+      "topo": "#A7ADB3", "gola": "#8E959C", "manga": "curta",
+      "tipoBaixo": "calca", "baixo": "#D9C3A0", "baixoLuz": "#CDB48E",
+      "sapato": "#4A4A4A", "sola": "#2E2E2E",
+      "barba": true,
+      "raioCabeca": 110, "tamanhoOlho": 1.1, "largura": 14, "altura": 1.06
+    },
+    "grisalha-perolas": {
+      "pele": "p2", "cabelo": "armado", "corCabelo": "#CFCBC6", "corSobrancelha": "#9C948C",
+      "topo": "#C7B6E0", "gola": "#B3A0D0", "manga": "longa",
+      "tipoBaixo": "saia", "baixo": "#8A7A99", "baixoLuz": "#7A6A89",
+      "sapato": "#8A5A3C", "sola": "#5E3C28",
+      "rugas": true, "acessorio": "perolas",
+      "raioCabeca": 114, "tamanhoOlho": 1.1, "largura": 20, "altura": 0.9
+    },
+    "cachos-mochila": {
+      "pele": "p6", "cabelo": "cachos", "corCabelo": "#2B1A12",
+      "topo": "#9DB59A", "gola": "#86A083", "manga": "curta",
+      "tipoBaixo": "calca", "baixo": "#4E6A8A", "baixoLuz": "#5F7DA0",
+      "sapato": "#F7F4EF", "sola": "#CDBFAF",
+      "cilios": true, "acessorio": "mochila",
+      "raioCabeca": 110, "tamanhoOlho": 1.15, "largura": 6, "altura": 1.02
+    }
+  },
+  "campos_aparencia": {
+    "preset": "preset",
+    "pele": "tom",
+    "cabelo": "cabelo",
+    "corCabelo": "cor",
+    "corSobrancelha": "cor",
+    "topo": "cor",
+    "gola": "cor",
+    "manga": "manga",
+    "tipoBaixo": "baixo",
+    "baixo": "cor",
+    "baixoLuz": "cor",
+    "sapato": "cor",
+    "sola": "cor",
+    "faixaSapato": "cor",
+    "oculos": "sim-nao",
+    "corOculos": "cor",
+    "barba": "sim-nao",
+    "sardas": "sim-nao",
+    "rugas": "sim-nao",
+    "cilios": "sim-nao",
+    "jaleco": "sim-nao",
+    "acessorio": "acessorio",
+    "prendedor": "cor",
+    "altura": "numero:0.6:1.3",
+    "largura": "numero:0:40",
+    "raioCabeca": "numero:96:126",
+    "tamanhoOlho": "numero:0.8:1.4"
+  }
+}

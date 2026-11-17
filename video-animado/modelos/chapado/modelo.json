@@ -1,0 +1,13 @@
+{
+  "id": "chapado",
+  "nome": "Chapado, casa quente",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "personagens",
+  "receita": "vozes-por-fala",
+  "resumo": "Personagens 2D chapados, sem contorno, cabeça grande, humor de situação com dica.",
+  "perguntas": { "pular": [], "trocar": { "7": "elenco-e-acompanhantes" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante"],
+  "stills_prova": ["expressoes-*", "opcoes-aparencia", "elenco", "cenarios", "teste-cena", "teste-celular", "teste-fecho"],
+  "criado_em": "2026-11-15"
+}

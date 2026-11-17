@@ -1,0 +1,26 @@
+{
+  "modelo": "conversa",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "nota": "Respostas do exemplo da vitrine: uma floricultura inventada e o cliente que lembrou do aniversário de namoro em cima da hora, só texto e música. Marca e pessoas inventadas.",
+  "universo": {
+    "nome": "Flor em Cima da Hora",
+    "pasta": "floricultura",
+    "assunto": "conversas de uma floricultura de bairro com quem lembra da data importante no último minuto, com uma dica de presente em cada vídeo",
+    "publico": "quem compra flores para presente, de 20 a 50 anos",
+    "tom": "leve e cúmplice, de quem já salvou muito aniversário esquecido"
+  },
+  "marca": { "nome": "Ateliê Girassol", "cor": "#8A3F8F", "simbolo": "folha", "palavra_fecho": "FLOR" },
+  "personagens": [
+    { "id": "atelie", "nome": "Ateliê Girassol", "papel": "protagonista", "lado": "direita", "quem_e": "a floricultura, que monta o buquê na hora",
+      "avatar": { "tipo": "desenho", "desenho": "flor", "cor": "#FFD08A" } },
+    { "id": "caio", "nome": "Caio", "papel": "apoio", "lado": "esquerda", "quem_e": "cliente que lembrou do aniversário de namoro às seis da tarde",
+      "status": "online", "avatar": { "tipo": "inicial", "cor": "#9FD8C6" } }
+  ],
+  "tela": { "fundo": "pontos", "horario": true, "lido": true, "hora": "18:02" },
+  "cores": { "origem": "marca", "pronta": null, "paleta": null },
+  "receita": "texto-e-musica",
+  "voz": { "caminho": "pronta" },
+  "nunca": ["prometer entrega que não dá tempo", "rir de quem esqueceu a data"],
+  "fecho": { "chamada": "Já salvou um aniversário em cima da hora?", "palavra": "FLOR", "aviso_ficticio": true }
+}

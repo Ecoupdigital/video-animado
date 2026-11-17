@@ -1,0 +1,14 @@
+{
+  "id": "conversa",
+  "nome": "Conversa no celular",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "personagens",
+  "receita": "vozes-por-fala",
+  "receitas": ["vozes-por-fala", "texto-e-musica"],
+  "resumo": "Mensageiro genérico num celular no centro da tela: título com a palavra destacada, contato no cabeçalho, bolhas dos dois lados entrando uma a uma, digitando, áudio, imagem, reação, legenda por cena e card final. Duas vozes (cada bolha entra no começo da fala dela) ou só texto e música, em 3 paletas prontas (claro, escuro, vivo).",
+  "perguntas": { "pular": [6, 7], "trocar": { "5": "quem-conversa", "8": "tela-do-chat", "9": "cores-da-conversa", "10": "receita-e-vozes", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno", "Cida", "Léo", "Paçoca", "WhatsApp", "Telegram", "Messenger", "iMessage", "Signal", "Viber", "WeChat", "Snapchat", "Zap", "Zapzap"],
+  "stills_prova": ["recursos", "avatares", "elenco", "paletas", "capa", "cena-*", "vista-*"],
+  "criado_em": "2026-11-17"
+}

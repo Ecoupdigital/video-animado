@@ -1,0 +1,20 @@
+{
+  "id": "explicacao",
+  "nome": "Explicação",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "sem-personagem",
+  "receita": "narracao-inteira",
+  "resumo": "Família de reels narrados que explicam processo, conta ou rotina, sem personagem: caixa, seta, círculo, post-it e clique entram na palavra falada, em 4 temas (quadro, lousa, post-its, tela de app).",
+  "temas": [
+    { "id": "quadro", "nome": "Quadro de explicação", "resumo": "Papel quadriculado, traço preto de caneta e um destaque: passos em caixas tremidas ligadas por setas, o resultado circulado.", "cor_troca": "troca todas as cores: papel, grade, traço, destaque e post-its", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "traco", "titulo", "texto", "suave", "destaque", "destaque2", "ok", "nota1", "nota2", "nota3", "nota4", "nota5", "moldura", "moldura2"] },
+    { "id": "lousa", "nome": "Lousa de giz", "resumo": "Lousa com textura e manchas de giz, moldura de madeira e bandeja com giz e apagador: conta linha a linha, resultado circulado em giz.", "cor_troca": "troca só a cor da lousa e o giz de destaque; a moldura de madeira e o giz branco ficam", "cores_trocaveis": ["fundo", "destaque"] },
+    { "id": "post-its", "nome": "Quadro de post-its", "resumo": "Quadro branco com colunas e post-its coloridos com sombra e leve rotação: a tarefa anda de coluna quando a voz fala dela.", "cor_troca": "troca todas as cores: parede, quadro, post-its, letra e destaque", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "traco", "titulo", "texto", "suave", "destaque", "destaque2", "ok", "nota1", "nota2", "nota3", "nota4", "nota5", "moldura", "moldura2"] },
+    { "id": "tela-app", "nome": "Tela de app", "resumo": "Fundo em degradê, selo de passo e uma janela de painel genérica com menu lateral: o cursor vai até o botão e clica na palavra falada.", "cor_troca": "troca todas as cores: degradê, janela, botão, texto e destaque", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "traco", "titulo", "texto", "suave", "destaque", "destaque2", "ok", "nota1", "nota2", "nota3", "nota4", "nota5", "moldura", "moldura2"] }
+  ],
+  "tema_recomendado": "quadro",
+  "perguntas": { "pular": [5, 6, 7], "trocar": { "8": "tema", "9": "cores-do-tema", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno"],
+  "stills_prova": ["cena-*", "tema-*", "folha-*", "elenco"],
+  "criado_em": "2026-11-17"
+}

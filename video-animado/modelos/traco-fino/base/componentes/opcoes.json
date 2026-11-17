@@ -1,0 +1,198 @@
+{
+  "tons_pele": {
+    "p1": {
+      "base": "#F4D9C6",
+      "sombra": "#DDB49B"
+    },
+    "p2": {
+      "base": "#F2D5C2",
+      "sombra": "#D9AF97"
+    },
+    "p3": {
+      "base": "#E9C2A2",
+      "sombra": "#CDA080"
+    },
+    "p4": {
+      "base": "#D9AA84",
+      "sombra": "#BB8962"
+    },
+    "p5": {
+      "base": "#C99672",
+      "sombra": "#A87652"
+    },
+    "p6": {
+      "base": "#B98563",
+      "sombra": "#9A6848"
+    },
+    "p7": {
+      "base": "#986441",
+      "sombra": "#7A4B2D"
+    },
+    "p8": {
+      "base": "#7A4C31",
+      "sombra": "#5B3621"
+    }
+  },
+  "corpos": [
+    "adulto",
+    "crianca"
+  ],
+  "cabelos_adulto": [
+    "chanel",
+    "comprido",
+    "rabo",
+    "coque",
+    "curto",
+    "crespo",
+    "careca"
+  ],
+  "cabelos_crianca": [
+    "arrepiado",
+    "franja",
+    "marias",
+    "crespo"
+  ],
+  "camisas": [
+    "aberta",
+    "fechada"
+  ],
+  "mangas": [
+    "sem",
+    "curta",
+    "longa"
+  ],
+  "baixos_adulto": [
+    "calca",
+    "bermuda",
+    "saia"
+  ],
+  "baixos_crianca": [
+    "bermuda",
+    "saia"
+  ],
+  "simbolos_marca": [
+    "lua",
+    "circulo",
+    "estrela",
+    "folha",
+    "coracao",
+    "dente",
+    "letra"
+  ],
+  "comodos": [
+    "sala",
+    "quarto"
+  ],
+  "paletas": {
+    "linho-e-petroleo": {
+      "fundo": "#F4EFE6",
+      "fundo2": "#E3D7C3",
+      "fundo3": "#CDBEA5",
+      "apoio": "#2F4A55",
+      "apoioEscuro": "#22363F",
+      "apoio2": "#8A8F6A",
+      "apoio2Claro": "#B9BC9C",
+      "destaque": "#F5645B",
+      "destaqueProfundo": "#C6372F",
+      "texto": "#1F2328",
+      "textoSuave": "#5B6066",
+      "acerto": "#5E7A4E",
+      "erro": "#C6372F",
+      "detalhe": "#B98B6E"
+    }
+  },
+  "presets": {
+    "chanel-camisa-oliva": {
+      "corpo": "adulto",
+      "pele": "p2",
+      "cabelo": "chanel",
+      "corCabelo": "#5A3B2A",
+      "corSobrancelha": "#4A3022",
+      "corBrilho": "#7A5641",
+      "cilios": true,
+      "camisa": "aberta",
+      "topo": "#8A8F6A",
+      "porBaixo": "#FBF8F2",
+      "manga": "curta",
+      "tipoBaixo": "calca",
+      "baixo": "#2F4A55",
+      "tenis": "#FBF8F2",
+      "sola": "#CDBEA5",
+      "antes": {
+        "cabelo": "comprido"
+      }
+    },
+    "curto-barba-camiseta": {
+      "corpo": "adulto",
+      "pele": "p6",
+      "cabelo": "curto",
+      "corCabelo": "#2B2420",
+      "barba": true,
+      "camisa": "fechada",
+      "topo": "#5C7682",
+      "manga": "curta",
+      "tipoBaixo": "calca",
+      "baixo": "#3E4248",
+      "tenis": "#E3D7C3",
+      "sola": "#CDBEA5",
+      "ombros": 14,
+      "altura": 1.06,
+      "corSobrancelha": "#2B2420"
+    },
+    "crianca-arrepiado-listrada": {
+      "corpo": "crianca",
+      "pele": "p1",
+      "cabelo": "arrepiado",
+      "corCabelo": "#6B4A33",
+      "topo": "#FBF8F2",
+      "listras": "#2F4A55",
+      "tipoBaixo": "bermuda",
+      "baixo": "#8A8F6A",
+      "tenis": "#FBF8F2",
+      "faixaTenis": "#C6372F",
+      "curativo": true,
+      "altura": 0.56
+    }
+  },
+  "campos_adulto": {
+    "preset": "preset",
+    "pele": "tom",
+    "cabelo": "cabelo-adulto",
+    "corCabelo": "cor",
+    "corSobrancelha": "cor",
+    "corBrilho": "cor",
+    "cilios": "sim-nao",
+    "camisa": "camisa",
+    "topo": "cor",
+    "porBaixo": "cor",
+    "manga": "manga",
+    "tipoBaixo": "baixo-adulto",
+    "baixo": "cor",
+    "tenis": "cor",
+    "sola": "cor",
+    "oculos": "sim-nao",
+    "corOculos": "cor",
+    "barba": "sim-nao",
+    "barriga": "numero:0:1",
+    "ombros": "numero:0:24",
+    "altura": "numero:0.85:1.15"
+  },
+  "campos_crianca": {
+    "preset": "preset",
+    "pele": "tom",
+    "cabelo": "cabelo-crianca",
+    "corCabelo": "cor",
+    "corSobrancelha": "cor",
+    "topo": "cor",
+    "listras": "cor-ou-nada",
+    "tipoBaixo": "baixo-crianca",
+    "baixo": "cor",
+    "tenis": "cor",
+    "faixaTenis": "cor-ou-nada",
+    "laco": "cor",
+    "curativo": "sim-nao",
+    "oculos": "sim-nao",
+    "corOculos": "cor",
+    "altura": "numero:0.45:0.7"
+  }
+}

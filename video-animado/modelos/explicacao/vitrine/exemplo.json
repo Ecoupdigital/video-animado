@@ -1,0 +1,20 @@
+{
+  "modelo": "explicacao",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Aula de 1 Minuto",
+    "pasta": "aula-de-1-minuto",
+    "assunto": "precificação para quem vende produto feito à mão: custo, margem e preço, uma conta por vídeo",
+    "publico": "artesãs e pequenos produtores de 25 a 55 anos que vendem pelo Instagram e não sabem quanto cobrar",
+    "tom": "didático e calmo, com a conta feita na tela"
+  },
+  "marca": { "nome": "Ateliê Régua", "cor": "#E4572E" },
+  "explicacao": { "rotulo": "AULA 3 · PRECIFICAÇÃO" },
+  "tema": "quadro",
+  "cores": { "origem": "tema", "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer lucro", "dar preço pronto sem a conta"],
+  "fecho": { "chamada": "Qual a sua margem hoje?", "assinatura": "@atelieregua", "frase_assinatura": "me segue pra aprender o próximo passo", "aviso_ia": true },
+  "amostra": { "titulo": "Como chegar no *preço certo*" }
+}

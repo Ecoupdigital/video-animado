@@ -1,0 +1,14 @@
+{
+  "id": "neon",
+  "nome": "Neon retrô",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "sem-personagem",
+  "receita": "narracao-inteira",
+  "receitas": ["narracao-inteira", "texto-e-musica"],
+  "resumo": "Oferta, lançamento, evento e contagem regressiva sem personagem: céu roxo, sol listrado, grade magenta andando e varredura de TV, com o letreiro neon que acende e troca na palavra falada (narração inteira) ou na batida da cama synth (só letreiros), o preço que conta, a contagem, o selo \"só hoje\", o botão em pílula e o card final. A piscada fica em no máximo 3 por segundo, só em partes pequenas da tela. 3 paletas prontas trocam todas as cores, com a cor da marca no destaque.",
+  "perguntas": { "pular": [5, 6, 7], "trocar": { "8": "oferta", "9": "cores-do-neon", "10": "voz-ou-musica", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno"],
+  "stills_prova": ["cenario", "pecas", "elenco", "paletas", "capa", "cena-*", "vista-*"],
+  "criado_em": "2026-11-17"
+}

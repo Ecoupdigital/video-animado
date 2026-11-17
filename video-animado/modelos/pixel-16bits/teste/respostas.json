@@ -1,0 +1,28 @@
+{
+  "modelo": "pixel-16bits",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "universo": {
+    "nome": "Plantão Pet",
+    "pasta": "plantao-pet",
+    "assunto": "notícias de saúde de cão e gato explicadas em menos de 30 segundos: vacina, alimentação, calor, remédio, com o que o tutor faz hoje",
+    "publico": "tutores de cão e gato de 25 a 50 anos que querem cuidar melhor sem cair em boato",
+    "tom": "claro e animado, de quem explica no balcão da clínica, sem assustar"
+  },
+  "marca": { "nome": "Clínica Veterinária Bicho Bom", "cor": "#D9731E", "simbolo": "pata" },
+  "personagens": [
+    {
+      "id": "dra-lu",
+      "nome": "Dra. Lu",
+      "papel": "protagonista",
+      "idade": 34,
+      "quem_e": "veterinária de plantão da clínica, que traduz a notícia em cuidado do dia a dia",
+      "aparencia": { "pele": "p7", "cabelo": "cacheado", "corCabelo": "preto", "barba": "nenhuma", "oculos": "preto", "roupa": "verde", "estampa": "simbolo", "corEstampa": "#F2B544", "cilios": true }
+    }
+  ],
+  "topo": { "rotulo": "// plantão pet", "assinatura": "BICHOBOM.VET" },
+  "cores": { "origem": "marca", "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["receitar remédio ou dose pelo vídeo", "dizer que um sintoma não é nada sem consulta", "mostrar animal machucado"],
+  "fecho": { "perfil": "@bichobom.vet", "frase": "notícia de pet sem susto, toda semana" }
+}

@@ -1,0 +1,42 @@
+{
+  "manchetes": ["NVDA ▼", "JENSEN HUANG RENUNCIA APÓS 33 ANOS", "DEPARTAMENTO DE JUSTIÇA INVESTIGA MEGASPEED", "CHINA NEGA AS ACUSAÇÕES", "COLETTE KRESS É CEO INTERINA"],
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "texto": "Um caso extraconjugal acabou de custar quase um trilhão de dólares pra NVIDIA, e a mulher envolvida é suspeita de espionagem.",
+      "titulo": "um caso *extraconjugal*",
+      "rotulo": "CUSTO PARA A NVIDIA",
+      "valor": { "numero": -1, "prefixo": "US$ ", "sufixo": " TRI", "legenda": "quase 1 trilhão em valor de mercado" },
+      "pessoa": { "nome": "Alice Huang", "papel": "ex-executiva · Megaspeed" },
+      "carimbo": "suspeita de espionagem",
+      "batidas": { "rotulo": "custar", "valor": "trilhão", "pessoa": "mulher", "carimbo": "suspeita" }
+    },
+    {
+      "tipo": "ficha",
+      "texto": "O Jensen Huang, fundador da NVIDIA, admitiu o caso no domingo.",
+      "titulo": "Jensen *Huang*",
+      "pessoa": { "nome": "Jensen Huang", "papel": "fundador · NVIDIA", "etiqueta": "ALVO 01" },
+      "campos": [{ "rotulo": "CARGO", "valor": "Fundador e CEO" }, { "rotulo": "DESDE", "valor": "1993" }],
+      "carimbo": "admitiu o caso · 08/11",
+      "batidas": { "pessoa": "Jensen", "campos": "fundador", "carimbo": "admitiu" }
+    },
+    {
+      "tipo": "rota",
+      "texto": "O governo americano investiga se os chips foram desviados pra China, driblando o bloqueio de exportação.",
+      "titulo": "os chips foram *desviados*?",
+      "nos": [{ "nome": "EUA", "sub": "NVIDIA" }, { "nome": "Singapura", "sub": "Megaspeed" }, { "nome": "China", "sub": "destino suspeito" }],
+      "bloqueio": "bloqueio de exportação",
+      "card": { "titulo": "Departamento de Justiça", "sub": "INVESTIGAÇÃO EM ANDAMENTO" },
+      "batidas": { "no0": "americano", "no1": "chips", "no2": "China", "bloqueio": "bloqueio", "card": "exportação" }
+    },
+    {
+      "tipo": "final",
+      "texto": "A China nega tudo. E aí, ele tinha que sair mesmo?",
+      "pergunta": "e aí, ele tinha que *sair?*",
+      "selo": "China nega as acusações",
+      "fontes": ["NYT", "Axios", "Reuters", "Financial Times", "comunicado da NVIDIA à SEC (12/11/2026)"],
+      "cita_pessoas": true,
+      "batidas": { "selo": "nega", "chamada": "mesmo" }
+    }
+  ]
+}

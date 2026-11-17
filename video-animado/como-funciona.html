@@ -57,7 +57,7 @@ summary .t{flex:1}
 summary .t small{display:block;color:var(--mute);font-weight:400;font-size:14px}
 summary .count{font-size:13px;color:var(--mute);font-weight:400;white-space:nowrap}
 summary::after{content:"+";font-size:22px;color:var(--mute);margin-left:4px}
-details[open] summary::after{content:"–"}
+details[open] summary::after{content:"-"}
 .qs{padding:0 16px 16px 58px;margin:0}
 .qs li{margin:0 0 12px;font-size:15px;padding-left:2px}
 .qs li::marker{color:var(--mute);font-size:13px}
@@ -79,13 +79,14 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
 
 <span class="tag">Skill /video-animado</span>
 <h1>Como a skill funciona e o que ela pergunta</h1>
-<p class="lead">Ela faz vídeos narrados com animação 2D desenhada em código. Serve pra qualquer pessoa, com nenhum, um ou vários personagens.</p>
+<p class="lead">Ela faz vídeos narrados com animação 2D desenhada em código. Serve pra qualquer pessoa, com nenhum, um ou vários personagens. Pra começar rápido, a pessoa escolhe um modelo pronto num catálogo e responde uma entrevista curta; ou cria um estilo do zero.</p>
 
 <div class="rules">
   <div class="rule"><b>Tudo em código</b>Nenhuma ferramenta externa de imagem ou vídeo por IA. Personagem e cenário são desenhados com formas.</div>
   <div class="rule"><b>Uma pergunta por vez</b>Sempre com 2 a 4 opções e uma recomendada.</div>
   <div class="rule"><b>"Decide por mim"</b>Em qualquer pergunta a pessoa pode dizer isso e a skill escolhe a recomendada.</div>
   <div class="rule"><b>Brandbook é a referência</b>Depois de criado, todo vídeo novo lê ele antes de começar.</div>
+  <div class="rule"><b>Modelo inteiro + ajustes</b>O modelo traz desenho, cenários e receita de vídeo prontos. A entrevista curta troca só o que é da pessoa.</div>
 </div>
 
 <h2>O caminho geral</h2>
@@ -98,12 +99,31 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
       <div class="fork">
         <div class="opt"><b>Usar um que achou</b>Pula direto pra fazer o vídeo.</div>
         <div class="opt"><b>Apontar outro caminho</b>Serve pra brandbook recebido de outra pessoa.</div>
-        <div class="opt"><b>Criar um novo</b>Começa a entrevista (Parte A).</div>
+        <div class="opt"><b>Criar um novo</b>Abre o catálogo de modelos.</div>
       </div>
     </div></div>
 
+  <div class="step"><div class="rail"><div class="dot">1</div><div class="line"></div></div>
+    <div class="body"><h3>Catálogo de modelos <span class="pill">uma pergunta</span></h3>
+      <p>Uma página com um cartão por modelo: frames de um vídeo de exemplo, o elenco, um trecho em vídeo mudo e pra que serve. Os modelos que a pessoa salvou aparecem com o selo "seu modelo". No Mac a página abre no navegador; no servidor, a skill mostra uma imagem dela. A pergunta traz até 3 modelos, o recomendado primeiro, mais a opção de criar do zero; qualquer outro entra pelo número.</p>
+      <div class="fork">
+        <div class="opt"><b>Escolher um modelo</b>Entrevista curta, de 8 a 12 perguntas.</div>
+        <div class="opt"><b>Criar um estilo novo</b>Entrevista completa (Parte A).</div>
+      </div>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">M</div><div class="line"></div></div>
+    <div class="body"><h3>Modelo · Entrevista curta <span class="pill warn">8 a 12 perguntas</span></h3>
+      <p>Copia o modelo pra pasta do universo e pergunta só o que é da pessoa: nome, assunto e público, tom, marca, personagem principal, aparência, elenco de apoio, cenários, cores, voz, o que nunca pode acontecer e o fecho. Pergunta que os arquivos já respondem é pulada. As respostas ficam num arquivo, e mudar uma resposta depois é só aplicar de novo.</p>
+    </div></div>
+
+  <div class="step"><div class="rail"><div class="dot">M</div><div class="line"></div></div>
+    <div class="body"><h3>Modelo · Aplica e gera</h3>
+      <p>As respostas viram os personagens, a marca no celular e no fecho, os nomes dos lugares e as cores. A skill escreve as partes do brandbook que pedem texto (narrativa, jeito de falar e de se mover) e gera as folhas de expressão e as imagens de teste.</p>
+    </div></div>
+
   <div class="step"><div class="rail"><div class="dot">A</div><div class="line"></div></div>
-    <div class="body"><h3>Parte A · Entrevista (só na primeira vez) <span class="pill warn">25 a 35 perguntas</span></h3>
+    <div class="body"><h3>Estilo novo · Parte A, entrevista completa <span class="pill warn">25 a 35 perguntas</span></h3>
       <p>7 blocos, uma pergunta por vez. Entre os blocos ela resume o que decidiu e pergunta se está certo. Todas as perguntas estão logo abaixo.</p>
     </div></div>
 
@@ -112,14 +132,19 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
       <p>HTML pra ver e compartilhar, versão em texto pro Claude ler, ficha e desenho de cada personagem, cenários, e uma imagem de teste.</p>
     </div></div>
 
+  <div class="step"><div class="rail"><div class="dot">A</div><div class="line"></div></div>
+    <div class="body"><h3>Parte A · Salvar como modelo seu <span class="pill">opcional</span></h3>
+      <p>No fim, a skill oferece guardar o estilo como modelo local. Ele volta no catálogo com o selo "seu modelo", e o próximo universo nesse estilo começa pela entrevista curta.</p>
+    </div></div>
+
   <div class="step"><div class="rail"><div class="dot ok">✓</div><div class="line"></div></div>
     <div class="body"><h3>Aprovação de olho</h3>
-      <p>A pessoa vê as expressões lado a lado e a imagem de teste. Só segue quando aprovar. Se o desenho não sair bom, a skill simplifica o desenho em vez de trocar de ferramenta.</p>
+      <p>Vale pro modelo e pro estilo novo. A pessoa vê as expressões lado a lado e a imagem de teste. Só segue quando aprovar. Se o desenho não sair bom, a skill simplifica o desenho em vez de trocar de ferramenta.</p>
     </div></div>
 
   <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
     <div class="body"><h3>Parte B · Pergunta rápida do vídeo</h3>
-      <p>Só o que faltar: tema, duração (30 a 60 s), formato (vertical por padrão), quais personagens e cenários entram.</p>
+      <p>Só o que faltar: tema, duração (30 a 60 s), formato (vertical por padrão), quais personagens e cenários entram. Universo que nasceu de um modelo segue a receita de vídeo do modelo; os outros, os passos de sempre.</p>
     </div></div>
 
   <div class="step"><div class="rail"><div class="dot">B</div><div class="line"></div></div>
@@ -144,10 +169,49 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
     </div></div>
 </div>
 
-<h2>As perguntas da entrevista</h2>
-<p class="sub">Clique em cada bloco pra abrir. As opções mostradas são pontos de partida; a skill adapta ao assunto da pessoa. Se uma resposta já cobrir outra pergunta, ela pula.</p>
+<h2>Os 10 modelos do catálogo</h2>
+<p class="sub">Numerados como no catálogo (o 11 é sempre "Criar um estilo novo"). Cada um traz o desenho, as cenas e a receita de vídeo prontos; três são famílias, um modelo com vários temas que a pessoa escolhe na entrevista.</p>
+
+<div class="grid">
+  <div class="file"><code>1 · chapado</code><b>Chapado, casa quente</b><br>Série de humor do dia a dia com um elenco fixo de bonecos e uma dica útil no meio.<br><small>Voz: uma voz por personagem, cada fala na boca de quem fala.</small></div>
+  <div class="file"><code>2 · traco-fino</code><b>Traço fino, antes e agora</b><br>Uma narradora conta como era antes e como é agora; a lembrança aparece em sépia.<br><small>Voz: uma narradora só, em primeira pessoa.</small></div>
+  <div class="file"><code>3 · dossie</code><b>Dossiê investigativo</b><br>Caso ou notícia contada como investigação: fichas, carimbos e fios ligando as partes. Sem personagem.<br><small>Voz: narração inteira, o texto entra na palavra falada.</small></div>
+  <div class="file"><code>4 · pixel-16bits</code><b>Pixel 16 bits</b><br>Notícia curta apresentada por um boneco em pixel art que fala, com um card do que a voz diz.<br><small>Voz: narração inteira, a boca do boneco segue o som.</small></div>
+  <div class="file"><code>5 · explicacao</code><b>Explicação</b><br>Explica um processo, uma conta ou uma rotina, sem personagem.<br><small>Voz: narração inteira. Temas (4): quadro de explicação, lousa de giz, quadro de post-its, tela de app.</small></div>
+  <div class="file"><code>6 · dados-historia</code><b>Dados e história</b><br>Mostra um resultado em número ou conta uma história no tempo, sem personagem.<br><small>Voz: narração inteira. Temas (4): mundo isométrico, linha do tempo, mapa com rota, recortes de jornal.</small></div>
+  <div class="file"><code>7 · conto</code><b>Conto com personagem</b><br>Contos curtos com personagens fixos que conversam: humor, história da marca, homenagem.<br><small>Voz: uma voz por personagem, narrador opcional. Temas (4): papel recortado, bonecos de formas, silhuetas, giz de cera.</small></div>
+  <div class="file"><code>8 · conversa</code><b>Conversa no celular</b><br>Conversa de mensagem entre duas pessoas num celular genérico: atendimento, venda, encomenda.<br><small>Voz: duas vozes, uma por lado, ou só texto e música, sem voz.</small></div>
+  <div class="file"><code>9 · mesa</code><b>Mesa vista de cima</b><br>Passo a passo visto de cima: cada ingrediente, produto ou material cai na mesa na palavra falada.<br><small>Voz: narração inteira.</small></div>
+  <div class="file"><code>10 · neon</code><b>Neon retrô</b><br>Oferta, lançamento, evento ou contagem regressiva com letreiro neon, sol listrado e grade andando. Sem personagem.<br><small>Voz: narração inteira, ou só letreiros na batida da música, sem voz.</small></div>
+</div>
+
+<h2>A entrevista curta (modelo do catálogo)</h2>
+<p class="sub">12 perguntas base, uma por vez, cada uma com uma recomendação. Cada modelo pode pular, trocar ou acrescentar perguntas, sempre ficando entre 8 e 12.</p>
 
 <details open>
+  <summary><span class="n">C</span><span class="t">Entrevista curta<small>O desenho, os cenários e a receita já vêm do modelo</small></span><span class="count">12 perguntas</span></summary>
+  <ol class="qs">
+    <li>Nome do universo<span class="ex">a skill sugere 3 nomes e a pessoa escolhe ou digita outro</span></li>
+    <li>Assunto e público</li>
+    <li>Tom<span class="ex">leve e acolhedor (recomendado) · irônico · didático</span></li>
+    <li>Marca<span class="ex">nome, cor, símbolo e a palavra do "Comenta" · ou nenhuma marca</span></li>
+    <li>Personagem principal<span class="ex">nome, idade e quem é numa frase</span></li>
+    <li>Aparência<span class="ex">a skill mostra a folha de opções do modelo: pele, cabelo, roupa, óculos, barba</span></li>
+    <li>Elenco de apoio<span class="ex">manter, trocar ou tirar papéis · no modelo chapado, também cachorro ou bebê</span></li>
+    <li>Cenários e nome do lugar<span class="ex">a placa da sala de espera, a loja da rua</span></li>
+    <li>Cores<span class="ex">as do modelo, com a cor da marca no destaque (recomendado)</span></li>
+    <li>Voz<span class="ex">clonada no ElevenLabs · pronta do ElevenLabs · áudio que a pessoa já gravou</span></li>
+    <li>O que nunca pode acontecer</li>
+    <li>Fecho<span class="ex">a chamada, a palavra do "Comenta" e o aviso de personagem fictícia</span></li>
+  </ol>
+</details>
+
+<div class="note"><b>Ajustes por modelo.</b> Um modelo sem personagem pula as perguntas 5 a 7; um modelo de boneco em pixel troca a pergunta 6 pelas opções do boneco. As famílias (Explicação, Dados e história e Conto com personagem) ganham a pergunta "qual tema?" e mantêm a de cores. A Conversa no celular e o Neon retrô perguntam se o vídeo tem voz ou só música: duas vozes ou só texto e música na Conversa; narração inteira ou só letreiros na batida no Neon. Resposta que não serve (um corte de cabelo que o modelo não tem, por exemplo) volta pra mesma pergunta, com o motivo.</div>
+
+<h2>As perguntas da entrevista completa (estilo novo)</h2>
+<p class="sub">Clique em cada bloco pra abrir. As opções mostradas são pontos de partida; a skill adapta ao assunto da pessoa. Se uma resposta já cobrir outra pergunta, ela pula.</p>
+
+<details>
   <summary><span class="n">1</span><span class="t">Universo<small>O mundo dos vídeos: assunto, público e tom</small></span><span class="count">5 perguntas</span></summary>
   <ol class="qs">
     <li>Sobre o que são os vídeos?<span class="ex">dicas · tutoriais · histórias · notícias · humor · outro</span></li>
@@ -243,10 +307,14 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
 </div>
 
 <div class="tree">estúdio/
+├─ modelos/                           <i>← modelos salvos pela pessoa + catalogo.html</i>
+│  └─ <b>nome-do-modelo</b>/
 └─ animacao/
    └─ <b>nome-do-universo</b>/            <i>← o brandbook (um por universo)</i>
       ├─ BRANDBOOK-ANIMACAO.html
       ├─ BRANDBOOK-ANIMACAO.md
+      ├─ respostas.json               <i>← quando nasce de um modelo</i>
+      ├─ RECEITA.md                   <i>← receita de vídeo do modelo</i>
       ├─ pronuncias.md                <i>← opcional</i>
       ├─ personagens/
       │  └─ nome-do-personagem/
@@ -257,10 +325,13 @@ button.theme{position:fixed;top:12px;right:12px;border:1px solid var(--line);bac
       └─ videos/
          └─ 2026-11-08-tema-do-video/</div>
 
+<h2>Modelo seu</h2>
+<p class="sub">Um estilo criado do zero pode virar modelo da pessoa. Ele guarda o desenho, os cenários, a receita e as respostas do universo de origem, e aparece no catálogo com o selo "seu modelo", na frente dos outros. O próximo universo nesse estilo pergunta só o que muda. Ele fica no computador da pessoa e não vai pro catálogo público.</p>
+
 <h2>Depois que o brandbook existe</h2>
 <p class="sub">Nos vídeos seguintes a skill pula a entrevista. Ela lê o brandbook, usa os mesmos personagens e cenários sem redesenhar, e se a pessoa pedir um ajuste que valha pros próximos vídeos (ex.: "o boneco tá sério demais"), atualiza o HTML e o texto juntos.</p>
 
-<footer>Fonte: SKILL.md e references/perguntas.md em 03-skills/video-animado. Se uma pergunta mudar lá, atualize aqui.</footer>
+<footer>Fonte: SKILL.md, references/perguntas.md, references/entrevista-curta.md, references/catalogo.md e references/modelo-local.md da skill video-animado; a lista de modelos vem de modelos/*/vitrine/vitrine.json, modelos/*/modelo.json e modelos/*/FICHA-DO-MODELO.md. Se uma pergunta ou um modelo mudar lá, atualize aqui.</footer>
 </div>
 <script>
 (function(){

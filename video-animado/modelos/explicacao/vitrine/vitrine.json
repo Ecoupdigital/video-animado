@@ -1,0 +1,7 @@
+{
+  "nome_exibicao": "Explicação",
+  "frase": "Reel narrado que explica processo, conta ou rotina, sem personagem: a caixa se desenha, a seta liga, o resultado ganha o círculo, o post-it anda e o cursor clica na palavra falada. Quatro temas: quadro, lousa, post-its e tela de app.",
+  "exemplo": "Exemplo: aula de precificação no quadro (marca inventada)",
+  "legendas": { "elenco": "Peças" },
+  "arquivos": { "folha": "folha.jpg", "elenco": "elenco.jpg", "trecho": "trecho.mp4" }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "pixel-16bits",
+  "nome": "Pixel 16 bits",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "pixel",
+  "receita": "sprites-por-som",
+  "resumo": "Reel de notícia com um boneco pixel 16 bits que fala: título que entra por linha, card branco com moldes, legenda em blocos e boca pelo som.",
+  "perguntas": { "pular": [7], "trocar": { "6": "aparencia-pixel", "8": "topo-rotulo-assinatura", "12": "card-final-perfil" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Theo", "Bruno", "Push Club", "Gobatto", "Anthropic"],
+  "stills_prova": ["elenco", "opcoes-aparencia", "card-*", "card-final"],
+  "criado_em": "2026-11-16"
+}

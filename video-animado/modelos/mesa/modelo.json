@@ -1,0 +1,13 @@
+{
+  "id": "mesa",
+  "nome": "Mesa vista de cima",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "sem-personagem",
+  "receita": "narracao-inteira",
+  "resumo": "Passo a passo visto de cima, sem personagem: numa mesa de madeira, mármore ou pano liso, cada item (cozinha, beleza, artesanato) cai ou aparece na palavra falada, a etiqueta de papel troca de passo, a faixa de legenda destaca a palavra e o card final fecha. A cor troca destaque, faixa, etiqueta e card final, nunca o material da mesa.",
+  "perguntas": { "pular": [5, 6, 7], "trocar": { "8": "superficie-e-itens", "9": "cores-da-mesa", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno"],
+  "stills_prova": ["superficies", "itens-*", "elenco", "paletas", "capa", "cena-*", "vista-*"],
+  "criado_em": "2026-11-17"
+}

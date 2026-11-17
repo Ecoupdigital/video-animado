@@ -1,0 +1,23 @@
+{
+  "modelo": "dossie",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "universo": {
+    "nome": "Dossiê NVIDIA",
+    "pasta": "dossie-nvidia",
+    "assunto": "o caso que tirou o fundador da NVIDIA do comando: o caso extraconjugal, a suspeita de espionagem e a corrida dos chips entre Estados Unidos e China",
+    "publico": "quem acompanha inteligência artificial e mercado de tecnologia",
+    "tom": "investigativo e rápido, com linguagem de suspeita e a leitura no fim"
+  },
+  "marca": null,
+  "dossie": {
+    "rotulo": "// DOSSIÊ · NVIDIA",
+    "selo": "CASO ABERTO",
+    "manchetes": ["NVDA ▼", "JENSEN HUANG RENUNCIA APÓS 33 ANOS", "DEPARTAMENTO DE JUSTIÇA INVESTIGA MEGASPEED", "CHINA NEGA AS ACUSAÇÕES", "COLETTE KRESS É CEO INTERINA"]
+  },
+  "cores": { "origem": "modelo", "tema": "investigativo", "paleta": null, "fontes": null },
+  "voz": { "caminho": "clonada", "voice_id": null },
+  "nunca": ["afirmar espionagem como fato", "foto de pessoa real que o autor não forneceu", "citar o nome da segunda pessoa reportada pelo jornal"],
+  "fecho": { "chamada": "E aí, ele tinha que sair mesmo?", "assinatura": "@jonathanrenan.ia", "frase_assinatura": "me segue pra acompanhar a IA", "aviso_ia": true },
+  "caso": { "titulo": "um caso *extraconjugal*", "nome": "Jensen Huang", "papel": "fundador · NVIDIA" }
+}

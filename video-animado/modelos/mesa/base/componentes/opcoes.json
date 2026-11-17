@@ -1,0 +1,104 @@
+{
+  "papeis": {
+    "destaque": "a palavra destacada da faixa de legenda (marcada com *palavra* no roteiro)",
+    "faixa": "fundo da faixa de legenda, embaixo (sai a 90%, a mesa aparece por trás)",
+    "faixaTexto": "texto da faixa de legenda",
+    "etiqueta": "papel da etiqueta de passo, girada no alto",
+    "etiquetaTexto": "título do passo e da abertura, na etiqueta",
+    "etiquetaPasso": "\"PASSO n DE N\", o rótulo da abertura, o furo da etiqueta e a palavra destacada do título",
+    "cardFinal": "papel do card final",
+    "cardTexto": "chamada, frase e marca do card final",
+    "cardDestaque": "assinatura, \"comenta aqui\" e o ponto da marca no card final"
+  },
+  "paletas": {
+    "ambar": {
+      "destaque": "#FBBF24", "faixa": "#1C1917", "faixaTexto": "#FFFFFF",
+      "etiqueta": "#FFFBEB", "etiquetaTexto": "#1C1917", "etiquetaPasso": "#92400E",
+      "cardFinal": "#FFFBEB", "cardTexto": "#1C1917", "cardDestaque": "#B45309"
+    },
+    "menta": {
+      "destaque": "#86EFAC", "faixa": "#163126", "faixaTexto": "#F2FBF5",
+      "etiqueta": "#F2F7EF", "etiquetaTexto": "#13241B", "etiquetaPasso": "#2D6A47",
+      "cardFinal": "#F2F7EF", "cardTexto": "#13241B", "cardDestaque": "#2D6A47"
+    },
+    "vinho": {
+      "destaque": "#FDA4AF", "faixa": "#3A0F22", "faixaTexto": "#FFF5F7",
+      "etiqueta": "#FFF1F2", "etiquetaTexto": "#2B0A17", "etiquetaPasso": "#9F1239",
+      "cardFinal": "#FFF1F2", "cardTexto": "#2B0A17", "cardDestaque": "#9F1239"
+    }
+  },
+  "prontas": {
+    "ambar": { "nome": "Âmbar: faixa grafite, palavra âmbar, etiqueta creme (as cores da tela de referência)" },
+    "menta": { "nome": "Menta: faixa verde-escura, palavra menta, etiqueta verde bem clara" },
+    "vinho": { "nome": "Vinho: faixa vinho, palavra rosa, etiqueta rosada" }
+  },
+  "pronta_padrao": "ambar",
+  "papeis_da_marca": ["destaque", "etiquetaPasso", "cardDestaque"],
+  "superficies": {
+    "madeira": {
+      "nome": "Madeira",
+      "resumo": "mesa de tábuas verticais com junta escura e veio, como a tela de referência",
+      "cores": { "tabua1": "#B97A4B", "tabua2": "#C08352", "tabua3": "#B47446", "tabua4": "#BD7F4F", "junta": "#8A5530", "veio": "#9C6237", "sombra": "#3D2210" },
+      "sombra_alfa": 0.45
+    },
+    "marmore": {
+      "nome": "Mármore",
+      "resumo": "mármore claro com veios cinza finos e uma mancha suave",
+      "cores": { "marmore": "#EFECE8", "marmore2": "#E2DDD6", "veio": "#A39C94", "veio2": "#C8C1B8", "sombra": "#3F3A35" },
+      "sombra_alfa": 0.3
+    },
+    "pano": {
+      "nome": "Pano liso",
+      "resumo": "toalha lisa azul-acinzentada com trama leve, sem estampa",
+      "cores": { "pano": "#B7C3C7", "trama": "#A8B5BA", "trama2": "#C6D0D3", "sombra": "#24303A" },
+      "sombra_alfa": 0.36
+    }
+  },
+  "superficie_padrao": "madeira",
+  "grupos": {
+    "cozinha": {
+      "nome": "Cozinha",
+      "centro": "tábua redonda de madeira com cabo, onde a pizza se monta em camadas (massa, molho, queijo, tomate, folha)",
+      "amostra": { "titulo": "Massa de 48 horas", "frase": "Queijo só com o molho *frio*" },
+      "itens": {
+        "massa": { "nome": "massa", "mesa": "bola de massa enfarinhada", "no_centro": "camada" },
+        "molho": { "nome": "molho", "mesa": "potinho de molho de tomate", "no_centro": "camada" },
+        "queijo": { "nome": "queijo", "mesa": "fatia de queijo com furos", "no_centro": "pedacos" },
+        "tomate": { "nome": "tomate", "mesa": "tomate inteiro com cabinho", "no_centro": "pedacos" },
+        "folha": { "nome": "folha", "mesa": "raminho de manjericão", "no_centro": "pedacos" },
+        "ovo": { "nome": "ovo", "mesa": "ovo inteiro" },
+        "farinha": { "nome": "farinha", "mesa": "montinho de farinha", "no_centro": "pedacos" },
+        "tigela": { "nome": "tigela", "mesa": "tigela vazia" },
+        "colher": { "nome": "colher", "mesa": "colher de pau" },
+        "prato": { "nome": "prato", "mesa": "prato raso" }
+      }
+    },
+    "beleza": {
+      "nome": "Beleza",
+      "centro": "bandeja redonda de penteadeira, onde o teste de cada produto fica marcado",
+      "amostra": { "titulo": "Pele leve em 5 minutos", "frase": "Base só no *centro* do rosto" },
+      "itens": {
+        "base": { "nome": "base", "mesa": "frasco de base com bomba, sem rótulo", "no_centro": "camada" },
+        "pincel": { "nome": "pincel", "mesa": "pincel de maquiagem" },
+        "batom": { "nome": "batom", "mesa": "batom aberto, sem marca", "no_centro": "camada" },
+        "sombra": { "nome": "sombra", "mesa": "estojo de sombras com 4 cores, sem marca", "no_centro": "pedacos" },
+        "espelho": { "nome": "espelho", "mesa": "espelho redondo de mão" },
+        "algodao": { "nome": "algodão", "mesa": "discos de algodão" }
+      }
+    },
+    "artesanato": {
+      "nome": "Artesanato",
+      "centro": "base de corte quadriculada, onde o cartão se monta",
+      "amostra": { "titulo": "Cartão de aniversário", "frase": "Cola só nas *pontas* do papel" },
+      "itens": {
+        "papel": { "nome": "papel", "mesa": "folhas de papel colorido", "no_centro": "camada" },
+        "tesoura": { "nome": "tesoura", "mesa": "tesoura aberta" },
+        "cola": { "nome": "cola", "mesa": "bastão de cola, sem rótulo", "no_centro": "pedacos" },
+        "linha": { "nome": "linha", "mesa": "carretel de linha" },
+        "botao": { "nome": "botão", "mesa": "botão de 4 furos", "no_centro": "pedacos" },
+        "fita": { "nome": "fita", "mesa": "rolo de fita", "no_centro": "camada" }
+      }
+    }
+  },
+  "grupo_padrao": "cozinha"
+}

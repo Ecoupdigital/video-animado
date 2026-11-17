@@ -1,0 +1,99 @@
+{
+  "secoes": [
+    {
+      "texto": "A Anthropic colocou o Claude dentro da sua reunião.",
+      "titulo": [
+        "O Claude entrou",
+        "na sua reunião"
+      ],
+      "destaque": [
+        "reunião"
+      ],
+      "legenda": [
+        "Claude",
+        "reunião."
+      ],
+      "gesto": "duas",
+      "card": {
+        "molde": "blocos",
+        "rotulo": "// lançamento",
+        "blocos": [
+          {
+            "rotulo": "o quê",
+            "valor": "Claude",
+            "em": "Claude"
+          },
+          {
+            "rotulo": "onde",
+            "valor": "Reunião",
+            "em": "dentro"
+          }
+        ]
+      }
+    },
+    {
+      "texto": "Ele monta o plano, desenha o cronograma e responde no chat.",
+      "titulo": [
+        "Monta o plano e",
+        "o cronograma"
+      ],
+      "destaque": [
+        "plano",
+        "cronograma"
+      ],
+      "gesto": "uma",
+      "card": {
+        "molde": "lista",
+        "rotulo": "// durante a reunião",
+        "itens": [
+          {
+            "texto": "Monta o plano",
+            "nota": "ao vivo",
+            "em": "plano,"
+          },
+          {
+            "texto": "Desenha o cronograma",
+            "nota": "num quadro",
+            "em": "cronograma"
+          },
+          {
+            "texto": "Responde no chat",
+            "em": "chat."
+          }
+        ]
+      }
+    },
+    {
+      "texto": "Mas por enquanto ainda é beta.",
+      "titulo": [
+        "Mas por enquanto",
+        "ainda é beta"
+      ],
+      "destaque": [
+        "beta"
+      ],
+      "gesto": "ombros",
+      "card": {
+        "molde": "selo",
+        "rotulo": "// disponibilidade",
+        "titulo": "Claude na reunião",
+        "selo": "BETA",
+        "em": "enquanto",
+        "icone": "check",
+        "etiquetas": [
+          {
+            "texto": "planos pagos",
+            "em": "beta."
+          }
+        ]
+      }
+    }
+  ],
+  "final": {
+    "duracao": 3,
+    "titulo": [
+      "Me segue pra mais",
+      "notícia de IA"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "conto",
+  "nome": "Conto com personagem",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "personagens",
+  "receita": "vozes-por-fala",
+  "resumo": "Família de contos curtos com personagens fixos que conversam: uma voz por personagem, a boca abre pelo volume, narrador opcional. O personagem se configura no traço de cada tema, em 4 temas (papel recortado, bonecos de formas, silhuetas e giz de cera), com cenários simples e o nome do lugar numa placa.",
+  "temas": [
+    { "id": "papel", "nome": "Papel recortado", "resumo": "Kraft com fibras, peças de papel presas por colchete com sombra projetada, sol, nuvens, colinas e casa; título serifado numa faixa rasgada e a legenda numa tarja escura rasgada.", "cor_troca": "troca só o destaque (a palavra falada na tarja), as faixas (a faixa do título) e as etiquetas (a placa do lugar); o kraft, as fibras, a sombra e as cores de recorte ficam", "cores_trocaveis": ["destaque", "faixa", "etiqueta"] },
+    { "id": "formas", "nome": "Bonecos de formas", "resumo": "Cor chapada viva, bonecos de pílula, retângulo, círculo ou triângulo com olhos grandes, braços e pernas de traço, que quicam na fala; selo do episódio, balões de fala claro e escuro e legenda embaixo.", "cor_troca": "troca todas as cores: fundo, chão, enfeites, balões, selo, placa e destaque", "cores_trocaveis": ["fundo", "fundo2", "ceu", "ceu2", "chao", "chao2", "sombra", "silhueta", "papel", "traco", "titulo", "texto", "tarja", "sobre", "destaque", "faixa", "etiqueta", "sol", "enfeite", "enfeite2", "madeira"] },
+    { "id": "silhuetas", "nome": "Silhuetas", "resumo": "Céu em degradê com sol grande, morros em camadas, árvore e pássaros batendo asa; os personagens são silhuetas escuras contra o céu, reconhecidas pelo contorno e pela altura, que falam pelo gesto; título em citação serifada inclinada e legenda clara sobre o morro escuro.", "cor_troca": "troca o céu (as 4 cores do degradê), o que o céu tinge (o sol, o morro de trás, os pássaros, a luz da janela e a legenda) e o destaque; as silhuetas, o morro da frente, a árvore, a placa e os móveis ficam escuros", "cores_trocaveis": ["fundo", "fundo2", "ceu", "ceu2", "chao2", "traco", "texto", "destaque", "sol", "enfeite2"] },
+    { "id": "giz-de-cera", "nome": "Giz de cera", "resumo": "Folha pautada com margem e desenho de criança em giz de traço tremido: sol girando, arco-íris, casa, chão verde e bonecos de cabeça redonda, olhos de ponto e boca que abre na fala; título e legenda em letra de mão.", "cor_troca": "troca as cores dos gizes (sol, arco-íris, chão, casa, janela, porta, placa, título, legenda e destaque); a folha, a pauta, a margem e o giz escuro do rosto ficam", "cores_trocaveis": ["ceu", "ceu2", "chao", "chao2", "titulo", "texto", "destaque", "etiqueta", "sol", "enfeite", "enfeite2", "madeira"] }
+  ],
+  "tema_recomendado": "formas",
+  "perguntas": { "pular": [], "trocar": { "8": "tema" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno", "Cida", "Léo", "Paçoca"],
+  "stills_prova": ["expressoes-*", "opcoes-aparencia-*", "poses-*", "elenco", "tema-*", "cenarios-*", "cena-*", "paletas"],
+  "criado_em": "2026-11-17"
+}

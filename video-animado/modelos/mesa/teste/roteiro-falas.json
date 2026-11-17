@@ -1,0 +1,42 @@
+{
+  "rotulo": "MAKE DO DIA · PELE LEVE",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "Make de cinco minutos para sair de casa, com tudo na bancada antes de começar.",
+      "titulo": "Make de *5 minutos* para sair de casa",
+      "frase": "Tudo na bancada antes de começar"
+    },
+    {
+      "tipo": "passo",
+      "texto": "Primeiro, algodão com tônico, sem esfregar. Depois, o espelho perto da janela.",
+      "titulo": "Pele limpa",
+      "frase": "Algodão com *tônico*, sem esfregar",
+      "itens": [{ "item": "algodao" }, { "item": "espelho" }],
+      "batidas": { "item0": "algodão", "item1": "espelho" }
+    },
+    {
+      "tipo": "passo",
+      "texto": "Base: duas gotas no dorso da mão, um risco de teste na bandeja e o pincel espalhando do centro para fora.",
+      "titulo": "Base em 2 gotas",
+      "frase": "Base só no *centro* do rosto",
+      "itens": [{ "item": "base", "lugar": "mesa" }, { "item": "base" }, { "item": "pincel" }],
+      "batidas": { "item0": "base", "item1": "risco", "item2": "pincel" }
+    },
+    {
+      "tipo": "passo",
+      "texto": "Sombra clara na pálpebra, e o batom com um toque só, batendo com o dedo.",
+      "titulo": "Olho e boca",
+      "frase": "Batom com o *dedo* dura mais",
+      "itens": [{ "item": "sombra", "lugar": "mesa" }, { "item": "sombra" }, { "item": "batom", "lugar": "mesa" }, { "item": "batom" }],
+      "batidas": { "item0": "sombra", "item1": "pálpebra", "item2": "batom", "item3": "toque" }
+    },
+    {
+      "tipo": "final",
+      "texto": "E você, qual passo sempre pula? Comenta aqui.",
+      "pergunta": "Qual passo você sempre *pula*?",
+      "fontes": [],
+      "batidas": { "card": "aqui" }
+    }
+  ]
+}

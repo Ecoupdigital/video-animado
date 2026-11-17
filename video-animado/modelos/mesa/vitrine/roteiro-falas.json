@@ -1,0 +1,88 @@
+{
+  "rotulo": "PIZZA DE DOMINGO · MARGUERITA",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "Pizza de frigideira em casa, em três passos.",
+      "titulo": "Pizza de *frigideira* em casa",
+      "frase": "Do zero, em 3 passos"
+    },
+    {
+      "tipo": "passo",
+      "texto": "A tigela de lado, farinha na tábua e a massa aberta com a mão.",
+      "titulo": "Abra a massa",
+      "frase": "Farinha na tábua, depois a *massa*",
+      "itens": [
+        {
+          "item": "tigela"
+        },
+        {
+          "item": "farinha"
+        },
+        {
+          "item": "massa"
+        }
+      ],
+      "batidas": {
+        "item0": "tigela",
+        "item1": "farinha",
+        "item2": "massa"
+      }
+    },
+    {
+      "tipo": "passo",
+      "texto": "A colher e dois ovos de lado, e o molho frio até a borda.",
+      "titulo": "Molho só frio",
+      "frase": "Espalhe o *molho* até a borda",
+      "itens": [
+        {
+          "item": "colher"
+        },
+        {
+          "item": "ovo",
+          "quantidade": 2
+        },
+        {
+          "item": "molho"
+        }
+      ],
+      "batidas": {
+        "item0": "colher",
+        "item1": "ovos",
+        "item2": "molho"
+      }
+    },
+    {
+      "tipo": "passo",
+      "texto": "O prato pronto, o queijo, três rodelas de tomate e as folhas de manjericão.",
+      "titulo": "A cobertura",
+      "frase": "Queijo só com o molho *frio*",
+      "itens": [
+        {
+          "item": "prato"
+        },
+        {
+          "item": "queijo"
+        },
+        {
+          "item": "tomate"
+        },
+        {
+          "item": "folha"
+        }
+      ],
+      "batidas": {
+        "item0": "prato",
+        "item1": "queijo",
+        "item2": "tomate",
+        "item3": "folhas"
+      }
+    },
+    {
+      "tipo": "final",
+      "texto": "Qual sabor sai no seu domingo? Comenta aqui.",
+      "pergunta": "Qual sabor sai no seu *domingo*?",
+      "fontes": []
+    }
+  ]
+}

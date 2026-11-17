@@ -1,0 +1,17 @@
+{
+  "nome_exibicao": "Mesa vista de cima",
+  "frase": "Passo a passo visto de cima, sem personagem: numa mesa de madeira, mármore ou pano liso, cada ingrediente, produto ou material cai na palavra falada, a etiqueta de papel troca de passo e a faixa de legenda destaca a palavra. Receita, maquiagem, artesanato: qualquer passo a passo com as mãos.",
+  "exemplo": "Exemplo: receita de pizza na madeira (marca inventada)",
+  "legendas": {
+    "elenco": "Itens"
+  },
+  "arquivos": {
+    "folha": "folha.jpg",
+    "elenco": "elenco.jpg",
+    "trecho": "trecho.mp4"
+  },
+  "trecho": {
+    "inicio": 3.0,
+    "duracao": 6
+  }
+}

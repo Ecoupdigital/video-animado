@@ -1,0 +1,35 @@
+{
+  "modelo": "traco-fino",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "nota": "Respostas que reproduzem o exemplo da vitrine (Segunda Viagem). Único arquivo do kit onde os nomes do exemplo aparecem.",
+  "universo": {
+    "nome": "Segunda Viagem",
+    "pasta": "segunda-viagem",
+    "assunto": "a segunda gravidez contada por quem já passou pela primeira: o que mudou entre o antes e o agora, com humor seco",
+    "publico": "mulheres de 28 a 38 anos grávidas do segundo filho ou pensando nele, Brasil",
+    "tom": "humor seco e sincero, ri dos próprios erros sem lição de moral"
+  },
+  "antes_e_agora": {
+    "virada": "antes a Carol organizava a primeira gravidez com planilha, caderno e cinco apps; agora organiza a segunda pelo Ciclua",
+    "rotulo_antes": "ANTES",
+    "rotulo_agora": "AGORA"
+  },
+  "marca": { "nome": "Ciclua", "cor": "#F5645B", "simbolo": "lua", "palavra_fecho": "CICLUA" },
+  "personagens": [
+    { "id": "carol", "nome": "Carol", "papel": "protagonista", "idade": 33, "corpo": "adulto",
+      "quem_e": "analista de finanças, grávida do segundo filho, narra o antes e o agora",
+      "aparencia": { "preset": "chanel-camisa-oliva" }, "voz": { "caminho": "pronta", "voice_id": null } },
+    { "id": "bruno", "nome": "Bruno", "papel": "apoio", "idade": 35, "corpo": "adulto",
+      "quem_e": "parceiro da Carol, presente de verdade, nunca fala",
+      "aparencia": { "preset": "curto-barba-camiseta" } },
+    { "id": "theo", "nome": "Theo", "papel": "apoio", "idade": 3, "corpo": "crianca",
+      "quem_e": "filho de 3 anos, o caos da casa, não fala",
+      "aparencia": { "preset": "crianca-arrepiado-listrada" } }
+  ],
+  "cenarios": { "apartamento": ["sala", "quarto"], "escritorio": true, "escola": { "nome": "Escola Infantil" } },
+  "cores": { "origem": "modelo", "paleta": null },
+  "voz": { "caminho": "pronta" },
+  "nunca": ["dar lição de moral", "julgar quem fez diferente", "tratar o parceiro como ajudante"],
+  "fecho": { "chamada": "Quer ver como funciona?", "palavra": "CICLUA", "aviso_ficticio": true }
+}

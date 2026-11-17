@@ -1,0 +1,60 @@
+{
+  "modelo": "traco-fino",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "universo": {
+    "nome": "Fôlego Novo",
+    "pasta": "folego-novo",
+    "assunto": "voltar a se exercitar depois dos 30, contado por uma personal trainer que já desistiu três vezes antes de virar profissional, com uma dica de treino possível em cada vídeo",
+    "publico": "adultos de 28 a 45 anos que começam a treinar e param em poucas semanas",
+    "tom": "sincero e leve, ri das desculpas sem humilhar ninguém"
+  },
+  "antes_e_agora": {
+    "virada": "antes ela treinava sozinha, sem plano, e largava tudo em duas semanas; agora treina com plano curto, anota o que fez e ensina isso aos alunos",
+    "rotulo_antes": "SEM PLANO",
+    "rotulo_agora": "COM PLANO"
+  },
+  "marca": { "nome": "Estúdio Movimento", "cor": "#D9622B", "simbolo": "letra", "palavra_fecho": "TREINO" },
+  "personagens": [
+    {
+      "id": "rita", "nome": "Rita", "papel": "protagonista", "idade": 36, "corpo": "adulto",
+      "quem_e": "personal trainer que já desistiu de treinar três vezes e hoje conta o antes e o agora para os alunos",
+      "aparencia": {
+        "pele": "p5", "cabelo": "rabo", "corCabelo": "#2A1E18", "cilios": true,
+        "camisa": "fechada", "topo": "#D9622B", "manga": "sem",
+        "tipoBaixo": "calca", "baixo": "#2F4A55", "tenis": "#F4F4F4", "sola": "#BFC6CC"
+      },
+      "aparencia_antes": { "cabelo": "comprido", "topo": "#9AA0A6", "manga": "longa", "baixo": "#4A6A8A" },
+      "voz": { "caminho": "pronta", "voice_id": null }
+    },
+    {
+      "id": "marcos", "nome": "Marcos", "papel": "apoio", "idade": 52, "corpo": "adulto",
+      "quem_e": "aluno que chega toda semana com uma desculpa nova e sempre volta",
+      "aparencia": {
+        "pele": "p7", "cabelo": "careca", "corCabelo": "#8C8C8C", "barba": true, "oculos": true,
+        "camisa": "fechada", "topo": "#5C7682", "manga": "curta",
+        "tipoBaixo": "bermuda", "baixo": "#3E4248", "tenis": "#E3D7C3",
+        "barriga": 0.5, "ombros": 8, "altura": 1.03
+      }
+    },
+    {
+      "id": "lia", "nome": "Lia", "papel": "apoio", "idade": 7, "corpo": "crianca",
+      "quem_e": "filha da Rita, imita os alongamentos da mãe no meio da sala",
+      "aparencia": {
+        "pele": "p5", "cabelo": "marias", "corCabelo": "#2A1E18", "laco": "#D9622B",
+        "topo": "#E7B75F", "tipoBaixo": "saia", "baixo": "#5C7682",
+        "tenis": "#FBF8F2", "faixaTenis": "#D9622B", "altura": 0.62
+      }
+    }
+  ],
+  "cenarios": {
+    "apartamento": ["sala", "quarto"],
+    "escritorio": false,
+    "escola": { "nome": "Escola Girassol" },
+    "sala_espera": { "placa": "Recepção" }
+  },
+  "cores": { "origem": "modelo", "paleta": null },
+  "voz": { "caminho": "pronta" },
+  "nunca": ["prometer resultado de emagrecimento em prazo", "mostrar exercício perigoso como se fosse fácil", "rir do corpo de alguém"],
+  "fecho": { "chamada": "Quer voltar a treinar sem desistir?", "palavra": "TREINO", "aviso_ficticio": true }
+}

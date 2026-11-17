@@ -1,0 +1,43 @@
+{
+  "manchetes": ["REFORMA DO SALÃO CUSTOU O TRIPLO", "ADMINISTRADORA NEGA IRREGULARIDADE", "ASSEMBLEIA EXTRA MARCADA PARA DIA 28"],
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "texto": "A reforma do salão de festas custou o triplo do orçamento aprovado.",
+      "titulo": "a reforma custou o *triplo*",
+      "rotulo": "CUSTO FINAL DA REFORMA",
+      "valor": { "numero": 3, "sufixo": "x", "legenda": "o triplo do aprovado em assembleia" },
+      "pessoa": { "nome": "Construtora Alfa", "papel": "empresa da obra" },
+      "carimbo": "suspeita de sobrepreço",
+      "batidas": { "rotulo": "custou", "valor": "triplo", "pessoa": "orçamento", "carimbo": "aprovado" }
+    },
+    {
+      "tipo": "linha",
+      "texto": "Em abril, a assembleia aprovou cento e vinte mil. Em maio, um aditivo. Em junho, a conta chegou.",
+      "titulo": "abril, maio, *junho*",
+      "marcos": [
+        { "data": "12/04", "texto": "assembleia aprova R$ 120 mil" },
+        { "data": "02/05", "texto": "aditivo sem votação" },
+        { "data": "20/06", "texto": "a conta chega", "alerta": true }
+      ],
+      "batidas": { "marco0": "abril", "marco1": "maio", "marco2": "junho" }
+    },
+    {
+      "tipo": "tombo",
+      "texto": "Resultado: o fundo de reserva caiu sessenta e dois por cento.",
+      "titulo": "*resultado:*",
+      "rotulo": "// FUNDO DE RESERVA",
+      "valor": { "numero": -62, "sufixo": "%", "legenda": "desde o aditivo" },
+      "batidas": { "queda": "fundo", "valor": "sessenta" }
+    },
+    {
+      "tipo": "final",
+      "texto": "A administradora nega irregularidade. E aí, você aprovaria essa obra?",
+      "pergunta": "e aí, você *aprovaria*?",
+      "fontes": ["ata da assembleia (12/04)", "aditivo do contrato (02/05)"],
+      "cita_pessoas": true,
+      "selo": "a administradora nega irregularidade",
+      "batidas": { "selo": "nega", "chamada": "obra" }
+    }
+  ]
+}

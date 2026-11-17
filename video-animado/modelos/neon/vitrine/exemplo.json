@@ -1,0 +1,28 @@
+{
+  "modelo": "neon",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Promo da Meia-Noite",
+    "pasta": "promo-da-meia-noite",
+    "assunto": "as promoções da madrugada de uma hamburgueria de bairro: o combo da noite, o preço que cai e a contagem até a meia-noite",
+    "publico": "quem pede lanche tarde da noite, de 18 a 35 anos",
+    "tom": "animado e rápido, de quem chama a turma para o último pedido da noite"
+  },
+  "marca": { "nome": "Brasa da Madrugada", "cor": "#F97316" },
+  "oferta": {
+    "tipo": "oferta",
+    "o_que": "Combo da meia-noite",
+    "preco": "R$ 39,90",
+    "preco_antigo": "R$ 79,80",
+    "prazo": "só até a meia-noite",
+    "selo": "só hoje",
+    "botao": "2 por 1 · só hoje"
+  },
+  "amostra": { "letreiro": ["PROMO DA", "MEIA-NOITE"] },
+  "cores": { "origem": "modelo", "pronta": null, "paleta": null },
+  "receita": "texto-e-musica",
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer entrega em tempo que a cozinha não faz", "inventar preço antigo"],
+  "fecho": { "chamada": "Marca quem divide o *combo* com você", "assinatura": "@brasadamadrugada", "frase_assinatura": "me segue pra não perder a próxima", "aviso_ia": true }
+}

@@ -1,0 +1,38 @@
+{
+  "receita": "texto-e-musica",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "compassos": 2,
+      "letreiros": [["HOJE TEM", "PROMO"], ["PROMO DA", "MEIA-NOITE"]],
+      "batidas": { "letreiro0": 1, "letreiro1": 3 }
+    },
+    {
+      "tipo": "oferta",
+      "compassos": 2,
+      "letreiros": [["COMBO", "EM DOBRO"]],
+      "batidas": { "letreiro0": 1, "o_que": 1, "preco": 2, "selo": 4, "prazo": 6 }
+    },
+    {
+      "tipo": "contagem",
+      "compassos": 2,
+      "forma": "numeros",
+      "de": 3,
+      "rotulo": "a promo começa em",
+      "texto_final": "agora",
+      "letreiros": [["CORRE", "PRA FILA"]],
+      "batidas": { "letreiro0": 1, "contagem": 2 }
+    },
+    {
+      "tipo": "chamada",
+      "compassos": 2,
+      "letreiros": [["PEDE", "JÁ"]],
+      "batidas": { "letreiro0": 1, "botao": 2 }
+    },
+    {
+      "tipo": "final",
+      "compassos": 2,
+      "batidas": { "card": 1 }
+    }
+  ]
+}

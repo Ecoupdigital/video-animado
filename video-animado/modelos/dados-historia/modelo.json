@@ -1,0 +1,20 @@
+{
+  "id": "dados-historia",
+  "nome": "Dados e história",
+  "versao": "1.0",
+  "origem": "skill",
+  "tipo": "sem-personagem",
+  "receita": "narracao-inteira",
+  "resumo": "Família de reels narrados que mostram um resultado em número ou contam uma história no tempo, sem personagem: o número conta, a coluna sobe, o marco entra, a rota se desenha, o recorte cai e o círculo fecha na palavra falada, em 4 temas (isométrico, linha do tempo, mapa, jornal).",
+  "temas": [
+    { "id": "isometrico", "nome": "Mundo isométrico", "resumo": "Degradê escuro, piso em losango e colunas de 3 faces que sobem, com cubos e moeda de enfeite: o número grande conta no destaque.", "cor_troca": "troca todas as cores: degradê, piso, colunas, cartões, texto e destaque", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "titulo", "texto", "suave", "tinta", "destaque", "destaque2", "barra", "piso", "sobre", "faixa", "etiqueta", "enfeite"] },
+    { "id": "linha-do-tempo", "nome": "Linha do tempo", "resumo": "Papel claro, título serifado e um trilho com a linha que se desenha: cada marco (ano e frase) entra na palavra, o último cheio.", "cor_troca": "troca todas as cores: papel, trilho, cartões, texto e destaque", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "titulo", "texto", "suave", "tinta", "destaque", "destaque2", "barra", "piso", "sobre", "faixa", "etiqueta", "enfeite"] },
+    { "id": "mapa", "nome": "Mapa com rota", "resumo": "Mapa estilizado e genérico (rio, quarteirões, praças, árvores): a rota se desenha pela rua até o pino, com chips de tempo e o valor no cartão do topo.", "cor_troca": "troca todas as cores: terra, quarteirões, rio, praças, rota, pino e chips", "cores_trocaveis": ["fundo", "fundo2", "superficie", "linha", "titulo", "texto", "suave", "tinta", "destaque", "destaque2", "barra", "piso", "sobre", "faixa", "etiqueta", "enfeite"] },
+    { "id": "jornal", "nome": "Recortes de jornal", "resumo": "Cortiça, ano serifado grande e recortes girados com sombra, manchete, retícula e fita: o recorte cai na palavra e o círculo à mão marca o detalhe.", "cor_troca": "troca só o destaque (círculo à mão e caneta), as faixas (fitas) e as etiquetas; a cortiça, o papel, a retícula e a letra de jornal ficam", "cores_trocaveis": ["destaque", "faixa", "etiqueta"] }
+  ],
+  "tema_recomendado": "isometrico",
+  "perguntas": { "pular": [5, 6, 7], "trocar": { "8": "tema", "9": "cores-do-tema", "12": "card-final" }, "acrescentar": [] },
+  "termos_proibidos": ["Ciclua", "Nina", "Carol", "NVIDIA", "Jensen", "Jonathan", "jonathanrenan", "FEBRASGO", "Caderneta", "gestante", "Huang", "Kress", "Megaspeed", "Gobatto", "Theo", "Bruno"],
+  "stills_prova": ["cena-*", "tema-*", "folha-*", "elenco"],
+  "criado_em": "2026-11-17"
+}

@@ -1,0 +1,23 @@
+{
+  "modelo": "dossie",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-16",
+  "universo": {
+    "nome": "Caso do Condomínio",
+    "pasta": "caso-do-condominio",
+    "assunto": "casos de condomínio contados como investigação: obras que estouram o orçamento, contratos sem concorrência e assembleias que ninguém viu, sempre com o documento na tela",
+    "publico": "moradores e síndicos de condomínio de 30 a 60 anos que querem entender para onde vai a taxa",
+    "tom": "sério e direto, com suspense, sem acusar ninguém: mostra o documento e deixa a pergunta"
+  },
+  "marca": { "nome": "Síndico em Pauta", "cor": "#2E7D6B" },
+  "dossie": {
+    "rotulo": "// DOSSIÊ · CONDOMÍNIO",
+    "selo": "EM APURAÇÃO",
+    "manchetes": ["REFORMA DO SALÃO CUSTOU O TRIPLO", "ADMINISTRADORA NEGA IRREGULARIDADE", "ASSEMBLEIA EXTRA MARCADA PARA DIA 28", "MORADORES PEDEM AS NOTAS DA OBRA"]
+  },
+  "cores": { "origem": "modelo", "tema": "jornal", "paleta": { "destaque": "#7A2E1F" }, "fontes": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["afirmar que alguém roubou ou desviou dinheiro", "mostrar nome, rosto ou apartamento de morador", "usar documento que não pode ser mostrado"],
+  "fecho": { "chamada": "E aí, você aprovaria essa obra?", "assinatura": "@sindicoempauta", "frase_assinatura": "me segue pra ver o próximo caso", "aviso_ia": true },
+  "caso": { "titulo": "A reforma que custou o triplo", "nome": "Construtora Alfa", "papel": "empresa da obra" }
+}

@@ -1,0 +1,7 @@
+{
+  "nome_exibicao": "Dossiê investigativo",
+  "frase": "Reel narrado de caso ou notícia, sem personagem: o texto entra na palavra falada, carimbo, ficha com silhueta, fio, rota, gráfico caindo e faixa de manchetes. Tema escuro, de jornal ou da marca.",
+  "exemplo": "Exemplo: caso NVIDIA (só silhuetas, sem foto)",
+  "legendas": { "elenco": "Peças" },
+  "arquivos": { "folha": "folha.jpg", "elenco": "elenco.jpg", "trecho": "trecho.mp4" }
+}

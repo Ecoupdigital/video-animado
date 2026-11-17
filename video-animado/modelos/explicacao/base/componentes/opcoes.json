@@ -1,0 +1,83 @@
+{
+  "temas": ["quadro", "lousa", "post-its", "tela-app"],
+  "papeis": {
+    "fundo": "fundo da tela: papel, lousa, parede ou começo do degradê",
+    "fundo2": "segunda cor do fundo: grade do papel, mancha da lousa, quadro branco ou fim do degradê",
+    "superficie": "caixa, cartão e janela",
+    "linha": "linhas finas: colunas, bordas, divisórias, barra da janela",
+    "traco": "traço e texto principal: caneta, giz branco, letra do post-it, texto da janela",
+    "titulo": "título sobre o fundo",
+    "texto": "texto de apoio sobre o fundo",
+    "suave": "rótulo, legenda pequena, item apagado",
+    "destaque": "risco do título, círculo do resultado, palavra-chave",
+    "destaque2": "segunda cor: seta, conta, botão",
+    "ok": "check e coluna de concluído",
+    "nota1": "post-it amarelo (e ícone preenchido)",
+    "nota2": "post-it rosa",
+    "nota3": "post-it azul",
+    "nota4": "post-it verde",
+    "nota5": "post-it laranja",
+    "moldura": "moldura: madeira da lousa, borda do quadro branco, corpo da caneta, barra da janela",
+    "moldura2": "segunda moldura: bandeja da lousa, tampa da caneta, ímã, sombra da janela"
+  },
+  "paletas": {
+    "quadro": {
+      "fundo": "#FBFAF6", "fundo2": "#EBE8DF", "superficie": "#FFFDF8", "linha": "#D9D4C7",
+      "traco": "#1D1D1F", "titulo": "#1D1D1F", "texto": "#5D5A52", "suave": "#8A877E",
+      "destaque": "#E4572E", "destaque2": "#2E6FD8", "ok": "#2F9E44",
+      "nota1": "#FEF08A", "nota2": "#FBCFE8", "nota3": "#BFDBFE", "nota4": "#BBF7D0", "nota5": "#FED7AA",
+      "moldura": "#E4572E", "moldura2": "#1D1D1F"
+    },
+    "lousa": {
+      "fundo": "#28473A", "fundo2": "#1E382D", "superficie": "#2F5244", "linha": "#A9BFB2",
+      "traco": "#F5F7F2", "titulo": "#F5F7F2", "texto": "#E8EFE9", "suave": "#A9C2B3",
+      "destaque": "#FDE68A", "destaque2": "#BFE3FF", "ok": "#B7F0C1",
+      "nota1": "#FDE68A", "nota2": "#F9C6D8", "nota3": "#BFE3FF", "nota4": "#C6F0CF", "nota5": "#FCD3A8",
+      "moldura": "#7A4A24", "moldura2": "#8B5A2B"
+    },
+    "post-its": {
+      "fundo": "#E7E5E4", "fundo2": "#FAFAF9", "superficie": "#FFFFFF", "linha": "#D6D3D1",
+      "traco": "#292524", "titulo": "#1C1917", "texto": "#57534E", "suave": "#78716C",
+      "destaque": "#EA580C", "destaque2": "#2563EB", "ok": "#16A34A",
+      "nota1": "#FEF08A", "nota2": "#FBCFE8", "nota3": "#BFDBFE", "nota4": "#BBF7D0", "nota5": "#FED7AA",
+      "moldura": "#D6D3D1", "moldura2": "#A8A29E"
+    },
+    "tela-app": {
+      "fundo": "#4F46E5", "fundo2": "#9333EA", "superficie": "#FFFFFF", "linha": "#E2E8F0",
+      "traco": "#0F172A", "titulo": "#FFFFFF", "texto": "#E0E7FF", "suave": "#94A3B8",
+      "destaque": "#FDE047", "destaque2": "#4F46E5", "ok": "#34D399",
+      "nota1": "#F87171", "nota2": "#FBBF24", "nota3": "#34D399", "nota4": "#E0E7FF", "nota5": "#F1F5F9",
+      "moldura": "#F1F5F9", "moldura2": "#1E1B4B"
+    }
+  },
+  "prontas": {
+    "quadro": {
+      "papel-claro": { "nome": "Papel claro e caneta vermelha", "cores": { "fundo": "#FBFAF6", "fundo2": "#EBE8DF", "traco": "#1D1D1F", "titulo": "#1D1D1F", "destaque": "#E4572E", "destaque2": "#2E6FD8", "moldura": "#E4572E" } },
+      "papel-kraft": { "nome": "Papel kraft e caneta vinho", "cores": { "fundo": "#EFE3C8", "fundo2": "#E0CFA9", "superficie": "#F7EDD7", "linha": "#CDBA92", "traco": "#2B2118", "titulo": "#2B2118", "texto": "#5E4E3B", "suave": "#8C7A60", "destaque": "#B0302A", "destaque2": "#1F5F8B", "moldura": "#B0302A", "moldura2": "#2B2118" } },
+      "quadro-branco": { "nome": "Quadro branco e caneta azul", "cores": { "fundo": "#FFFFFF", "fundo2": "#E8EEF5", "superficie": "#FFFFFF", "linha": "#CBD5E1", "traco": "#1E293B", "titulo": "#1E293B", "texto": "#475569", "suave": "#94A3B8", "destaque": "#2563EB", "destaque2": "#DC2626", "moldura": "#2563EB", "moldura2": "#1E293B" } }
+    },
+    "lousa": {
+      "verde": { "nome": "Lousa verde e giz amarelo", "cores": { "fundo": "#28473A", "destaque": "#FDE68A" } },
+      "preta": { "nome": "Lousa preta e giz rosa", "cores": { "fundo": "#23272A", "destaque": "#F9C6D8" } },
+      "azul": { "nome": "Lousa azul e giz amarelo", "cores": { "fundo": "#1F3A52", "destaque": "#FDE68A" } }
+    },
+    "post-its": {
+      "parede-clara": { "nome": "Parede clara e marcador laranja", "cores": { "fundo": "#E7E5E4", "fundo2": "#FAFAF9", "destaque": "#EA580C" } },
+      "cortica": { "nome": "Cortiça e marcador vermelho", "cores": { "fundo": "#C9A27A", "fundo2": "#FBF7F0", "linha": "#D9CBB7", "titulo": "#2A1E12", "texto": "#4A3A28", "suave": "#6E5B45", "destaque": "#C2410C", "moldura": "#A47C55", "moldura2": "#7C5A3A" } },
+      "noite": { "nome": "Parede escura e marcador amarelo", "cores": { "fundo": "#1F2937", "fundo2": "#F9FAFB", "titulo": "#F9FAFB", "texto": "#D1D5DB", "suave": "#9CA3AF", "destaque": "#F59E0B", "moldura": "#374151", "moldura2": "#6B7280" } }
+    },
+    "tela-app": {
+      "violeta": { "nome": "Degradê violeta e destaque amarelo", "cores": { "fundo": "#4F46E5", "fundo2": "#9333EA", "destaque": "#FDE047", "destaque2": "#4F46E5" } },
+      "oceano": { "nome": "Degradê oceano e destaque amarelo", "cores": { "fundo": "#0EA5E9", "fundo2": "#1D4ED8", "texto": "#E0F2FE", "destaque": "#FDE047", "destaque2": "#1D4ED8", "nota4": "#DBEAFE", "moldura2": "#0C2A4D" } },
+      "grafite": { "nome": "Degradê grafite e destaque verde", "cores": { "fundo": "#111827", "fundo2": "#374151", "texto": "#D1D5DB", "destaque": "#34D399", "destaque2": "#059669", "nota4": "#D1FAE5", "moldura2": "#030712" } }
+    }
+  },
+  "pronta_padrao": { "quadro": "papel-claro", "lousa": "verde", "post-its": "parede-clara", "tela-app": "violeta" },
+  "estilos": {
+    "quadro": { "nome": "Quadro de explicação", "modo": "claro", "titulo_mao": true, "giz": false, "rabisco": 1, "capa": "passos", "derivados": {} },
+    "lousa": { "nome": "Lousa de giz", "modo": "escuro", "titulo_mao": true, "giz": true, "rabisco": 1, "capa": "conta", "derivados": { "fundo2": ["fundo", "#000000", 0.22], "superficie": ["fundo", "#FFFFFF", 0.06] } },
+    "post-its": { "nome": "Quadro de post-its", "modo": "claro", "titulo_mao": false, "giz": false, "rabisco": 0.7, "capa": "colunas", "derivados": {} },
+    "tela-app": { "nome": "Tela de app", "modo": "escuro", "titulo_mao": false, "giz": false, "rabisco": 0, "capa": "tela", "derivados": {} }
+  },
+  "icones": ["moeda", "calendario", "documento", "relogio", "grafico", "pessoa", "check", "alerta", "etiqueta", "lampada", "carteira", "porcento", "casa", "lista"]
+}

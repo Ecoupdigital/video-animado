@@ -1,0 +1,33 @@
+{
+  "modelo": "chapado",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-15",
+  "nota": "Respostas que reproduzem o exemplo da vitrine (Nina Pesquisou). Único arquivo do kit onde os nomes do exemplo aparecem.",
+  "universo": {
+    "nome": "Nina Pesquisou",
+    "pasta": "nina-pesquisou",
+    "assunto": "humor leve da vida de tentante, grávida e mãe de primeira viagem, com uma dica útil e com fonte em cada vídeo",
+    "publico": "tentantes, gestantes e mães no primeiro ano do bebê, 22 a 38 anos, Brasil",
+    "tom": "amiga leve e engraçada"
+  },
+  "marca": { "nome": "Ciclua", "cor": "#F5645B", "simbolo": "lua", "palavra_fecho": "CICLUA" },
+  "personagens": [
+    { "id": "nina", "nome": "Nina", "papel": "protagonista", "idade": 30, "quem_e": "primeira gestação, a ansiosa que pesquisa tudo",
+      "aparencia": { "preset": "coque-sardas" }, "barriga_padrao": 0.55 },
+    { "id": "leo", "nome": "Léo", "papel": "apoio", "idade": 32, "quem_e": "marido, calmo e meio perdido, piada ruim",
+      "aparencia": { "preset": "crespo-barba" } },
+    { "id": "dona-cida", "nome": "Dona Cida", "papel": "apoio", "idade": 62, "quem_e": "sogra carinhosa e cheia de mito",
+      "aparencia": { "preset": "grisalha-perolas" } },
+    { "id": "je", "nome": "Jé", "papel": "apoio", "idade": 33, "quem_e": "amiga mãe do Theo, a que já passou por tudo",
+      "aparencia": { "preset": "cachos-mochila" } }
+  ],
+  "acompanhantes": [
+    { "id": "pacoca", "tipo": "cachorro", "nome": "Paçoca", "cor": "caramelo" },
+    { "id": "bebe", "tipo": "bebe", "nome": "Bebê", "pele": "p5" }
+  ],
+  "cenarios": { "casa": ["sala", "cozinha", "quarto", "banheiro"] },
+  "cores": { "origem": "modelo", "paleta": null },
+  "voz": { "caminho": "pronta" },
+  "nunca": ["diagnóstico, remédio ou dose", "dica de saúde sem fonte oficial na tela"],
+  "fecho": { "chamada": "Quer conhecer o app que eu uso?", "palavra": "CICLUA", "aviso_ficticio": true }
+}

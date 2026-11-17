@@ -1,0 +1,7 @@
+{
+  "nome_exibicao": "Pixel 16 bits",
+  "frase": "Notícia curta com um boneco pixel 16 bits que fala: título que entra por linha, card com lista, conversa, selo ou blocos, legenda em blocos e a boca mexendo pelo som da voz.",
+  "exemplo": "Exemplo: notícia de IA do @jonathanrenan.ia",
+  "legendas": { "elenco": "Boneco" },
+  "arquivos": { "folha": "folha.jpg", "elenco": "elenco.jpg", "trecho": "trecho.mp4" }
+}

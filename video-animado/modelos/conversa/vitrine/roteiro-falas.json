@@ -1,0 +1,24 @@
+{
+  "receita": "texto-e-musica",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "titulo": "O aniversário de namoro *esquecido*",
+      "legenda": "Sexta, 18h",
+      "mensagens": [
+        { "quem": "caio", "texto": "Oi! Hoje faz dois anos de namoro e eu esqueci." },
+        { "quem": "atelie", "texto": "Calma! A gente monta um buquê agora." }
+      ]
+    },
+    {
+      "tipo": "conversa",
+      "legenda": "O buquê",
+      "mensagens": [
+        { "quem": "caio", "texto": "Ela ama girassol.", "reacao": "coracao" },
+        { "quem": "atelie", "tipo": "imagem", "imagem": "produto", "texto": "Girassol com cartão, pronto às 19h." },
+        { "quem": "caio", "texto": "Vocês salvaram o meu namoro!" }
+      ]
+    },
+    { "tipo": "fecho" }
+  ]
+}

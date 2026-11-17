@@ -1,0 +1,34 @@
+{
+  "rotulo": "AULA 3 · PRECIFICAÇÃO",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "Como chegar no preço certo da sua peça.",
+      "titulo": "Como chegar no *preço certo*",
+      "subtitulo": "em três passos",
+      "icone": "etiqueta",
+      "batidas": { "risco": "certo", "icone": "sua", "subtitulo": "peça" }
+    },
+    {
+      "tipo": "passos",
+      "texto": "Some o custo. Depois, a margem. E chega no preço.",
+      "titulo": "Custo, margem, *preço*",
+      "passos": [ { "texto": "Custo", "icone": "moeda" }, { "texto": "+ Margem", "icone": "porcento" }, { "texto": "= Preço", "icone": "etiqueta" } ],
+      "batidas": { "passo0": "custo", "passo1": "margem", "passo2": "preço" }
+    },
+    {
+      "tipo": "conta",
+      "texto": "Custo de vinte reais, mais cem por cento de margem, dá quarenta.",
+      "titulo": "Na *conta*",
+      "linhas": ["Custo: R$ 20", "+ 100% de margem"],
+      "resultado": "R$ 40",
+      "batidas": { "linha0": "custo", "linha1": "mais", "resultado": "quarenta" }
+    },
+    {
+      "tipo": "final",
+      "texto": "E a sua margem, qual é?",
+      "pergunta": "E a sua *margem*?",
+      "fontes": []
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "rotulo": "FÔLEGO · 3º TRIMESTRE",
+  "cenas": [
+    {
+      "tipo": "abertura",
+      "texto": "O melhor trimestre da rede: mais quarenta e dois por cento de alunos novos.",
+      "titulo": "O melhor *trimestre* da rede",
+      "valor": {
+        "numero": 42,
+        "prefixo": "+",
+        "sufixo": "%"
+      },
+      "subtitulo": "de alunos novos",
+      "fonte": "sistema de matrícula da rede (set/2026)",
+      "batidas": {
+        "valor": "quarenta",
+        "circulo": "alunos",
+        "subtitulo": "novos"
+      }
+    },
+    {
+      "tipo": "colunas",
+      "texto": "Matrículas por mês: julho teve cento e vinte, agosto duzentas, e setembro chegou a trezentas e quarenta.",
+      "titulo": "Matrículas por *mês*",
+      "valor": {
+        "numero": 340
+      },
+      "colunas": [
+        {
+          "rotulo": "JUL",
+          "valor": 120
+        },
+        {
+          "rotulo": "AGO",
+          "valor": 200
+        },
+        {
+          "rotulo": "SET",
+          "valor": 340
+        }
+      ],
+      "legenda": "Setembro puxou o trimestre inteiro.",
+      "fonte": "sistema de matrícula da rede",
+      "batidas": {
+        "coluna0": "julho",
+        "coluna1": "agosto",
+        "coluna2": "setembro",
+        "valor": "trezentas"
+      }
+    },
+    {
+      "tipo": "marcos",
+      "texto": "Como a rede chegou aqui? Em dois mil e dezenove, uma sala. Em dois mil e vinte e dois, a segunda. Hoje, quatro unidades.",
+      "titulo": "Como a rede *chegou* aqui",
+      "marcos": [
+        {
+          "ano": "2019",
+          "texto": "Primeira sala, 40 alunos"
+        },
+        {
+          "ano": "2022",
+          "texto": "Segunda unidade"
+        },
+        {
+          "ano": "2026",
+          "texto": "Hoje: 4 unidades"
+        }
+      ],
+      "batidas": {
+        "marco0": "dois",
+        "marco1": "dois#2",
+        "marco2": "hoje"
+      }
+    },
+    {
+      "tipo": "rota",
+      "texto": "De uma unidade à outra: do Centro até a nova, são oito minutos de bicicleta.",
+      "titulo": "De uma unidade à *outra*",
+      "trechos": [
+        {
+          "chip": "3 min"
+        },
+        {
+          "chip": "8 min"
+        }
+      ],
+      "chegada": "Unidade nova",
+      "legenda": "A quinta abre em dezembro.",
+      "batidas": {
+        "trecho0": "centro",
+        "trecho1": "nova",
+        "pino": "minutos"
+      }
+    },
+    {
+      "tipo": "recortes",
+      "texto": "E o bairro notou: a academia que abre às cinco virou notícia.",
+      "titulo": "2019",
+      "sub": "QUANDO O BAIRRO NOTOU",
+      "recortes": [
+        {
+          "manchete": "Academia de bairro abre às 5h"
+        },
+        {
+          "manchete": "Fila na porta antes do sol"
+        }
+      ],
+      "circulo": {
+        "palavra": "nós!",
+        "recorte": 1
+      },
+      "batidas": {
+        "recorte0": "bairro",
+        "recorte1": "cinco",
+        "circulo": "notícia"
+      }
+    },
+    {
+      "tipo": "final",
+      "texto": "Qual unidade é a sua?",
+      "pergunta": "Qual unidade é a *sua*?",
+      "fontes": [
+        "sistema de matrícula da Fôlego (set/2026)"
+      ],
+      "batidas": {
+        "chamada": "sua"
+      }
+    }
+  ]
+}

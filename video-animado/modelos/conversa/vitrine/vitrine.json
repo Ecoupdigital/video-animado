@@ -1,0 +1,13 @@
+{
+  "nome_exibicao": "Conversa no celular",
+  "frase": "Um mensageiro genérico num celular no centro da tela: o contato no alto, as bolhas dos dois lados entrando uma a uma, digitando, áudio, imagem e reação. Duas vozes, uma por lado, ou só texto e música.",
+  "exemplo": "Exemplo: a floricultura e o cliente que esqueceu o aniversário de namoro, só texto e música (marca inventada)",
+  "arquivos": {
+    "folha": "folha.jpg",
+    "elenco": "elenco.jpg",
+    "trecho": "trecho.mp4"
+  },
+  "legendas": {
+    "elenco": "Quem conversa"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "modelo": "mesa",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Make do Dia",
+    "pasta": "make-do-dia",
+    "assunto": "maquiagem para o dia a dia, passo a passo e sem exagero: pele leve, olho rápido e boca que dura, sempre com o produto mostrado na mesa antes de usar",
+    "publico": "mulheres de 22 a 45 anos que se maquiam em menos de 10 minutos antes de sair de casa e querem aprender sem gastar muito",
+    "tom": "prático e animado, de amiga que mostra na bancada o que usa, sem julgar quem não sabe"
+  },
+  "marca": { "nome": "Rosto Leve", "cor": "#B83B5E" },
+  "mesa": { "superficie": "marmore", "grupo": "beleza" },
+  "cores": { "origem": "marca", "pronta": null, "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer pele perfeita ou resultado de procedimento", "mostrar produto, embalagem ou logo de marca real", "dizer que alguém está feia sem maquiagem"],
+  "fecho": { "chamada": "Qual passo você sempre pula?", "assinatura": "@rostoleve", "frase_assinatura": "me segue pra ver o próximo passo", "aviso_ia": true },
+  "amostra": { "titulo": "Pele leve em 5 minutos", "frase": "Base só no *centro* do rosto" }
+}

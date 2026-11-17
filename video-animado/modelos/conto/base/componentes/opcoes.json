@@ -1,0 +1,140 @@
+{
+  "temas": ["papel", "formas", "silhuetas", "giz-de-cera"],
+  "papeis": {
+    "fundo": "fundo da tela: o kraft do papel recortado, a cor chapada das formas",
+    "fundo2": "textura e segunda cor do fundo: fibras do kraft, enfeites claros das formas",
+    "ceu": "céu atrás do cenário externo (começo do degradê, quando o tema tem céu em degradê)",
+    "ceu2": "fim do degradê do céu, perto do horizonte, e a parede clara do cenário interno",
+    "chao": "chão ou colina da frente, onde os personagens pisam",
+    "chao2": "colina de trás ou segunda faixa do chão",
+    "sombra": "sombra projetada das peças de papel e sombra elíptica dos bonecos",
+    "silhueta": "o mais escuro: pupila, pernas de traço, sapato padrão e as silhuetas contra o céu",
+    "papel": "papel claro: nuvem, parede da casa, balão de fala claro, cartão do fecho",
+    "traco": "traço fino: colchete das peças, risco de enfeite, traço de giz",
+    "titulo": "título e chamada sobre o papel claro",
+    "texto": "texto de apoio: subtítulo, legenda sobre o chão",
+    "tarja": "tarja escura da legenda, balão de fala escuro",
+    "sobre": "texto sobre a tarja, sobre o balão escuro e sobre o selo",
+    "destaque": "palavra falada na legenda, pílula do fecho sem marca",
+    "faixa": "faixa do título (papel rasgado) e selo do episódio",
+    "etiqueta": "placa com o nome do lugar e etiquetas",
+    "sol": "sol e o círculo grande de enfeite",
+    "enfeite": "telhado, cortina e bloco de enfeite",
+    "enfeite2": "janela e vidro",
+    "madeira": "porta, mesa e chão de tábua do cenário interno"
+  },
+  "paletas": {
+    "papel": {
+      "fundo": "#ECDCBC", "fundo2": "#C9AD80", "ceu": "#ECDCBC", "ceu2": "#F3E6CB", "chao": "#5A9447", "chao2": "#8BB466",
+      "sombra": "#5A3D1A", "silhueta": "#2B2B2B", "papel": "#FFFDF6", "traco": "#9A9A9A", "titulo": "#3A2A18", "texto": "#7A5A36",
+      "tarja": "#3A2A18", "sobre": "#FFFAF0", "destaque": "#F6A13C", "faixa": "#FFFDF6", "etiqueta": "#3F6E9A",
+      "sol": "#F08A24", "enfeite": "#C8483A", "enfeite2": "#8EC5E8", "madeira": "#7A4B2A"
+    },
+    "formas": {
+      "fundo": "#FFD23F", "fundo2": "#FFE27A", "ceu": "#FFD23F", "ceu2": "#FFE27A", "chao": "#FF9F1C", "chao2": "#FFB54D",
+      "sombra": "#C46B00", "silhueta": "#1D1D1F", "papel": "#FFFFFF", "traco": "#1D1D1F", "titulo": "#1D1D1F", "texto": "#1D1D1F",
+      "tarja": "#1D1D1F", "sobre": "#FFD23F", "destaque": "#7B2CBF", "faixa": "#1D1D1F", "etiqueta": "#FFFFFF",
+      "sol": "#FFE27A", "enfeite": "#FFE27A", "enfeite2": "#8ECAE6", "madeira": "#C46B00"
+    },
+    "silhuetas": {
+      "fundo": "#F6915A", "fundo2": "#C2477A", "ceu": "#3B1D5E", "ceu2": "#FCD27D", "chao": "#1A0F1F", "chao2": "#5B2A4F",
+      "sombra": "#120A16", "silhueta": "#1A0F1F", "papel": "#FFF1E6", "traco": "#2A1530", "titulo": "#FFFFFF", "texto": "#F5D0E0",
+      "tarja": "#1A0F1F", "sobre": "#F5D0E0", "destaque": "#FCD27D", "faixa": "#2A1530", "etiqueta": "#1A0F1F",
+      "sol": "#FFE6A6", "enfeite": "#24132A", "enfeite2": "#FFD98A", "madeira": "#24132A"
+    },
+    "giz-de-cera": {
+      "fundo": "#FFFDF8", "fundo2": "#C7DBF0", "ceu": "#3B82F6", "ceu2": "#FCD34D", "chao": "#22C55E", "chao2": "#16A34A",
+      "sombra": "#CBD5E1", "silhueta": "#1F2937", "papel": "#FFFFFF", "traco": "#334155", "titulo": "#1D4ED8", "texto": "#334155",
+      "tarja": "#334155", "sobre": "#FFFFFF", "destaque": "#DB2777", "faixa": "#F2A7A7", "etiqueta": "#2563EB",
+      "sol": "#F59E0B", "enfeite": "#EF4444", "enfeite2": "#60A5FA", "madeira": "#A16207"
+    }
+  },
+  "prontas": {
+    "papel": {
+      "laranja": { "nome": "Destaque laranja e placa azul", "cores": { "destaque": "#F6A13C", "faixa": "#FFFDF6", "etiqueta": "#3F6E9A" } },
+      "azul": { "nome": "Destaque azul-claro e placa azul-escura", "cores": { "destaque": "#8CC8F0", "faixa": "#F4F8FB", "etiqueta": "#2F5D8A" } },
+      "vermelha": { "nome": "Destaque coral e placa vinho", "cores": { "destaque": "#F47C6A", "faixa": "#FFF3E8", "etiqueta": "#9C3D2E" } }
+    },
+    "formas": {
+      "sol": { "nome": "Amarelo, chão laranja e destaque roxo", "cores": { "fundo": "#FFD23F", "chao": "#FF9F1C", "destaque": "#7B2CBF" } },
+      "menta": { "nome": "Menta, chão verde-água e destaque vermelho", "cores": { "fundo": "#BDF0DF", "fundo2": "#DDF8EE", "ceu": "#BDF0DF", "ceu2": "#DDF8EE", "chao": "#2A9D8F", "chao2": "#52B6A8", "sombra": "#1C6B61", "sol": "#FFFFFF", "enfeite": "#DDF8EE", "madeira": "#1C6B61", "destaque": "#C1121F", "sobre": "#BDF0DF" } },
+      "noite": { "nome": "Noite, chão roxo e destaque rosa", "cores": { "fundo": "#1E2140", "fundo2": "#2C3160", "ceu": "#1E2140", "ceu2": "#2C3160", "chao": "#4B3F8C", "chao2": "#5C4FA3", "sombra": "#120F2B", "titulo": "#FFFFFF", "texto": "#FFFFFF", "traco": "#FFFFFF", "tarja": "#FFD23F", "sobre": "#1D1D1F", "faixa": "#FFD23F", "destaque": "#FF5D8F", "sol": "#FFE27A", "enfeite": "#2C3160", "enfeite2": "#FFD23F", "madeira": "#8C6BFF" } }
+    },
+    "silhuetas": {
+      "por-do-sol": { "nome": "Pôr do sol: roxo, rosa, laranja e amarelo", "cores": { "ceu": "#3B1D5E", "fundo2": "#C2477A", "fundo": "#F6915A", "ceu2": "#FCD27D", "sol": "#FFE6A6", "chao2": "#5B2A4F", "traco": "#2A1530", "texto": "#F5D0E0", "destaque": "#FCD27D", "enfeite2": "#FFD98A" } },
+      "noite": { "nome": "Noite de lua: azul-marinho, azul e lua clara", "cores": { "ceu": "#0B1033", "fundo2": "#2B3A7A", "fundo": "#8A9AD6", "ceu2": "#C9D2F0", "sol": "#F4F1E4", "chao2": "#2A3361", "traco": "#0E1230", "texto": "#DCE3FF", "destaque": "#F2E3A0", "enfeite2": "#F6E7A8" } },
+      "amanhecer": { "nome": "Amanhecer: azul, azul-claro, pêssego e amarelo-claro", "cores": { "ceu": "#3D6FB6", "fundo2": "#8FB8E8", "fundo": "#F7B7A3", "ceu2": "#FFE3B0", "sol": "#FFF4D6", "chao2": "#56688A", "traco": "#2E3A55", "texto": "#FFE7DC", "destaque": "#FFD27A", "enfeite2": "#FFE9B8" } }
+    },
+    "giz-de-cera": {
+      "classica": { "nome": "Caixa clássica: vermelho, laranja, verde e azul", "cores": { "ceu": "#3B82F6", "ceu2": "#FCD34D", "chao": "#22C55E", "chao2": "#16A34A", "titulo": "#1D4ED8", "texto": "#334155", "destaque": "#DB2777", "etiqueta": "#2563EB", "sol": "#F59E0B", "enfeite": "#EF4444", "enfeite2": "#60A5FA", "madeira": "#A16207" } },
+      "pastel": { "nome": "Caixa pastel: rosa, lilás, verde-claro e azul-claro", "cores": { "ceu": "#93C5FD", "ceu2": "#FDE68A", "chao": "#86EFAC", "chao2": "#4ADE80", "titulo": "#7C3AED", "texto": "#475569", "destaque": "#DB2777", "etiqueta": "#8B5CF6", "sol": "#FBBF24", "enfeite": "#F9A8D4", "enfeite2": "#A5B4FC", "madeira": "#C08457" } },
+      "forte": { "nome": "Caixa forte: vermelho-escuro, laranja, verde-escuro e roxo", "cores": { "ceu": "#7C3AED", "ceu2": "#FACC15", "chao": "#15803D", "chao2": "#166534", "titulo": "#B91C1C", "texto": "#1E293B", "destaque": "#EA580C", "etiqueta": "#7C3AED", "sol": "#EA580C", "enfeite": "#DC2626", "enfeite2": "#0EA5E9", "madeira": "#78350F" } }
+    }
+  },
+  "pronta_padrao": { "papel": "laranja", "formas": "sol", "silhuetas": "por-do-sol", "giz-de-cera": "classica" },
+  "estilos": {
+    "papel": { "nome": "Papel recortado", "titulo": "faixa-rasgada", "legenda": "tarja-rasgada", "fala": "legenda", "capa": "abertura", "cenario_capa": "rua", "contraste": ["tarja"], "escala": 0.82 },
+    "formas": { "nome": "Bonecos de formas", "titulo": "selo", "legenda": "simples", "fala": "balao", "capa": "dialogo", "cenario_capa": "rua", "contraste": ["chao"], "escala": 1.15 },
+    "silhuetas": { "nome": "Silhuetas", "titulo": "citacao", "legenda": "clara", "fala": "legenda", "capa": "abertura", "cenario_capa": "rua", "contraste": ["chao"], "escala": 1 },
+    "giz-de-cera": { "nome": "Giz de cera", "titulo": "manuscrito", "legenda": "manuscrita", "fala": "legenda", "capa": "abertura", "cenario_capa": "rua", "contraste": ["fundo"], "escala": 0.95 }
+  },
+  "cenarios": {
+    "rua": { "nome": "Rua", "tipo": "externo", "resumo": "lado de fora: céu, sol, nuvens, colinas e a fachada do lugar com a placa do nome" },
+    "sala": { "nome": "Sala", "tipo": "interno", "resumo": "lado de dentro: parede, janela com cortina, quadro com a placa do nome, mesa e chão de tábua" }
+  },
+  "simbolos_marca": ["estrela", "circulo", "coracao", "folha", "balao", "letra"],
+  "tons_pele": {
+    "p1": { "base": "#F7DCC6", "sombra": "#E2BC9E", "bochecha": "#F2A08C" },
+    "p2": { "base": "#F2C29B", "sombra": "#DCA57C", "bochecha": "#EC9A86" },
+    "p3": { "base": "#E0AA80", "sombra": "#C48C63", "bochecha": "#E08A72" },
+    "p4": { "base": "#C68A62", "sombra": "#A9704C", "bochecha": "#D9786A" },
+    "p5": { "base": "#B47A52", "sombra": "#966040", "bochecha": "#CC6B58" },
+    "p6": { "base": "#9C6644", "sombra": "#7E4F33", "bochecha": "#BF5D4C" },
+    "p7": { "base": "#8A5A3C", "sombra": "#6E4630", "bochecha": "#B4544A" },
+    "p8": { "base": "#62402B", "sombra": "#4C3020", "bochecha": "#A04A42" }
+  },
+  "listas": {
+    "acessorios": ["nenhum", "oculos", "bone", "laco", "gravata"],
+    "cabelos": ["curto", "comprido", "coque", "cachos", "rabo", "careca"],
+    "roupas": ["camisa-calca", "camisa-saia", "vestido", "macacao"],
+    "corpos": ["pilula", "retangulo", "circulo", "triangulo"],
+    "olhos": ["redondos", "grandes", "pontos", "sonolentos"],
+    "sobrancelhas": ["fina", "grossa", "nenhuma"],
+    "formatos": ["reto", "vestido", "largo", "redondo"],
+    "alturas": ["baixa", "media", "alta"]
+  },
+  "aparencia": {
+    "comum": { "preset": "preset", "cor": "cor", "corDetalhe": "cor", "acessorio": "lista:acessorios" },
+    "papel": { "pele": "tom", "cabelo": "lista:cabelos", "corCabelo": "cor", "roupa": "lista:roupas", "corBaixo": "cor", "sapato": "cor" },
+    "formas": { "corpo": "lista:corpos", "olhos": "lista:olhos", "sobrancelha": "lista:sobrancelhas" },
+    "silhuetas": { "formato": "lista:formatos", "altura": "lista:alturas" }
+  },
+  "campos_divididos": {
+    "silhuetas": ["cabelo"],
+    "giz-de-cera": ["pele", "cabelo", "corCabelo", "roupa", "corBaixo"]
+  },
+  "descricao_campos": {
+    "preset": "ponto de partida da aparência (um visual pronto; os outros campos trocam só o que foi respondido)",
+    "cor": "cor principal do personagem: a roupa de cima no papel, o corpo nas formas",
+    "corDetalhe": "cor do acessório (boné, laço, gravata) e da armação dos óculos",
+    "acessorio": "o detalhe que identifica o personagem em qualquer tema",
+    "pele": "tom de pele, de p1 (mais clara) a p8 (mais escura)",
+    "cabelo": "corte de cabelo em peça de papel",
+    "corCabelo": "cor do cabelo e da sobrancelha",
+    "roupa": "roupa em peças: camisa e calça, camisa e saia, vestido ou macacão",
+    "corBaixo": "calça, saia ou macacão",
+    "sapato": "cor do sapato",
+    "corpo": "forma do corpo do boneco",
+    "olhos": "jeito dos olhos do boneco",
+    "sobrancelha": "sobrancelha do boneco",
+    "formato": "formato do corpo da silhueta, lido pelo contorno: reto (calça), vestido (saia rodada), largo (ombros largos) ou redondo (barriga)",
+    "altura": "altura da silhueta: baixa, media ou alta (o contorno contra o céu mostra quem é quem)"
+  },
+  "presets": {
+    "coque-oculos": { "cor": "#3A86FF", "corDetalhe": "#1D1D1F", "acessorio": "oculos", "pele": "p3", "cabelo": "coque", "corCabelo": "#4A2C17", "roupa": "camisa-saia", "corBaixo": "#2B3A55", "sapato": "#2B2B2B", "corpo": "pilula", "olhos": "redondos", "sobrancelha": "fina", "formato": "vestido", "altura": "alta" },
+    "bone-camiseta": { "cor": "#EF476F", "corDetalhe": "#FFD23F", "acessorio": "bone", "pele": "p7", "cabelo": "curto", "corCabelo": "#1E1A17", "roupa": "camisa-calca", "corBaixo": "#3B4A6B", "sapato": "#2B2B2B", "corpo": "retangulo", "olhos": "redondos", "sobrancelha": "grossa", "formato": "reto", "altura": "media" },
+    "cachos-laco": { "cor": "#06A77D", "corDetalhe": "#FF5D8F", "acessorio": "laco", "pele": "p5", "cabelo": "cachos", "corCabelo": "#2A1B12", "roupa": "vestido", "corBaixo": "#F4D35E", "sapato": "#7A3B2E", "corpo": "circulo", "olhos": "grandes", "sobrancelha": "fina", "formato": "redondo", "altura": "baixa" },
+    "careca-gravata": { "cor": "#F28C28", "corDetalhe": "#3A86FF", "acessorio": "gravata", "pele": "p1", "cabelo": "careca", "corCabelo": "#8A8580", "roupa": "macacao", "corBaixo": "#355C7D", "sapato": "#3A2E26", "corpo": "triangulo", "olhos": "sonolentos", "sobrancelha": "grossa", "formato": "largo", "altura": "alta" }
+  },
+  "preset_padrao": ["coque-oculos", "bone-camiseta", "cachos-laco", "careca-gravata"]
+}

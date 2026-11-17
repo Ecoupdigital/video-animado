@@ -1,0 +1,18 @@
+{
+  "modelo": "mesa",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "universo": {
+    "nome": "Pizza de Domingo",
+    "pasta": "pizza-de-domingo",
+    "assunto": "receitas de pizza caseira passo a passo, da massa ao forno, com a quantidade e o tempo de cada etapa na tela",
+    "publico": "quem cozinha em casa no fim de semana, de 25 a 55 anos",
+    "tom": "calmo e caseiro, de quem cozinha junto e explica o porquê de cada passo"
+  },
+  "marca": { "nome": "Forno de Casa", "cor": "#C2410C" },
+  "mesa": { "superficie": "madeira", "grupo": "cozinha" },
+  "cores": { "origem": "modelo", "pronta": null, "paleta": null },
+  "voz": { "caminho": "pronta", "voice_id": null },
+  "nunca": ["prometer massa perfeita na primeira vez", "citar marca de farinha ou de queijo"],
+  "fecho": { "chamada": "Qual sabor sai no seu domingo?", "assinatura": "@fornodecasa", "frase_assinatura": "me segue pra ver o próximo passo", "aviso_ia": true }
+}

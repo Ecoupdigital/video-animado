@@ -1,0 +1,27 @@
+{
+  "modelo": "conto",
+  "versao_modelo": "1.0",
+  "respondido_em": "2026-11-17",
+  "nota": "Respostas do exemplo da vitrine: uma oficina de bicicleta inventada, com o mecânico e uma cliente, nos bonecos de formas. Marca, lugar e pessoas inventados.",
+  "universo": {
+    "nome": "Oficina do Bento",
+    "pasta": "oficina-bicicleta",
+    "assunto": "situações da oficina de bicicleta do bairro: o barulho misterioso, o pneu que murcha sozinho, a corrente que sai, com uma dica de manutenção em cada vídeo",
+    "publico": "ciclistas de fim de semana e quem vai de bicicleta para o trabalho",
+    "tom": "leve, de vizinho que entende do assunto e não faz ninguém se sentir bobo"
+  },
+  "marca": { "nome": "Pedal de Bairro", "cor": "#E4572E", "simbolo": "circulo", "palavra_fecho": "PEDAL" },
+  "tema": "formas",
+  "cenarios": { "lista": ["rua", "sala"], "lugar": "Pedal de Bairro" },
+  "personagens": [
+    { "id": "bento", "nome": "Bento", "papel": "protagonista", "idade": 52, "quem_e": "mecânico calmo que já ouviu todo barulho de bicicleta",
+      "aparencia": { "preset": "careca-gravata", "cor": "#F28C28", "acessorio": "bone", "corDetalhe": "#1D3557", "corpo": "circulo", "olhos": "redondos", "sobrancelha": "grossa" } },
+    { "id": "lia", "nome": "Lia", "papel": "apoio", "idade": 27, "quem_e": "cliente apressada que jura que a bicicleta está falando",
+      "aparencia": { "preset": "cachos-laco", "cor": "#06A77D", "acessorio": "laco", "corDetalhe": "#FF5D8F", "corpo": "pilula", "olhos": "grandes", "sobrancelha": "fina" } }
+  ],
+  "cores": { "origem": "tema", "pronta": null, "paleta": null },
+  "narrador": false,
+  "voz": { "caminho": "pronta" },
+  "nunca": ["ensinar conserto perigoso", "rir de quem não entende de bicicleta"],
+  "fecho": { "chamada": "Sua bicicleta também faz barulho?", "palavra": "PEDAL", "aviso_ficticio": true }
+}

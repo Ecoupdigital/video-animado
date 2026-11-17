@@ -1,0 +1,25 @@
+{
+  "name": "universo-animado",
+  "version": "1.0.0",
+  "description": "Conto animado em código, com personagens, criado a partir do modelo Conto (família com temas: papel recortado, bonecos de formas, silhuetas e giz de cera).",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/media-utils": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "marked": "^15.0.12",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "preview": "remotion studio _preview/src/index.ts",
+    "lint": "tsc --noEmit"
+  }
+}

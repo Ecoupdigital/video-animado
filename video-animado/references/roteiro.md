@@ -4,6 +4,15 @@
 
 Escreva **3 opções de gancho** (a frase dos primeiros 3 segundos), cada uma de um tipo diferente, por exemplo: pergunta que incomoda, afirmação contra a corrente, número ou fato concreto, cena do conflito do personagem. Mostre as 3 com AskUserQuestion, a recomendada primeiro, e só depois escreva o roteiro com o gancho escolhido. Respeite a forma de abrir e fechar que está na narrativa do brandbook.
 
+## Clareza e nexo (lição do 1º vídeo real, 09/11/2026)
+
+Antes de mostrar o roteiro, confira:
+- **Linguagem:** alguém de 18 anos entende de primeira? Troque construção de documento ("na maioria das vezes é feito com", "de preferência", "realizar") por fala de conversa ("na maioria dos postos, pedem", "o certo é", "fazer").
+- **Cadeia de causa:** escreva numa linha "problema → pergunta → resposta → consequência". Se a resposta (a dica) não resolve o problema da cena, a história fica sem nexo mesmo com cada frase certa.
+- **Nada pendurado:** todo elemento levantado (uma dúvida, uma sombra, um objeto) tem resposta antes do fim.
+- **Cada personagem com função:** fala de coadjuvante que não move a história vira só piada solta; reescreva para ela responder ou provocar algo.
+- **A piada mais forte costuma ser o erro do personagem revelado pela dica.** Reforce na tela (lista, post-it) o que é dito.
+
 ## Lista de afirmações para conferir
 
 Depois do roteiro, liste em separado **toda afirmação de fato** que ele faz (números, datas, nomes de ferramentas, o que um produto faz). Marque as que a pessoa precisa confirmar. Nunca invente estatística: se não há fonte, tire a afirmação ou deixe em termos que a pessoa sustente.
