@@ -26,18 +26,23 @@ Em todos os modelos dá para trocar as cores na entrevista: as do tema, as da su
 
 ## Instalar
 
+O jeito mais fácil: abra o Claude Code nesta pasta e mande o texto de [`PROMPT_INSTALACAO.md`](PROMPT_INSTALACAO.md). A IA roda o instalador, pede o seu ok para o que faltar no sistema e faz um teste.
+
+Na mão:
+
 ```bash
-git clone https://github.com/Ecoupdigital/video-animado.git
-cp -R video-animado/video-animado ~/.claude/skills/video-animado
+bash instalar.sh --conferir   # confere o que já tem e o que falta
+bash instalar.sh              # instala a skill, o estúdio (~/meu-estudio) e o transcritor
+bash instalar.sh --teste      # cria um universo de teste e desenha uma cena com o Remotion
 ```
 
-Depois, no Claude Code, peça um vídeo animado ou digite `/video-animado`.
+O instalador nunca usa sudo nem brew sozinho: quando falta algo do sistema, ele mostra o comando e para. Depois, no Claude Code, peça um vídeo animado ou digite `/video-animado`.
 
 ## O que precisa ter
 
 - Claude Code (ou o app do Claude, aba Code)
 - Node 20 ou mais novo e ffmpeg. O Remotion é instalado sozinho no primeiro universo (`npm install`).
-- Uma ferramenta para transcrever áudio com o tempo de cada palavra (mlx-whisper no Mac, faster-whisper no Linux)
+- Python 3.9 ou mais novo. O instalador cria o transcritor com o tempo de cada palavra num ambiente só da skill (`~/.video-animado/venv`): mlx-whisper no Mac com chip Apple, faster-whisper nos outros.
 - Conector ou chave do ElevenLabs, se for usar voz clonada ou voz pronta. Dá para usar áudio gravado por você, e os modelos Conversa no celular e Neon retrô têm a opção só texto com música, sem voz.
 
 As fontes dos modelos novos vêm dentro da skill, então o render não depende de internet (o Dossiê ainda baixa as fontes na hora).
