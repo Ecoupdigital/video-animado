@@ -5,6 +5,21 @@
 # universo) e os nomes próprios do roteiro do vídeo (roteiro-falas.json ao lado de src/), para os nomes
 # saírem escritos certo. Mac: mlx-whisper (whisper-large-v3-turbo). Linux: faster-whisper large-v3 na CPU.
 import json, os, re, sys
+import importlib.util
+
+
+def _usar_python_do_instalador():
+    """Sem transcritor neste Python, usa o que o instalar.sh deixa em ~/.video-animado/venv."""
+    if importlib.util.find_spec('mlx_whisper') or importlib.util.find_spec('faster_whisper'):
+        return
+    venv = os.path.join(os.path.expanduser('~'), '.video-animado', 'venv')
+    py = os.path.join(venv, 'bin', 'python')
+    # compara a pasta do ambiente (sys.prefix): o python do venv é um link para o do sistema
+    if os.path.isfile(py) and os.path.realpath(sys.prefix) != os.path.realpath(venv):
+        os.execv(py, [py] + sys.argv)
+
+
+_usar_python_do_instalador()
 
 if len(sys.argv) < 3:
     sys.exit('Uso: python3 transcrever.py <audio> <saida.json> [termos extras]')
