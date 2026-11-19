@@ -97,6 +97,8 @@ Com vários personagens, cada ficha guarda a voz do personagem.
 - Um componente por cenário.
 - Uma imagem de teste com o personagem dentro de um cenário.
 
+**Clipe piloto antes de tudo o mais.** Imagem parada não mostra ritmo, voz nem movimento, e a pessoa só descobre o que não gosta quando vê o vídeo andando. Com 1 personagem e 1 ou 2 cenários prontos, monte um clipe de 8 a 10 s com voz, movimento, cortes, legenda e som, dentro da Regra de dinamismo, e mostre. Só depois do piloto aprovado desenhe o resto (outros cenários, elenco de apoio, brandbook completo). Diga antes quantos caracteres de voz o piloto gasta.
+
 **Só siga quando a pessoa aprovar de olho** as expressões e a imagem de teste. Se o desenho em código não sair bom, simplifique o desenho (menos detalhe, mais forma). Nunca troque por ferramenta externa.
 
 ### Parte B. Fazer o vídeo
@@ -105,12 +107,31 @@ Com vários personagens, cada ficha guarda a voz do personagem.
 
 1. **Pergunta única** (só o que faltar): tema, duração (30 a 60 s por padrão), formato (vertical 1080x1920 por padrão, 30 fps), quais personagens e cenários entram.
 2. **Gancho e roteiro pra ser OUVIDO** (leia `references/roteiro.md`). Primeiro 3 opções de gancho de tipos diferentes, a pessoa escolhe. Depois o roteiro: frases curtas, número escrito como se fala, sem parênteses nem sigla difícil, sem as frases proibidas da lista. Do lado de cada frase: a cena, quem aparece, a expressão e o que surge na tela. Respeite a narrativa do brandbook. Ao final, liste à parte as afirmações de fato que a pessoa precisa confirmar. Salve em `videos/<data-slug>/roteiro.md` e **só siga com a aprovação da pessoa**.
+   - **Ação e corte em cada fala.** Do lado de cada frase, escreva também o que o personagem FAZ (verbo de ação dentro de um cenário) e quantos planos a frase tem. Fala com mais de 3 s precisa de dois planos ou mais (ver Regra de dinamismo).
+   - **Série:** abertura fixa e fecho fixo do brandbook entram com as palavras da pessoa, sem resumir. Antes de pedir a aprovação, releia o que ela disse na conversa sobre o formato e confira se o roteiro tem cada ponto.
 3. **Narração**, pelo caminho de voz salvo no brandbook. Mostre o áudio e espere aprovação. Frase estranha: gere de novo só aquela frase. Use o `pronuncias.md` se existir. Salve `narracao.mp3`.
 4. **Tempo de cada palavra.** Transcreva a narração com timestamps por palavra (a ferramenta de transcrição que o estúdio já tem, a do curso de edição: mlx-whisper no Mac). Corrija erros típicos do Whisper em nomes de produtos e termos técnicos. Se a pessoa não tiver transcritor instalado, diga e ajude a instalar antes de seguir.
 5. **Projeto Remotion** em `videos/<data-slug>/` (use a skill `remotion-best-practices`). Um áudio de fundo (`narracao.mp3`). Cada cena importa os componentes do brandbook, **nunca redesenha** personagem ou cenário. Boca: extraia o volume do áudio por frame e use como `falando`, com um piso pra não tremer no silêncio. Cada elemento nasce na palavra que o cita. Legenda palavra por palavra no estilo do brandbook. Hooks do React nunca dentro de `if` ou depois de `return` antecipado.
 6. **Conferir antes de renderizar.** `npx tsc --noEmit`, depois um frame de cada cena. Olhe a imagem: personagem inteiro e igual à ficha, texto sem sobrepor nem estourar a largura, dentro da área segura, boca batendo com a voz, expressão e cena certas no tempo certo. Detalhes em `references/conferencias.md`.
 7. **Renderizar, conferir e entregar.** mp4 (H.264, áudio AAC) em `~/Downloads/`. Rode `scripts/checar_video.py` (volume, tamanho, silêncio), gere um contact sheet e chame o **revisor independente** (subagente que não viu a montagem, briefing em `references/conferencias.md`). Corrija o que for grave ou médio e renderize de novo. Entregue também a capa e a legenda do post, e ofereça os formatos 1:1 e 16:9 (`references/roteiro.md`). Diga o que tem em cada cena, a duração, o que o revisor achou e o que mudou, o que ela deve conferir de ouvido (você não ouve áudio) e onde está o projeto.
+   - **Dinamismo:** rode `scripts/checar_dinamismo.py` no mp4 antes de chamar o revisor. Reprovado não vai para a pessoa: acrescente planos nos trechos apontados e renderize de novo.
+   - **Fechar o aprendizado:** quando a pessoa aprovar o primeiro vídeo de um universo (ou aprovar depois de várias correções), antes de encerrar atualize o brandbook nas duas versões e a ficha com o que foi aprovado de fato, e escreva ou atualize o `RECEITA.md` na raiz do universo: o que foi reprovado e com que palavras, a estrutura do roteiro, a voz, o ritmo, o som, os comandos e a pasta do vídeo modelo a copiar. Sem isso o próximo vídeo sai do brandbook velho e repete os erros.
 8. **Ajustes.** A pessoa pede em palavras comuns ("o boneco tá sério demais", "aparece mais rápido") ou pelo tempo ("muda o título em 0:12"). Converta tempo em frame, mexa só na cena afetada e mostre o trecho antes de renderizar tudo. Se a regra vale pros próximos vídeos, atualize o brandbook (as duas versões); se vale só pra este, o projeto.
+
+## Regra de dinamismo (vale para todo vídeo, de qualquer universo)
+
+O erro que mais custa retrabalho é entregar vídeo lento e parado. Quem assiste vive na era dos cortes: se a imagem não muda, a pessoa passa. Estas metas valem do clipe piloto ao vídeo final, e o `scripts/checar_dinamismo.py <video.mp4> [palavras.json]` mede as quatro primeiras no mp4 pronto (sai reprovado se alguma falhar):
+
+1. **Nenhum trecho com mais de 3 s sem corte.** Corte é troca de plano, de cenário ou de enquadramento (aberto para fechado, personagem para objeto, frente para lado). Zoom lento no mesmo plano não conta.
+2. **Média de até 2,5 s por plano.** Um vídeo de 35 s tem pelo menos 14 planos.
+3. **Primeiro corte até os 2 s** e algo se mexendo já no primeiro frame. Nada de abertura contemplativa.
+4. **Fala a partir de 2,6 palavras por segundo.** Voz lenta: acelere a narração (`atempo` de 1,08 a 1,15) e encurte as pausas entre falas para 0,2 a 0,3 s.
+5. **O personagem sempre faz alguma coisa** dentro de um cenário: anda, pega, abre, corre, cai. Personagem parado de frente só em corte curto de reação, de até 2 s.
+6. **A cada fala entra algo novo na tela** (objeto, texto grande, outro lugar) e a câmera nunca fica imóvel (aproxima, acompanha, treme no susto).
+7. **Som marca o corte:** efeito curto na troca de plano e trilha que muda de clima com a história (`scripts/trilha.py`, trilha de suspense por trechos de clima, feita em código). Silêncio só de propósito, antes de um susto.
+8. **Rápido demais também reprova.** Corte existe para a história andar, não para bater meta. Plano dura pelo menos 1,2 s (só o clarão de um susto pode ser menor), a média não desce de 1,6 s por plano e a história continua dentro do cenário: objeto citado numa palavra entra como adesivo por cima da cena, sem trocar a tela inteira. Tela cheia de objeto só quando ele é o assunto da fala inteira, e fica até a fala acabar. O `checar_dinamismo.py` reprova mais de 2 planos com menos de 1 s e média abaixo de 1,6 s.
+
+Cena longa no mesmo lugar (o personagem atravessa a casa, por exemplo) se resolve com planos encaixados: detalhe da mão, do objeto, do rosto, e volta. Medido no 100 Dias no Escuro (18/11/2026): a primeira versão, reprovada como "lenta e estática", tinha 2 cortes em 45 s; a versão aceita tinha 13 em 36 s e ainda deixava 8,7 s seguidos na mesma sala.
 
 ### Sugestão de nome
 
@@ -159,3 +180,12 @@ Sempre que o brandbook for criado, sugira 3 nomes de universo (curtos, fáceis d
 - Lembrança com dissolve: comece a cena do antes no MESMO enquadramento em que o agora termina, senão aparecem duas pessoas de tamanhos diferentes no meio da passagem; e tire do antes os objetos que ainda não existiam (brinquedos de um filho que não tinha nascido).
 - Vídeo que vende recurso do app (Segunda Viagem, ep. 2): confira no CÓDIGO que a usuária daquela fase chega ao recurso, não só que a tela existe. O revisor achou que a tela de sintomas existia mas não tinha atalho na gestação, e o resumo Premium sairia vazio; o vídeo virou PR no app (#25 do ciclua) e só publica depois. Peça ao revisor para ler o código do app junto com os frames.
 - Estimativa de crédito de voz: conte os caracteres do texto exato antes de prometer (no ep. 2 estimei 690 e deram 815). E transcreva a fala de chamada sozinha: "comenta Ciclua" às vezes sai "comenta a Ciclua"; "comenta: Ciclua," resolveu.
+- Vídeo lento e parado (100 Dias no Escuro, 18/11/2026): foi o motivo de três versões reprovadas. Siga a Regra de dinamismo desde o piloto e meça com `scripts/checar_dinamismo.py`; não confie no olho de quem montou.
+- Aprovar estilo por imagem parada: a pessoa aprovou as imagens e reprovou o vídeo. O portão de aprovação é o clipe piloto de 8 a 10 s com voz e som, antes do brandbook completo.
+- Estilo perguntado só em palavras: comece o bloco Visual pedindo um vídeo ou perfil de referência ("queria que parecesse com qual?"). Sem referência, mostre 3 versões lado a lado em imagem.
+- Som escolhido por lista de texto: "ambiente + efeitos" no papel virou "faltou trilha, faltou emoção" no vídeo. Som se escolhe ouvindo, no piloto.
+- Formato da série perdido no resumo: a pessoa descreveu a abertura ("o mundo apagou, quem salva o Davi são vocês") e o roteiro saiu com outras palavras. Guarde abertura e fecho fixos no brandbook, literais.
+- Áudio ou imagem mostrados junto com uma caixa de pergunta ficam escondidos atrás dela: mostre a mídia numa mensagem normal e pergunte só na seguinte.
+- Corrigir vídeo lento enchendo de corte (100 Dias no Escuro, 18/11/2026): para passar no medidor entraram 8 telas de objeto, algumas de meio segundo, e a pessoa reprovou: "muito rápido, não dá pra entender o que tá acontecendo". A versão com 25 cortes em 36 s (média 1,4 s) foi reprovada; a de 13 cortes estava lenta. O alvo fica entre as duas, perto de 1,7 a 2,2 s por plano, e medidor aprovado não dispensa assistir o trecho mexido.
+- Efeito sonoro em toda troca de cena (100 Dias no Escuro, 18/11/2026): um "vupt" sintético em cada um dos 31 cortes foi reprovado como "barulho estranho, muito ruim". Corte comum não leva efeito: a trilha segura. Efeito só no que acontece na história (estouro, apagão, objeto que surge, a virada), poucos por vídeo e baixos. Quem monta não ouve o resultado, então peça para a pessoa ouvir o piloto antes de espalhar um som pelo vídeo.
+

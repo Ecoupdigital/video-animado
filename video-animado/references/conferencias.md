@@ -10,6 +10,10 @@ python3 <skill>/scripts/checar_video.py ~/Downloads/<arquivo>.mp4 --formato 9:16
 
 Confere duração, tamanho do vídeo para o formato, volume (alvo -16 a -14 LUFS, pico até -1 dB) e silêncio no começo. Se der PROBLEMA, corrija e renderize de novo. AVISO você decide se vale mexer.
 
+## 1b. Dinamismo (automática)
+
+`python3 scripts/checar_dinamismo.py <video.mp4> [palavras.json]`. Mede cortes, maior trecho sem corte, média por plano e palavras por segundo, contra as metas da Regra de dinamismo da SKILL.md. Reprovado: acrescente planos (detalhe, rosto, objeto) nos trechos apontados antes de mostrar a alguém. Peça também ao revisor independente uma nota de ritmo: "em que segundo você passaria o vídeo?".
+
 ## 2. Conferência dos frames (você, olhando)
 
 Tire um frame de cada cena e um contact sheet. Confira:

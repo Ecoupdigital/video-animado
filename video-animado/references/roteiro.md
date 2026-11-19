@@ -13,6 +13,15 @@ Antes de mostrar o roteiro, confira:
 - **Cada personagem com função:** fala de coadjuvante que não move a história vira só piada solta; reescreva para ela responder ou provocar algo.
 - **A piada mais forte costuma ser o erro do personagem revelado pela dica.** Reforce na tela (lista, post-it) o que é dito.
 
+## Explicar a lógica (lição do 100 Dias no Escuro, 18/11/2026)
+
+Em vídeo de história, a pessoa quer narrativa contada: o que aconteceu, por que ficou assim, quem é o personagem e em que situação ele está. Lista de fatos soltos seguida de uma pergunta foi reprovada como "falta história".
+
+- Todo fato que sustenta uma escolha ou um perigo é explicado antes de ser usado. Passe em cada afirmação e pergunte "por quê?" como quem não sabe nada do assunto. Se a resposta não está na fala anterior, escreva.
+- Exemplo: "encher tudo de água enquanto a torneira funciona" travou a pessoa ("por que a água vai acabar?"). Resolveu com: a torneira só tem a água da caixa do prédio, a bomba que enche a caixa é elétrica, quando esvaziar acabou.
+- A explicação pode custar segundos. Vale mais que o vídeo curto que ninguém entende.
+- Roteiro escrito e aprovado antes de qualquer gravação de voz.
+
 ## Lista de afirmações para conferir
 
 Depois do roteiro, liste em separado **toda afirmação de fato** que ele faz (números, datas, nomes de ferramentas, o que um produto faz). Marque as que a pessoa precisa confirmar. Nunca invente estatística: se não há fonte, tire a afirmação ou deixe em termos que a pessoa sustente.

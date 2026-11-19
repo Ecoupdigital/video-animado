@@ -38,10 +38,11 @@ Depois, no Claude Code, peça um vídeo animado ou digite `/video-animado`.
 - Claude Code (ou o app do Claude, aba Code)
 - Node 20 ou mais novo e ffmpeg. O Remotion é instalado sozinho no primeiro universo (`npm install`).
 - Uma ferramenta para transcrever áudio com o tempo de cada palavra (mlx-whisper no Mac, faster-whisper no Linux)
+- Python 3 com numpy e scipy, só para a trilha sonora feita em código (`scripts/trilha.py`)
 - Conector ou chave do ElevenLabs, se for usar voz clonada ou voz pronta. Dá para usar áudio gravado por você, e os modelos Conversa no celular e Neon retrô têm a opção só texto com música, sem voz.
 
 As fontes dos modelos novos vêm dentro da skill, então o render não depende de internet (o Dossiê ainda baixa as fontes na hora).
 
 ## Estado
 
-Criada em 08/11/2026. Catálogo de 10 modelos em 17/11/2026. Cada modelo foi testado com um universo de outro assunto, imagens conferidas, um vídeo de 15 s com áudio emprestado e as conferências automáticas (`scripts/conferir_kit.mjs`, `conferir_neutro.mjs`, `conferir_portabilidade.mjs`). Ainda falta um vídeo com voz nova por modelo. Se algo quebrar, abra uma issue.
+Criada em 08/11/2026. Catálogo de 10 modelos em 17/11/2026. Cada modelo foi testado com um universo de outro assunto, imagens conferidas, um vídeo de 15 s com áudio emprestado e as conferências automáticas (`scripts/conferir_kit.mjs`, `conferir_neutro.mjs`, `conferir_portabilidade.mjs`). Em 18/11/2026 entrou a Regra de dinamismo (cortes a cada 3 s no máximo, sem exagero), o medidor `scripts/checar_dinamismo.py`, a trilha em código `scripts/trilha.py` e o clipe piloto antes de aprovar o estilo. Ainda falta um vídeo com voz nova por modelo. Se algo quebrar, abra uma issue.

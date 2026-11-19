@@ -43,6 +43,8 @@ Se for nenhum, pule o bloco.
 
 ## Bloco 5. Visual
 
+**Antes de qualquer pergunta deste bloco:** "Tem algum vídeo ou perfil que você queria que o seu parecesse? Manda o link ou um print." A referência vale mais que as respostas abaixo. Sem referência, desenhe 3 versões do personagem e mostre lado a lado.
+
 1. Estilo de desenho possível em código: geométrico chapado (recomendado), com contorno, minimalista, estilo papel recortado. Mostre uma amostra rápida de cada se a pessoa ficar em dúvida.
 2. Paleta: sugira 2 a 3 paletas com hex exatos e peça para escolher ou ajustar. Defina a proporção de uso (fundo, personagem, destaque) e a cor de erro/acerto.
 3. Fontes: sugira 2 combinações de Google Fonts. Uma para título e legenda, outra para detalhes.
@@ -50,6 +52,8 @@ Se for nenhum, pule o bloco.
 5. Nível de detalhe: muito simples, simples, médio. Recomendado: simples.
 
 ## Bloco 6. Movimento
+
+**Ritmo não é pergunta:** todo universo segue a Regra de dinamismo da SKILL.md (cortes a cada 3 s no máximo, fala rápida, personagem em ação). Pergunte só o que varia: tom do movimento (elástico, seco, suave) e o que nunca fazer. Trilha e efeitos a pessoa escolhe ouvindo o clipe piloto.
 
 1. Parado, o personagem respira e pisca? (recomendado: sim, sutil)
 2. Entrada e saída de cena: deslizando, pulando, aparecendo com fade, cortando.
